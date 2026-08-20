@@ -1,0 +1,1449 @@
+RAW PREVIOUS BOOT LOG
+================================================================================
+Hostname: ip-172-31-21-130
+Collection time: 2026-08-20 15:04:04.034357
+================================================================================
+
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Linux version 7.0.0-1010-aws (buildd@lcy02-amd64-063) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #10~24.04.1-Ubuntu SMP PREEMPT Mon Jul 27 17:41:33 UTC 2026 (Ubuntu 7.0.0-1010.10~24.04.1-aws 7.0.12)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Command line: BOOT_IMAGE=/vmlinuz-7.0.0-1010-aws root=PARTUUID=fe814a98-f7fd-4c3d-9642-c18fe64c6e5d ro console=tty1 console=ttyS0 nvme_core.io_timeout=4294967295 panic=-1
+Aug 20 14:58:21 ip-172-31-21-130 kernel: KERNEL supported cpus:
+Aug 20 14:58:21 ip-172-31-21-130 kernel:   Intel GenuineIntel
+Aug 20 14:58:21 ip-172-31-21-130 kernel:   AMD AuthenticAMD
+Aug 20 14:58:21 ip-172-31-21-130 kernel:   Hygon HygonGenuine
+Aug 20 14:58:21 ip-172-31-21-130 kernel:   Centaur CentaurHauls
+Aug 20 14:58:21 ip-172-31-21-130 kernel:   zhaoxin   Shanghai  
+Aug 20 14:58:21 ip-172-31-21-130 kernel: x86/CPU: Model not found in latest microcode list
+Aug 20 14:58:21 ip-172-31-21-130 kernel: BIOS-provided physical RAM map:
+Aug 20 14:58:21 ip-172-31-21-130 kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009dfff]  System RAM
+Aug 20 14:58:21 ip-172-31-21-130 kernel: BIOS-e820: [mem 0x000000000009e000-0x000000000009ffff]  device reserved
+Aug 20 14:58:21 ip-172-31-21-130 kernel: BIOS-e820: [gap 0x00000000000a0000-0x00000000000dffff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff]  device reserved
+Aug 20 14:58:21 ip-172-31-21-130 kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000efffffff]  System RAM
+Aug 20 14:58:21 ip-172-31-21-130 kernel: BIOS-e820: [gap 0x00000000f0000000-0x00000000fbffffff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: BIOS-e820: [mem 0x00000000fc000000-0x00000000ffffffff]  device reserved
+Aug 20 14:58:21 ip-172-31-21-130 kernel: BIOS-e820: [mem 0x0000000100000000-0x000000020fffffff]  System RAM
+Aug 20 14:58:21 ip-172-31-21-130 kernel: NX (Execute Disable) protection: active
+Aug 20 14:58:21 ip-172-31-21-130 kernel: APIC: Static calls initialized
+Aug 20 14:58:21 ip-172-31-21-130 kernel: SMBIOS 2.7 present.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: DMI: Xen HVM domU, BIOS 4.11.amazon 08/24/2006
+Aug 20 14:58:21 ip-172-31-21-130 kernel: DMI: Memory slots populated: 1/1
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Hypervisor detected: Xen HVM
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Xen version 4.11.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: platform_pci_unplug: Netfront and the Xen platform PCI driver have been compiled for this kernel: unplug emulated NICs.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: platform_pci_unplug: Blkfront and the Xen platform PCI driver have been compiled for this kernel: unplug emulated disks.
+                                         You might have to change the root device
+                                         from /dev/hd[a-d] to /dev/xvd[a-d]
+                                         in your root= kernel command line option
+Aug 20 14:58:21 ip-172-31-21-130 kernel: HVMOP_pagetable_dying not supported
+Aug 20 14:58:21 ip-172-31-21-130 kernel: tsc: Detected 2299.998 MHz processor
+Aug 20 14:58:21 ip-172-31-21-130 kernel: e820: update [mem 0x00000000-0x00000fff] System RAM ==> device reserved
+Aug 20 14:58:21 ip-172-31-21-130 kernel: e820: remove [mem 0x000a0000-0x000fffff] System RAM
+Aug 20 14:58:21 ip-172-31-21-130 kernel: last_pfn = 0x210000 max_arch_pfn = 0x400000000
+Aug 20 14:58:21 ip-172-31-21-130 kernel: MTRR map: 4 entries (3 fixed + 1 variable; max 19), built from 8 variable MTRRs
+Aug 20 14:58:21 ip-172-31-21-130 kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Aug 20 14:58:21 ip-172-31-21-130 kernel: last_pfn = 0xf0000 max_arch_pfn = 0x400000000
+Aug 20 14:58:21 ip-172-31-21-130 kernel: found SMP MP-table at [mem 0x000fbb70-0x000fbb7f]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: RAMDISK: [mem 0x3631f000-0x37186fff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: Early table checksum verification disabled
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: RSDP 0x00000000000EA020 000024 (v02 Xen   )
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: XSDT 0x00000000FC00D4F0 00005C (v01 Xen    HVM      00000000 HVML 00000000)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: FACP 0x00000000FC00D3F0 0000F4 (v04 Xen    HVM      00000000 HVML 00000000)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: DSDT 0x00000000FC001000 00BD14 (v02 Xen    HVM      00000000 INTL 20090123)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: FACS 0x00000000FC00D2F0 000040
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: FACS 0x00000000FC00D2F0 000040
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: SSDT 0x00000000FC00CD20 000033 (v02 Xen    HVM      00000000 INTL 20090123)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: SSDT 0x00000000FC00CD60 000031 (v02 Xen    HVM      00000000 INTL 20090123)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: APIC 0x00000000FC00CDA0 0000D8 (v02 Xen    HVM      00000000 HVML 00000000)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: HPET 0x00000000FC00D280 000038 (v01 Xen    HVM      00000000 HVML 00000000)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: WAET 0x00000000FC00D2C0 000028 (v01 Xen    HVM      00000000 HVML 00000000)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: Reserving FACP table memory at [mem 0xfc00d3f0-0xfc00d4e3]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: Reserving DSDT table memory at [mem 0xfc001000-0xfc00cd13]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: Reserving FACS table memory at [mem 0xfc00d2f0-0xfc00d32f]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: Reserving FACS table memory at [mem 0xfc00d2f0-0xfc00d32f]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: Reserving SSDT table memory at [mem 0xfc00cd20-0xfc00cd52]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: Reserving SSDT table memory at [mem 0xfc00cd60-0xfc00cd90]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: Reserving APIC table memory at [mem 0xfc00cda0-0xfc00ce77]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: Reserving HPET table memory at [mem 0xfc00d280-0xfc00d2b7]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: Reserving WAET table memory at [mem 0xfc00d2c0-0xfc00d2e7]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: No NUMA configuration found
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Faking a node at [mem 0x0000000000000000-0x000000020fffffff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: NODE_DATA(0) allocated [mem 0x20ffd2280-0x20fffcfff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: PM-Timer IO Port: 0xb008
+Aug 20 14:58:21 ip-172-31-21-130 kernel: IOAPIC[0]: apic_id 1, version 17, address 0xfec00000, GSI 0-47
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 low level)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 low level)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 low level)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000
+Aug 20 14:58:21 ip-172-31-21-130 kernel: TSC deadline timer available
+Aug 20 14:58:21 ip-172-31-21-130 kernel: CPU topo: Max. logical packages:   1
+Aug 20 14:58:21 ip-172-31-21-130 kernel: CPU topo: Max. logical nodes:      1
+Aug 20 14:58:21 ip-172-31-21-130 kernel: CPU topo: Num. nodes per package:  1
+Aug 20 14:58:21 ip-172-31-21-130 kernel: CPU topo: Max. logical dies:       1
+Aug 20 14:58:21 ip-172-31-21-130 kernel: CPU topo: Max. dies per package:   1
+Aug 20 14:58:21 ip-172-31-21-130 kernel: CPU topo: Max. threads per core:   1
+Aug 20 14:58:21 ip-172-31-21-130 kernel: CPU topo: Num. cores per package:     2
+Aug 20 14:58:21 ip-172-31-21-130 kernel: CPU topo: Num. threads per package:   2
+Aug 20 14:58:21 ip-172-31-21-130 kernel: CPU topo: Allowing 2 present CPUs plus 13 hotplug CPUs
+Aug 20 14:58:21 ip-172-31-21-130 kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: PM: hibernation: Registered nosave memory: [mem 0x0009e000-0x000fffff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: PM: hibernation: Registered nosave memory: [mem 0xf0000000-0xffffffff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: [gap 0xf0000000-0xfbffffff] available for PCI devices
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Booting paravirtualized kernel on Xen HVM
+Aug 20 14:58:21 ip-172-31-21-130 kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Zone ranges:
+Aug 20 14:58:21 ip-172-31-21-130 kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel:   Normal   [mem 0x0000000100000000-0x000000020fffffff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel:   Device   empty
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Movable zone start for each node
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Early memory node ranges
+Aug 20 14:58:21 ip-172-31-21-130 kernel:   node   0: [mem 0x0000000000001000-0x000000000009dfff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel:   node   0: [mem 0x0000000000100000-0x00000000efffffff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel:   node   0: [mem 0x0000000100000000-0x000000020fffffff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000020fffffff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Aug 20 14:58:21 ip-172-31-21-130 kernel: On node 0, zone DMA: 98 pages in unavailable ranges
+Aug 20 14:58:21 ip-172-31-21-130 kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:15 nr_cpu_ids:15 nr_node_ids:1
+Aug 20 14:58:21 ip-172-31-21-130 kernel: percpu: Embedded 85 pages/cpu s225280 r8192 d114688 u524288
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pcpu-alloc: s225280 r8192 d114688 u524288 alloc=1*2097152
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pcpu-alloc: [0] 00 01 02 03 [0] 04 05 06 07 
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pcpu-alloc: [0] 08 09 10 11 [0] 12 13 14 -- 
+Aug 20 14:58:21 ip-172-31-21-130 kernel: xen: PV spinlocks enabled
+Aug 20 14:58:21 ip-172-31-21-130 kernel: PV qspinlock hash table entries: 256 (order: 0, 4096 bytes, linear)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Kernel command line: BOOT_IMAGE=/vmlinuz-7.0.0-1010-aws root=PARTUUID=fe814a98-f7fd-4c3d-9642-c18fe64c6e5d ro console=tty1 console=ttyS0 nvme_core.io_timeout=4294967295 panic=-1
+Aug 20 14:58:21 ip-172-31-21-130 kernel: random: crng init done
+Aug 20 14:58:21 ip-172-31-21-130 kernel: printk: log buffer data + meta data: 262144 + 1114112 = 1376256 bytes
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: software IO TLB: area num 16.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Fallback order for Node 0: 0 
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Built 1 zonelists, mobility grouping on.  Total pages: 2097053
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Policy zone: Normal
+Aug 20 14:58:21 ip-172-31-21-130 kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+Aug 20 14:58:21 ip-172-31-21-130 kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=15, Nodes=1
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Kernel/User page tables isolation: enabled
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ftrace section at ffffffff8b534260 sorted properly
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ftrace: allocating 63844 entries in 252 pages
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ftrace: allocated 252 pages with 6 groups
+Aug 20 14:58:21 ip-172-31-21-130 kernel: rcu: Hierarchical RCU implementation.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=15.
+Aug 20 14:58:21 ip-172-31-21-130 kernel:         Trampoline variant of Tasks RCU enabled.
+Aug 20 14:58:21 ip-172-31-21-130 kernel:         Rude variant of Tasks RCU enabled.
+Aug 20 14:58:21 ip-172-31-21-130 kernel:         Tracing variant of Tasks RCU enabled.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=15
+Aug 20 14:58:21 ip-172-31-21-130 kernel: RCU Tasks: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=15.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: RCU Tasks Rude: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=15.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: NR_IRQS: 524544, nr_irqs: 952, preallocated irqs: 16
+Aug 20 14:58:21 ip-172-31-21-130 kernel: xen:events: Using 2-level ABI
+Aug 20 14:58:21 ip-172-31-21-130 kernel: xen:events: Xen HVM callback vector for event delivery is enabled
+Aug 20 14:58:21 ip-172-31-21-130 kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Console: colour VGA+ 80x25
+Aug 20 14:58:21 ip-172-31-21-130 kernel: printk: legacy console [tty1] enabled
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+Aug 20 14:58:21 ip-172-31-21-130 kernel: printk: legacy console [ttyS0] enabled
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: Core revision 20251212
+Aug 20 14:58:21 ip-172-31-21-130 kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 30580167144 ns
+Aug 20 14:58:21 ip-172-31-21-130 kernel: APIC: Switch to symmetric I/O mode setup
+Aug 20 14:58:21 ip-172-31-21-130 kernel: x2apic enabled
+Aug 20 14:58:21 ip-172-31-21-130 kernel: APIC: Switched APIC routing to: physical x2apic
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=0 pin2=0
+Aug 20 14:58:21 ip-172-31-21-130 kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x212733415c7, max_idle_ns: 440795236380 ns
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 4599.99 BogoMIPS (lpj=2299998)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Last level dTLB entries: 4KB 64, 2MB 32, 4MB 32, 1GB 4
+Aug 20 14:58:21 ip-172-31-21-130 kernel: mitigations: Enabled attack vectors: user_kernel, user_user, guest_host, guest_guest, SMT mitigations: auto
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Speculative Store Bypass: Vulnerable
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Spectre V2 : Mitigation: Retpolines
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ITS: Mitigation: Aligned branch/return thunks
+Aug 20 14:58:21 ip-172-31-21-130 kernel: MDS: Vulnerable: Clear CPU buffers attempted, no microcode
+Aug 20 14:58:21 ip-172-31-21-130 kernel: MMIO Stale Data: Vulnerable: Clear CPU buffers attempted, no microcode
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Spectre V2 : Spectre v2 / SpectreRSB: Filling RSB on context switch and VMEXIT
+Aug 20 14:58:21 ip-172-31-21-130 kernel: active return thunk: its_return_thunk
+Aug 20 14:58:21 ip-172-31-21-130 kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Aug 20 14:58:21 ip-172-31-21-130 kernel: x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Freeing SMP alternatives memory: 56K
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pid_max: default: 32768 minimum: 301
+Aug 20 14:58:21 ip-172-31-21-130 kernel: landlock: Up and running.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Yama: becoming mindful.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: AppArmor: AppArmor initialized
+Aug 20 14:58:21 ip-172-31-21-130 kernel: AppArmor: AppArmor secmark mediation reserved: ready to be enabled
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: VFS: Finished mounting rootfs on nullfs
+Aug 20 14:58:21 ip-172-31-21-130 kernel: clocksource: xen: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Xen: using vcpuop timer interface
+Aug 20 14:58:21 ip-172-31-21-130 kernel: installing Xen timer for CPU 0
+Aug 20 14:58:21 ip-172-31-21-130 kernel: smpboot: CPU0: Intel(R) Xeon(R) CPU E5-2686 v4 @ 2.30GHz (family: 0x6, model: 0x4f, stepping: 0x1)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: cpu 0 spinlock event irq 53
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Performance Events: unsupported CPU family 6 model 79 no PMU driver, software events only.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: signal: max sigframe size: 1776
+Aug 20 14:58:21 ip-172-31-21-130 kernel: rcu: Hierarchical SRCU implementation.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: rcu:         Max phase no-delay instances is 400.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Timer migration: 2 hierarchy levels; 8 children per group; 2 crossnode level
+Aug 20 14:58:21 ip-172-31-21-130 kernel: NMI watchdog: Perf NMI watchdog permanently disabled
+Aug 20 14:58:21 ip-172-31-21-130 kernel: smp: Bringing up secondary CPUs ...
+Aug 20 14:58:21 ip-172-31-21-130 kernel: installing Xen timer for CPU 1
+Aug 20 14:58:21 ip-172-31-21-130 kernel: smpboot: x86: Booting SMP configuration:
+Aug 20 14:58:21 ip-172-31-21-130 kernel: .... node  #0, CPUs:        #1
+Aug 20 14:58:21 ip-172-31-21-130 kernel: cpu 1 spinlock event irq 59
+Aug 20 14:58:21 ip-172-31-21-130 kernel: smp: Brought up 1 node, 2 CPUs
+Aug 20 14:58:21 ip-172-31-21-130 kernel: smpboot: Total of 2 processors activated (400451.76 BogoMIPS)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Memory: 7087332K/8388212K available (23130K kernel code, 4948K rwdata, 16388K rodata, 5412K init, 5744K bss, 1291384K reserved, 0K cma-reserved)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: devtmpfs: initialized
+Aug 20 14:58:21 ip-172-31-21-130 kernel: x86/mm: Memory block size: 128MB
+Aug 20 14:58:21 ip-172-31-21-130 kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Aug 20 14:58:21 ip-172-31-21-130 kernel: posixtimers hash table entries: 8192 (order: 5, 131072 bytes, linear)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: futex hash table entries: 4096 (262144 bytes on 1 NUMA nodes, total 256 KiB, linear).
+Aug 20 14:58:21 ip-172-31-21-130 kernel: PM: RTC time: 14:58:18, date: 2026-08-20
+Aug 20 14:58:21 ip-172-31-21-130 kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Aug 20 14:58:21 ip-172-31-21-130 kernel: DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations
+Aug 20 14:58:21 ip-172-31-21-130 kernel: DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Aug 20 14:58:21 ip-172-31-21-130 kernel: DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Aug 20 14:58:21 ip-172-31-21-130 kernel: audit: initializing netlink subsys (disabled)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: audit: type=2000 audit(1787237894.127:1): state=initialized audit_enabled=0 res=1
+Aug 20 14:58:21 ip-172-31-21-130 kernel: thermal_sys: Registered thermal governor 'fair_share'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: thermal_sys: Registered thermal governor 'bang_bang'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: thermal_sys: Registered thermal governor 'step_wise'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: thermal_sys: Registered thermal governor 'user_space'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: thermal_sys: Registered thermal governor 'power_allocator'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: cpuidle: using governor ladder
+Aug 20 14:58:21 ip-172-31-21-130 kernel: cpuidle: using governor menu
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Aug 20 14:58:21 ip-172-31-21-130 kernel: PCI: Using configuration type 1 for base access
+Aug 20 14:58:21 ip-172-31-21-130 kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+Aug 20 14:58:21 ip-172-31-21-130 kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: Added _OSI(Module Device)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: Added _OSI(Processor Device)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: 3 ACPI AML tables successfully acquired and loaded
+Aug 20 14:58:21 ip-172-31-21-130 kernel: xen: --> pirq=16 -> irq=9 (gsi=9)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: \_SB_: platform _OSC: OS support mask [006e7eff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: Interpreter enabled
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: PM: (supports S0 S4 S5)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: Using IOAPIC for interrupt routing
+Aug 20 14:58:21 ip-172-31-21-130 kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Aug 20 14:58:21 ip-172-31-21-130 kernel: PCI: Using E820 reservations for host bridge windows
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: Enabled 2 GPEs in block 00 to 0F
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI EDR HPX-Type3]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0A03:00: _OSC: platform retains control of PCIe features (AE_ERROR)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [0] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [3] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [4] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [5] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [6] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [7] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [8] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [9] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [10] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [11] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [12] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [13] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [14] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [15] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [16] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [17] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [18] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [19] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [20] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [21] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [22] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [23] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [24] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [25] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [26] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [27] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [28] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [29] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [30] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpiphp: Slot [31] registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: PCI host bridge to bus 0000:00
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci_bus 0000:00: root bus resource [mem 0xf0000000-0xffffffff window]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000 conventional PCI endpoint
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:01.0: [8086:7000] type 00 class 0x060100 conventional PCI endpoint
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:01.1: [8086:7010] type 00 class 0x010180 conventional PCI endpoint
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:01.1: BAR 4 [io  0xc000-0xc00f]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:01.1: BAR 0 [io  0x01f0-0x01f7]: legacy IDE quirk
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:01.1: BAR 1 [io  0x03f6]: legacy IDE quirk
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:01.1: BAR 2 [io  0x0170-0x0177]: legacy IDE quirk
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:01.1: BAR 3 [io  0x0376]: legacy IDE quirk
+Aug 20 14:58:21 ip-172-31-21-130 kernel: * Found PM-Timer Bug on the chipset. Due to workarounds for a bug,
+                                         * this clock source is slow. Consider trying other clock sources
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:01.3: [8086:7113] type 00 class 0x068000 conventional PCI endpoint
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:02.0: [1013:00b8] type 00 class 0x030000 conventional PCI endpoint
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:02.0: BAR 0 [mem 0xf8000000-0xf9ffffff pref]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:02.0: BAR 1 [mem 0xfbfff000-0xfbffffff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:03.0: [5853:0001] type 00 class 0xff8000 conventional PCI endpoint
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:03.0: BAR 0 [io  0xc100-0xc1ff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:03.0: BAR 1 [mem 0xfa000000-0xfaffffff pref]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 5
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 5
+Aug 20 14:58:21 ip-172-31-21-130 kernel: xen:balloon: Initialising balloon driver
+Aug 20 14:58:21 ip-172-31-21-130 kernel: iommu: Default domain type: Translated
+Aug 20 14:58:21 ip-172-31-21-130 kernel: iommu: DMA domain TLB invalidation policy: lazy mode
+Aug 20 14:58:21 ip-172-31-21-130 kernel: SCSI subsystem initialized
+Aug 20 14:58:21 ip-172-31-21-130 kernel: libata version 3.00 loaded.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: bus type USB registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: usbcore: registered new interface driver usbfs
+Aug 20 14:58:21 ip-172-31-21-130 kernel: usbcore: registered new interface driver hub
+Aug 20 14:58:21 ip-172-31-21-130 kernel: usbcore: registered new device driver usb
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pps_core: LinuxPPS API ver. 1 registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Aug 20 14:58:21 ip-172-31-21-130 kernel: PTP clock support registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: EDAC MC: Ver: 3.0.0
+Aug 20 14:58:21 ip-172-31-21-130 kernel: NetLabel: Initializing
+Aug 20 14:58:21 ip-172-31-21-130 kernel: NetLabel:  domain hash size = 128
+Aug 20 14:58:21 ip-172-31-21-130 kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Aug 20 14:58:21 ip-172-31-21-130 kernel: NetLabel:  unlabeled traffic allowed by default
+Aug 20 14:58:21 ip-172-31-21-130 kernel: mctp: management component transport protocol core
+Aug 20 14:58:21 ip-172-31-21-130 kernel: NET: Registered PF_MCTP protocol family
+Aug 20 14:58:21 ip-172-31-21-130 kernel: PCI: Using ACPI for IRQ routing
+Aug 20 14:58:21 ip-172-31-21-130 kernel: PCI: pci_cache_line_size set to 64 bytes
+Aug 20 14:58:21 ip-172-31-21-130 kernel: e820: register RAM buffer resource [mem 0x0009e000-0x0009ffff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Aug 20 14:58:21 ip-172-31-21-130 kernel: vgaarb: loaded
+Aug 20 14:58:21 ip-172-31-21-130 kernel: hpet: 3 channels of 0 reserved for per-cpu timers
+Aug 20 14:58:21 ip-172-31-21-130 kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+Aug 20 14:58:21 ip-172-31-21-130 kernel: hpet0: 3 comparators, 64-bit 62.500000 MHz counter
+Aug 20 14:58:21 ip-172-31-21-130 kernel: clocksource: Switched to clocksource xen
+Aug 20 14:58:21 ip-172-31-21-130 kernel: VFS: Disk quotas dquot_6.6.0
+Aug 20 14:58:21 ip-172-31-21-130 kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: AppArmor: AppArmor Filesystem Enabled
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:00: Could not reserve [mem 0x00000000-0x0009ffff]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0010-0x001f]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0022-0x002d]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0030-0x003f]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0044-0x005f]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0062-0x0063]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0065-0x006f]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0072-0x007f]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0080]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0084-0x0086]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0088]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x008c-0x008e]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0090-0x009f]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x00a2-0x00bd]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x00e0-0x00ef]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:01: Reserved [io  0x08a0-0x08a3]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:01: Reserved [io  0x0cc0-0x0ccf]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:01: Reserved [io  0x04d0-0x04d1]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:02: Reserved [io  0x10c0-0x1141]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: acpi PNP0C02:02: Reserved [io  0xb044-0xb047]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pnp: PnP ACPI init
+Aug 20 14:58:21 ip-172-31-21-130 kernel: xen: --> pirq=17 -> irq=8 (gsi=8)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: xen: --> pirq=18 -> irq=12 (gsi=12)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: xen: --> pirq=19 -> irq=1 (gsi=1)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: xen: --> pirq=20 -> irq=6 (gsi=6)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pnp 00:03: [dma 2]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: xen: --> pirq=21 -> irq=4 (gsi=4)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pnp: PnP ACPI: found 5 devices
+Aug 20 14:58:21 ip-172-31-21-130 kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Aug 20 14:58:21 ip-172-31-21-130 kernel: NET: Registered PF_INET protocol family
+Aug 20 14:58:21 ip-172-31-21-130 kernel: IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: TCP: Hash tables configured (established 65536 bind 65536)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: MPTCP token hash table entries: 8192 (order: 6, 196608 bytes, linear)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: UDP hash table entries: 4096 (order: 6, 262144 bytes, linear)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: UDP-Lite hash table entries: 4096 (order: 6, 262144 bytes, linear)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+Aug 20 14:58:21 ip-172-31-21-130 kernel: NET: Registered PF_XDP protocol family
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci_bus 0000:00: resource 7 [mem 0xf0000000-0xffffffff window]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:01.0: PIIX3: Enabling Passive Release
+Aug 20 14:58:21 ip-172-31-21-130 kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Aug 20 14:58:21 ip-172-31-21-130 kernel: PCI: CLS 0 bytes, default 64
+Aug 20 14:58:21 ip-172-31-21-130 kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Trying to unpack rootfs image as initramfs...
+Aug 20 14:58:21 ip-172-31-21-130 kernel: software IO TLB: mapped [mem 0x00000000ec000000-0x00000000f0000000] (64MB)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x212733415c7, max_idle_ns: 440795236380 ns
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Initialise system trusted keyrings
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Key type blacklist registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Freeing initrd memory: 14752K
+Aug 20 14:58:21 ip-172-31-21-130 kernel: workingset: timestamp_bits=36 max_order=21 bucket_order=0
+Aug 20 14:58:21 ip-172-31-21-130 kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Aug 20 14:58:21 ip-172-31-21-130 kernel: fuse: init (API version 7.45)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: integrity: Platform Keyring initialized
+Aug 20 14:58:21 ip-172-31-21-130 kernel: integrity: Machine keyring initialized
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Key type asymmetric registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Asymmetric key parser 'x509' registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: io scheduler mq-deadline registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Aug 20 14:58:21 ip-172-31-21-130 kernel: input: Power Button as /devices/platform/LNXPWRBN:00/input/input0
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: button: Power Button [PWRF]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: input: Sleep Button as /devices/platform/LNXSLPBN:00/input/input1
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: button: Sleep Button [SLPF]
+Aug 20 14:58:21 ip-172-31-21-130 kernel: xen: --> pirq=22 -> irq=28 (gsi=28)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: xen:grant_table: Grant tables using version 1 layout
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Grant table initialized
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Aug 20 14:58:21 ip-172-31-21-130 kernel: 00:04: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Linux agpgart interface v0.103
+Aug 20 14:58:21 ip-172-31-21-130 kernel: loop: module loaded
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Invalid max_queues (4), will use default max: 2.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Key type psk registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: scsi host0: ata_piix
+Aug 20 14:58:21 ip-172-31-21-130 kernel: scsi host1: ata_piix
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc000 irq 14 lpm-pol 0
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc008 irq 15 lpm-pol 0
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ACPI: bus type drm_connector registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: tun: Universal TUN/TAP device driver, 1.6
+Aug 20 14:58:21 ip-172-31-21-130 kernel: blkfront: xvda: barrier or flush: disabled; persistent grants: disabled; indirect descriptors: enabled; bounce buffer: disabled;
+Aug 20 14:58:21 ip-172-31-21-130 kernel: PPP generic driver version 2.4.2
+Aug 20 14:58:21 ip-172-31-21-130 kernel: xen_netfront: Initialising Xen virtual ethernet driver
+Aug 20 14:58:21 ip-172-31-21-130 kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f13:PS2M] at 0x60,0x64 irq 1,12
+Aug 20 14:58:21 ip-172-31-21-130 kernel: i8042: Warning: Keylock active
+Aug 20 14:58:21 ip-172-31-21-130 kernel:  xvda: xvda1 xvda14 xvda15 xvda16
+Aug 20 14:58:21 ip-172-31-21-130 kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Aug 20 14:58:21 ip-172-31-21-130 kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+Aug 20 14:58:21 ip-172-31-21-130 kernel: mousedev: PS/2 mouse device common for all mice
+Aug 20 14:58:21 ip-172-31-21-130 kernel: rtc_cmos 00:00: registered as rtc0
+Aug 20 14:58:21 ip-172-31-21-130 kernel: rtc_cmos 00:00: setting system clock to 2026-08-20T14:58:19 UTC (1787237899)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: rtc_cmos 00:00: alarms up to one day, 114 bytes nvram, hpet irqs
+Aug 20 14:58:21 ip-172-31-21-130 kernel: i2c_dev: i2c /dev entries driver
+Aug 20 14:58:21 ip-172-31-21-130 kernel: device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: device-mapper: uevent: version 1.0.3
+Aug 20 14:58:21 ip-172-31-21-130 kernel: device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+Aug 20 14:58:21 ip-172-31-21-130 kernel: intel_pstate: CPU model not supported
+Aug 20 14:58:21 ip-172-31-21-130 kernel: drop_monitor: Initializing network drop monitor service
+Aug 20 14:58:21 ip-172-31-21-130 kernel: NET: Registered PF_INET6 protocol family
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Segment Routing with IPv6
+Aug 20 14:58:21 ip-172-31-21-130 kernel: In-situ OAM (IOAM) with IPv6
+Aug 20 14:58:21 ip-172-31-21-130 kernel: NET: Registered PF_PACKET protocol family
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Key type dns_resolver registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: resctrl: No MBM correction factor available
+Aug 20 14:58:21 ip-172-31-21-130 kernel: IPI shorthand broadcast: enabled
+Aug 20 14:58:21 ip-172-31-21-130 kernel: sched_clock: Marking stable (494003862, 291831675)->(6336639507, -5550803970)
+Aug 20 14:58:21 ip-172-31-21-130 kernel: registered taskstats version 1
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Loading compiled-in X.509 certificates
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 2f24b06c1e624fb173fdac675ec9a919854884d7'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing 2025 Kmod: d541cef61dc7e793b7eb7e899970a2eef0b5dc8c'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing 2025 Kmod: 4627603d2357a2a3f81006370894c221175893e9'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: blacklist: Loading compiled-in revocation X.509 certificates
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Demotion targets for Node 0: null
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Key type .fscrypt registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Key type fscrypt-provisioning registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Key type big_key registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Key type encrypted registered
+Aug 20 14:58:21 ip-172-31-21-130 kernel: AppArmor: AppArmor sha256 policy hashing enabled
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ima: No TPM chip found, activating TPM-bypass!
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Loading compiled-in module X.509 certificates
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 2f24b06c1e624fb173fdac675ec9a919854884d7'
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ima: Allocated hash algorithm: sha256
+Aug 20 14:58:21 ip-172-31-21-130 kernel: ima: No architecture policies found
+Aug 20 14:58:21 ip-172-31-21-130 kernel: evm: Initialising EVM extended attributes:
+Aug 20 14:58:21 ip-172-31-21-130 kernel: evm: security.selinux
+Aug 20 14:58:21 ip-172-31-21-130 kernel: evm: security.SMACK64
+Aug 20 14:58:21 ip-172-31-21-130 kernel: evm: security.SMACK64EXEC
+Aug 20 14:58:21 ip-172-31-21-130 kernel: evm: security.SMACK64TRANSMUTE
+Aug 20 14:58:21 ip-172-31-21-130 kernel: evm: security.SMACK64MMAP
+Aug 20 14:58:21 ip-172-31-21-130 kernel: evm: security.apparmor
+Aug 20 14:58:21 ip-172-31-21-130 kernel: evm: security.ima
+Aug 20 14:58:21 ip-172-31-21-130 kernel: evm: security.capability
+Aug 20 14:58:21 ip-172-31-21-130 kernel: evm: HMAC attrs: 0x1
+Aug 20 14:58:21 ip-172-31-21-130 kernel: PM:   Magic number: 6:443:991
+Aug 20 14:58:21 ip-172-31-21-130 kernel: memory memory34: hash matches
+Aug 20 14:58:21 ip-172-31-21-130 kernel: RAS: Correctable Errors collector initialized.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: clk: Disabling unused clocks
+Aug 20 14:58:21 ip-172-31-21-130 kernel: PM: genpd: Disabling unused power domains
+Aug 20 14:58:21 ip-172-31-21-130 kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+Aug 20 14:58:21 ip-172-31-21-130 kernel: md: Waiting for all devices to be available before autodetect
+Aug 20 14:58:21 ip-172-31-21-130 kernel: md: If you don't use raid, use raid=noautodetect
+Aug 20 14:58:21 ip-172-31-21-130 kernel: md: Autodetecting RAID arrays.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: md: autorun ...
+Aug 20 14:58:21 ip-172-31-21-130 kernel: md: ... autorun DONE.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: EXT4-fs (xvda1): mounted filesystem 0ef35759-eb42-4358-9a2a-1f74696d7007 ro with ordered data mode. Quota mode: none.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: VFS: Mounted root (ext4 filesystem) readonly on device 202:1.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: devtmpfs: mounted
+Aug 20 14:58:21 ip-172-31-21-130 kernel: VFS: Pivoted into new rootfs
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Freeing unused decrypted memory: 2028K
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Freeing unused kernel image (initmem) memory: 5412K
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Write protecting the kernel read-only data: 43008k
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Freeing unused kernel image (text/rodata gap) memory: 1444K
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Freeing unused kernel image (rodata/data gap) memory: 2044K
+Aug 20 14:58:21 ip-172-31-21-130 kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: x86/mm: Checking user space page tables
+Aug 20 14:58:21 ip-172-31-21-130 kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Run /sbin/init as init process
+Aug 20 14:58:21 ip-172-31-21-130 kernel:   with arguments:
+Aug 20 14:58:21 ip-172-31-21-130 kernel:     /sbin/init
+Aug 20 14:58:21 ip-172-31-21-130 kernel:   with environment:
+Aug 20 14:58:21 ip-172-31-21-130 kernel:     HOME=/
+Aug 20 14:58:21 ip-172-31-21-130 kernel:     TERM=linux
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Inserted module 'autofs4'
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: systemd 255.4-1ubuntu8.17 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Detected virtualization xen.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Detected architecture x86-64.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Hostname set to <ip-172-31-21-130>.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Queued start job for default target graphical.target.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Created slice system-modprobe.slice - Slice /system/modprobe.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Created slice system-serial\x2dgetty.slice - Slice /system/serial-getty.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Created slice system-systemd\x2dfsck.slice - Slice /system/systemd-fsck.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Created slice user.slice - User and Session Slice.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Expecting device dev-disk-by\x2dlabel-BOOT.device - /dev/disk/by-label/BOOT...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Expecting device dev-disk-by\x2dlabel-UEFI.device - /dev/disk/by-label/UEFI...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Expecting device dev-ttyS0.device - /dev/ttyS0...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Reached target slices.target - Slice Units.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Reached target snapd.mounts-pre.target - Mounting snaps.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Reached target swap.target - Swaps.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Reached target time-set.target - System Time Set.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Listening on dm-event.socket - Device-mapper event daemon FIFOs.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Listening on lvm2-lvmpolld.socket - LVM2 poll daemon socket.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Listening on multipathd.socket - multipathd control socket.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Listening on syslog.socket - Syslog Socket.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Listening on systemd-fsckd.socket - fsck to fsckd communication Socket.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Listening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Listening on systemd-journald.socket - Journal Socket.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Listening on systemd-networkd.socket - Network Service Netlink Socket.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: systemd-pcrextend.socket - TPM2 PCR Extension (Varlink) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting systemd-journald.service - Journal Service...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting keyboard-setup.service - Set the console keyboard layout...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting lvm2-monitor.service - Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+Aug 20 14:58:21 ip-172-31-21-130 systemd-journald[129]: Collecting audit messages is disabled.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting modprobe@dm_mod.service - Load Kernel Module dm_mod...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting modprobe@drm.service - Load Kernel Module drm...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting modprobe@fuse.service - Load Kernel Module fuse...
+Aug 20 14:58:21 ip-172-31-21-130 systemd-journald[129]: Journal started
+Aug 20 14:58:21 ip-172-31-21-130 systemd-journald[129]: Runtime Journal (/run/log/journal/ec25dbf92fa7a8cca14e3d5e3abd2657) is 8.0M, max 158.6M, 150.6M free.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting modprobe@loop.service - Load Kernel Module loop...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup was skipped because of an unmet condition check (ConditionFileIsExecutable=/usr/bin/ovs-vsctl).
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting systemd-fsck-root.service - File System Check on Root Device...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: systemd-pcrmachine.service - TPM2 PCR Machine ID Measurement was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: systemd-tpm2-setup-early.service - TPM2 SRK Setup (Early) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Aug 20 14:58:21 ip-172-31-21-130 systemd-modules-load[146]: Module 'i2c_dev' is built in
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+Aug 20 14:58:21 ip-172-31-21-130 systemd-modules-load[146]: Inserted module 'msr'
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Started systemd-journald.service - Journal Service.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounted dev-hugepages.mount - Huge Pages File System.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounted dev-mqueue.mount - POSIX Message Queue File System.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounted sys-kernel-debug.mount - Kernel Debug File System.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounted sys-kernel-tracing.mount - Kernel Trace File System.
+Aug 20 14:58:21 ip-172-31-21-130 systemd-modules-load[146]: Inserted module 'dm_multipath'
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished keyboard-setup.service - Set the console keyboard layout.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+Aug 20 14:58:21 ip-172-31-21-130 systemd-fsck[148]: cloudimg-rootfs: clean, 156688/10354688 files, 3219331/20709115 blocks
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: modprobe@configfs.service: Deactivated successfully.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished modprobe@configfs.service - Load Kernel Module configfs.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: modprobe@dm_mod.service: Deactivated successfully.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished modprobe@dm_mod.service - Load Kernel Module dm_mod.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: modprobe@drm.service: Deactivated successfully.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished modprobe@drm.service - Load Kernel Module drm.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished modprobe@efi_pstore.service - Load Kernel Module efi_pstore.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: modprobe@fuse.service: Deactivated successfully.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished modprobe@fuse.service - Load Kernel Module fuse.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: modprobe@loop.service: Deactivated successfully.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished modprobe@loop.service - Load Kernel Module loop.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished systemd-fsck-root.service - File System Check on Root Device.
+Aug 20 14:58:21 ip-172-31-21-130 systemd-modules-load[146]: Inserted module 'nf_conntrack'
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounting sys-fs-fuse-connections.mount - FUSE Control File System...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounting sys-kernel-config.mount - Kernel Configuration File System...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Started systemd-fsckd.service - File System Check Daemon to report status.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: systemd-repart.service - Repartition Root Disk was skipped because no trigger condition checks were met.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished lvm2-monitor.service - Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounted sys-fs-fuse-connections.mount - FUSE Control File System.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounted sys-kernel-config.mount - Kernel Configuration File System.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting systemd-sysctl.service - Apply Kernel Variables...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished systemd-sysctl.service - Apply Kernel Variables.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: EXT4-fs (xvda1): re-mounted 0ef35759-eb42-4358-9a2a-1f74696d7007 r/w.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished systemd-remount-fs.service - Remount Root and Kernel File Systems.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting multipathd.service - Device-Mapper Multipath Device Controller...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: systemd-hwdb-update.service - Rebuild Hardware Database was skipped because of an unmet condition check (ConditionNeedsUpdate=/etc).
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting systemd-journal-flush.service - Flush Journal to Persistent Storage...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: systemd-pstore.service - Platform Persistent Storage Archival was skipped because of an unmet condition check (ConditionDirectoryNotEmpty=/sys/fs/pstore).
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting systemd-random-seed.service - Load/Save OS Random Seed...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: systemd-sysusers.service - Create System Users was skipped because no trigger condition checks were met.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting systemd-tmpfiles-setup-dev.service - Create Static Device Nodes in /dev...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: systemd-tpm2-setup.service - TPM2 SRK Setup was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished systemd-udev-trigger.service - Coldplug All udev Devices.
+Aug 20 14:58:21 ip-172-31-21-130 systemd-journald[129]: Time spent on flushing to /var/log/journal/ec25dbf92fa7a8cca14e3d5e3abd2657 is 49.131ms for 603 entries.
+Aug 20 14:58:21 ip-172-31-21-130 systemd-journald[129]: System Journal (/var/log/journal/ec25dbf92fa7a8cca14e3d5e3abd2657) is 129.6M, max 4.0G, 3.8G free.
+Aug 20 14:58:21 ip-172-31-21-130 systemd-journald[129]: Received client request to flush runtime journal.
+Aug 20 14:58:21 ip-172-31-21-130 systemd-journald[129]: /var/log/journal/ec25dbf92fa7a8cca14e3d5e3abd2657/system.journal: Journal file uses a different sequence number ID, rotating.
+Aug 20 14:58:21 ip-172-31-21-130 systemd-journald[129]: Rotating system journal.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: loop0: detected capacity change from 0 to 57752
+Aug 20 14:58:21 ip-172-31-21-130 kernel: loop1: detected capacity change from 0 to 58160
+Aug 20 14:58:21 ip-172-31-21-130 kernel: loop2: detected capacity change from 0 to 151512
+Aug 20 14:58:21 ip-172-31-21-130 kernel: loop3: detected capacity change from 0 to 100888
+Aug 20 14:58:21 ip-172-31-21-130 kernel: loop4: detected capacity change from 0 to 151536
+Aug 20 14:58:21 ip-172-31-21-130 kernel: loop5: detected capacity change from 0 to 102608
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished systemd-random-seed.service - Load/Save OS Random Seed.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished systemd-tmpfiles-setup-dev.service - Create Static Device Nodes in /dev.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting systemd-udevd.service - Rule-based Manager for Device Events and Files...
+Aug 20 14:58:21 ip-172-31-21-130 multipathd[188]: multipathd v0.9.4: start up
+Aug 20 14:58:21 ip-172-31-21-130 multipathd[188]: reconfigure: setting up paths and maps
+Aug 20 14:58:21 ip-172-31-21-130 systemd-udevd[192]: Using default interface naming scheme 'v255'.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Started multipathd.service - Device-Mapper Multipath Device Controller.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Reached target local-fs-pre.target - Preparation for Local File Systems.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounting snap-amazon\x2dssm\x2dagent-13009.mount - Mount unit for amazon-ssm-agent, revision 13009...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounting snap-amazon\x2dssm\x2dagent-13349.mount - Mount unit for amazon-ssm-agent, revision 13349...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounting snap-core22-2411.mount - Mount unit for core22, revision 2411...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounting snap-core22-2437.mount - Mount unit for core22, revision 2437...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounting snap-snapd-26865.mount - Mount unit for snapd, revision 26865...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounting snap-snapd-27710.mount - Mount unit for snapd, revision 27710...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounted snap-amazon\x2dssm\x2dagent-13009.mount - Mount unit for amazon-ssm-agent, revision 13009.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounted snap-amazon\x2dssm\x2dagent-13349.mount - Mount unit for amazon-ssm-agent, revision 13349.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounted snap-core22-2411.mount - Mount unit for core22, revision 2411.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounted snap-core22-2437.mount - Mount unit for core22, revision 2437.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounted snap-snapd-26865.mount - Mount unit for snapd, revision 26865.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Mounted snap-snapd-27710.mount - Mount unit for snapd, revision 27710.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Reached target snapd.mounts.target - Mounted snaps.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished systemd-journal-flush.service - Flush Journal to Persistent Storage.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Started systemd-udevd.service - Rule-based Manager for Device Events and Files.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: plymouth-start.service - Show Plymouth Boot Screen was skipped because of an unmet condition check (ConditionKernelCommandLine=splash).
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Started systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: systemd-ask-password-plymouth.path - Forward Password Requests to Plymouth Directory Watch was skipped because of an unmet condition check (ConditionPathExists=/run/plymouth/pid).
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Reached target cryptsetup.target - Local Encrypted Volumes.
+Aug 20 14:58:21 ip-172-31-21-130 (udev-worker)[237]: eth0: Could not set WakeOnLan to off, ignoring: Operation not supported
+Aug 20 14:58:21 ip-172-31-21-130 kernel: vif vif-0 enX0: renamed from eth0
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Found device dev-ttyS0.device - /dev/ttyS0.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Found device dev-disk-by\x2dlabel-BOOT.device - /dev/disk/by-label/BOOT.
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting systemd-fsck@dev-disk-by\x2dlabel-BOOT.service - File System Check on /dev/disk/by-label/BOOT...
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Found device dev-disk-by\x2dlabel-UEFI.device - /dev/disk/by-label/UEFI.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: cirrus-qemu 0000:00:02.0: vgaarb: deactivate vga console
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Starting systemd-fsck@dev-disk-by\x2dlabel-UEFI.service - File System Check on /dev/disk/by-label/UEFI...
+Aug 20 14:58:21 ip-172-31-21-130 systemd-fsck[273]: BOOT: clean, 605/58496 files, 54967/233728 blocks
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Console: switching to colour dummy device 80x25
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished systemd-fsck@dev-disk-by\x2dlabel-BOOT.service - File System Check on /dev/disk/by-label/BOOT.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: [drm] Initialized cirrus-qemu 2.0.0 for 0000:00:02.0 on minor 0
+Aug 20 14:58:21 ip-172-31-21-130 kernel: fbcon: cirrus-qemudrmf (fb0) is primary device
+Aug 20 14:58:21 ip-172-31-21-130 kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Aug 20 14:58:21 ip-172-31-21-130 kernel: Console: switching to colour frame buffer device 100x37
+Aug 20 14:58:21 ip-172-31-21-130 kernel: cirrus-qemu 0000:00:02.0: [drm] fb0: cirrus-qemudrmf frame buffer device
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Listening on systemd-rfkill.socket - Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Aug 20 14:58:21 ip-172-31-21-130 (udev-worker)[223]: enX0: Could not set WakeOnLan to off, ignoring: Operation not supported
+Aug 20 14:58:21 ip-172-31-21-130 systemd-fsck[284]: fsck.fat 4.2 (2021-01-31)
+Aug 20 14:58:21 ip-172-31-21-130 systemd-fsck[284]: /dev/xvda15: 12 files, 12499/213663 clusters
+Aug 20 14:58:21 ip-172-31-21-130 systemd[1]: Finished systemd-fsck@dev-disk-by\x2dlabel-UEFI.service - File System Check on /dev/disk/by-label/UEFI.
+Aug 20 14:58:21 ip-172-31-21-130 kernel: RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 655360 ms ovfl timer
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Mounting boot.mount - /boot...
+Aug 20 14:58:22 ip-172-31-21-130 kernel: EXT4-fs (xvda16): mounted filesystem 8fb95cef-95fc-48ca-aaab-3f1b1df59748 r/w with ordered data mode. Quota mode: none.
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Mounted boot.mount - /boot.
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Mounting boot-efi.mount - /boot/efi...
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Mounted boot-efi.mount - /boot/efi.
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Reached target local-fs.target - Local File Systems.
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Listening on systemd-sysext.socket - System Extension Image Management (Varlink).
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Starting apparmor.service - Load AppArmor profiles...
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Starting console-setup.service - Set console font and keymap...
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Starting finalrd.service - Create final runtime dir for shutdown pivot root...
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: ldconfig.service - Rebuild Dynamic Linker Cache was skipped because no trigger condition checks were met.
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Starting plymouth-read-write.service - Tell Plymouth To Write Out Runtime Data...
+Aug 20 14:58:22 ip-172-31-21-130 apparmor.systemd[323]: Restarting AppArmor
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Starting systemd-binfmt.service - Set Up Additional Binary Formats...
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Starting systemd-tmpfiles-setup.service - Create Volatile Files and Directories...
+Aug 20 14:58:22 ip-172-31-21-130 apparmor.systemd[323]: Reloading AppArmor profiles
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Starting ufw.service - Uncomplicated firewall...
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Finished console-setup.service - Set console font and keymap.
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Finished finalrd.service - Create final runtime dir for shutdown pivot root.
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Finished plymouth-read-write.service - Tell Plymouth To Write Out Runtime Data.
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: proc-sys-fs-binfmt_misc.automount: Got automount request for /proc/sys/fs/binfmt_misc, triggered by 331 (systemd-binfmt)
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Mounting proc-sys-fs-binfmt_misc.mount - Arbitrary Executable File Formats File System...
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Finished ufw.service - Uncomplicated firewall.
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Mounted proc-sys-fs-binfmt_misc.mount - Arbitrary Executable File Formats File System.
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Finished systemd-binfmt.service - Set Up Additional Binary Formats.
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Finished systemd-tmpfiles-setup.service - Create Volatile Files and Directories.
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: systemd-firstboot.service - First Boot Wizard was skipped because of an unmet condition check (ConditionFirstBoot=yes).
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: first-boot-complete.target - First Boot Complete was skipped because of an unmet condition check (ConditionFirstBoot=yes).
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: systemd-journal-catalog-update.service - Rebuild Journal Catalog was skipped because of an unmet condition check (ConditionNeedsUpdate=/var).
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: systemd-machine-id-commit.service - Commit a transient machine-id on disk was skipped because of an unmet condition check (ConditionPathIsMountPoint=/etc/machine-id).
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Starting systemd-resolved.service - Network Name Resolution...
+Aug 20 14:58:22 ip-172-31-21-130 kernel: audit: type=1400 audit(1787237902.192:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="Discord" pid=348 comm="apparmor_parser"
+Aug 20 14:58:22 ip-172-31-21-130 kernel: audit: type=1400 audit(1787237902.192:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="1password" pid=347 comm="apparmor_parser"
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: systemd-update-done.service - Update is Completed was skipped because no trigger condition checks were met.
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Starting systemd-update-utmp.service - Record System Boot/Shutdown in UTMP...
+Aug 20 14:58:22 ip-172-31-21-130 kernel: audit: type=1400 audit(1787237902.198:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="QtWebEngineProcess" pid=355 comm="apparmor_parser"
+Aug 20 14:58:22 ip-172-31-21-130 kernel: audit: type=1400 audit(1787237902.198:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name=4D6F6E676F444220436F6D70617373 pid=354 comm="apparmor_parser"
+Aug 20 14:58:22 ip-172-31-21-130 kernel: audit: type=1400 audit(1787237902.201:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="balena-etcher" pid=357 comm="apparmor_parser"
+Aug 20 14:58:22 ip-172-31-21-130 kernel: audit: type=1400 audit(1787237902.204:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="buildah" pid=359 comm="apparmor_parser"
+Aug 20 14:58:22 ip-172-31-21-130 kernel: audit: type=1400 audit(1787237902.204:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="brave" pid=358 comm="apparmor_parser"
+Aug 20 14:58:22 ip-172-31-21-130 kernel: audit: type=1400 audit(1787237902.207:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="cam" pid=360 comm="apparmor_parser"
+Aug 20 14:58:22 ip-172-31-21-130 kernel: audit: type=1400 audit(1787237902.208:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ch-checkns" pid=361 comm="apparmor_parser"
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Finished systemd-update-utmp.service - Record System Boot/Shutdown in UTMP.
+Aug 20 14:58:22 ip-172-31-21-130 systemd-resolved[352]: Positive Trust Anchors:
+Aug 20 14:58:22 ip-172-31-21-130 systemd-resolved[352]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+Aug 20 14:58:22 ip-172-31-21-130 systemd-resolved[352]: Negative trust anchors: home.arpa 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 170.0.0.192.in-addr.arpa 171.0.0.192.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa ipv4only.arpa corp home internal intranet lan local private test
+Aug 20 14:58:22 ip-172-31-21-130 kernel: input: ImPS/2 Generic Wheel Mouse as /devices/platform/i8042/serio1/input/input4
+Aug 20 14:58:22 ip-172-31-21-130 systemd-resolved[352]: Using system hostname 'ip-172-31-21-130'.
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Started systemd-resolved.service - Network Name Resolution.
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Reached target nss-lookup.target - Host and Network Name Lookups.
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Finished apparmor.service - Load AppArmor profiles.
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Starting snapd.apparmor.service - Load AppArmor profiles managed internally by snapd...
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: vgauth.service - Authentication service for virtual machines hosted on VMware was skipped because of an unmet condition check (ConditionVirtualization=vmware).
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: open-vm-tools.service - Service for virtual machines hosted on VMware was skipped because of an unmet condition check (ConditionVirtualization=vmware).
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Starting cloud-init-local.service - Cloud-init: Local Stage (pre-network)...
+Aug 20 14:58:22 ip-172-31-21-130 snapd-apparmor[458]: main.go:146: Loading profiles [/var/lib/snapd/apparmor/profiles/snap-confine.snapd.26865 /var/lib/snapd/apparmor/profiles/snap-confine.snapd.27710 /var/lib/snapd/apparmor/profiles/snap-update-ns.amazon-ssm-agent /var/lib/snapd/apparmor/profiles/snap.amazon-ssm-agent.amazon-ssm-agent /var/lib/snapd/apparmor/profiles/snap.amazon-ssm-agent.ssm-cli]
+Aug 20 14:58:22 ip-172-31-21-130 systemd[1]: Finished snapd.apparmor.service - Load AppArmor profiles managed internally by snapd.
+Aug 20 14:58:23 ip-172-31-21-130 cloud-init[480]: Cloud-init v. 26.1-0ubuntu1~24.04.1 running 'init-local' at Thu, 20 Aug 2026 14:58:23 +0000. Up 4.15 seconds.
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[483]: dhcpcd-10.0.6 starting
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[483]: chrooting as dhcpcd to /usr/lib/dhcpcd
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[485]: spawned manager process on PID 485
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: spawned privileged proxy on PID 486
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: spawned controller proxy on PID 487
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: DUID 00:01:00:01:32:0d:a4:f5:0a:ff:cc:05:da:3b
+Aug 20 14:58:23 ip-172-31-21-130 kernel: 8021q: 802.1Q VLAN Support v1.8
+Aug 20 14:58:23 ip-172-31-21-130 kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Aug 20 14:58:23 ip-172-31-21-130 kernel: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Aug 20 14:58:23 ip-172-31-21-130 kernel: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: enX0: executing: /bin/true PREINIT
+Aug 20 14:58:23 ip-172-31-21-130 kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+Aug 20 14:58:23 ip-172-31-21-130 kernel: cfg80211: failed to load regulatory.db
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: enX0: executing: /bin/true CARRIER
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: enX0: IAID cc:05:da:3b
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: enX0: delaying IPv4 for 0.2 seconds
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: enX0: reading lease: /var/lib/dhcpcd/enX0.lease
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: enX0: rebinding lease of 172.31.21.130
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: enX0: spawned BPF ARP 172.31.21.130 on PID 494
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: enX0: sending REQUEST (xid 0x2d43f30c), next in 4.9 seconds
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: enX0: spawned BPF BOOTP on PID 495
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: enX0: acknowledged 172.31.21.130 from 172.31.16.1
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: enX0: leased 172.31.21.130 for 3600 seconds
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: enX0: renew in 1800 seconds, rebind in 3150 seconds
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: enX0: writing lease: /var/lib/dhcpcd/enX0.lease
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: enX0: adding IP address 172.31.21.130/20 broadcast 172.31.31.255
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: enX0: adding route to 172.31.16.0/20
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: enX0: adding default route via 172.31.16.1
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: enX0: executing: /bin/true REBOOT
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: enX0: spawned BOOTP proxy 172.31.21.130 on PID 498
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: control command: dhcpcd --dumplease --ipv4only enX0
+Aug 20 14:58:23 ip-172-31-21-130 dhcpcd[486]: enX0: BPF BOOTP exited from PID 495
+Aug 20 14:58:23 ip-172-31-21-130 systemd[1]: Finished cloud-init-local.service - Cloud-init: Local Stage (pre-network).
+Aug 20 14:58:23 ip-172-31-21-130 systemd[1]: Reached target network-pre.target - Preparation for Network.
+Aug 20 14:58:23 ip-172-31-21-130 systemd[1]: Starting systemd-networkd.service - Network Configuration...
+Aug 20 14:58:23 ip-172-31-21-130 systemd-networkd[509]: lo: Link UP
+Aug 20 14:58:23 ip-172-31-21-130 systemd-networkd[509]: lo: Gained carrier
+Aug 20 14:58:23 ip-172-31-21-130 systemd-networkd[509]: Enumeration completed
+Aug 20 14:58:23 ip-172-31-21-130 systemd-networkd[509]: enX0: Link UP
+Aug 20 14:58:23 ip-172-31-21-130 systemd-networkd[509]: enX0: Gained carrier
+Aug 20 14:58:23 ip-172-31-21-130 systemd[1]: Started systemd-networkd.service - Network Configuration.
+Aug 20 14:58:23 ip-172-31-21-130 systemd-networkd[509]: enX0: Link DOWN
+Aug 20 14:58:23 ip-172-31-21-130 systemd-networkd[509]: enX0: Lost carrier
+Aug 20 14:58:23 ip-172-31-21-130 systemd[1]: Reached target network.target - Network.
+Aug 20 14:58:23 ip-172-31-21-130 systemd-networkd[509]: enX0: Configuring with /run/systemd/network/10-netplan-enX0.network.
+Aug 20 14:58:23 ip-172-31-21-130 systemd-networkd[509]: enX0: Link UP
+Aug 20 14:58:23 ip-172-31-21-130 systemd-networkd[509]: enX0: Gained carrier
+Aug 20 14:58:23 ip-172-31-21-130 systemd[1]: Starting systemd-networkd-wait-online.service - Wait for Network to be Configured...
+Aug 20 14:58:23 ip-172-31-21-130 systemd-networkd[509]: enX0: DHCPv4 address 172.31.21.130/20, gateway 172.31.16.1 acquired from 172.31.16.1
+Aug 20 14:58:24 ip-172-31-21-130 kernel: floppy0: no floppy controllers found
+Aug 20 14:58:25 ip-172-31-21-130 systemd-networkd[509]: enX0: Gained IPv6LL
+Aug 20 14:58:25 ip-172-31-21-130 systemd[1]: Finished systemd-networkd-wait-online.service - Wait for Network to be Configured.
+Aug 20 14:58:25 ip-172-31-21-130 systemd[1]: Starting cloud-init.service - Cloud-init: Network Stage...
+Aug 20 14:58:25 ip-172-31-21-130 cloud-init[519]: Cloud-init v. 26.1-0ubuntu1~24.04.1 running 'init' at Thu, 20 Aug 2026 14:58:25 +0000. Up 6.94 seconds.
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: ++++++++++++++++++++++++++++++++++++++Net device info+++++++++++++++++++++++++++++++++++++++
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: +--------+------+-----------------------------+---------------+--------+-------------------+
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: | Device |  Up  |           Address           |      Mask     | Scope  |     Hw-Address    |
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: +--------+------+-----------------------------+---------------+--------+-------------------+
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: |  enX0  | True |        172.31.21.130        | 255.255.240.0 | global | 0a:ff:cc:05:da:3b |
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: |  enX0  | True | fe80::8ff:ccff:fe05:da3b/64 |       .       |  link  | 0a:ff:cc:05:da:3b |
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: |   lo   | True |          127.0.0.1          |   255.0.0.0   |  host  |         .         |
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: |   lo   | True |           ::1/128           |       .       |  host  |         .         |
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: +--------+------+-----------------------------+---------------+--------+-------------------+
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: ++++++++++++++++++++++++++++++Route IPv4 info++++++++++++++++++++++++++++++
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: +-------+-------------+-------------+-----------------+-----------+-------+
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: | Route | Destination |   Gateway   |     Genmask     | Interface | Flags |
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: +-------+-------------+-------------+-----------------+-----------+-------+
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: |   0   |   0.0.0.0   | 172.31.16.1 |     0.0.0.0     |    enX0   |   UG  |
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: |   1   |  172.31.0.2 | 172.31.16.1 | 255.255.255.255 |    enX0   |  UGH  |
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: |   2   | 172.31.16.0 |   0.0.0.0   |  255.255.240.0  |    enX0   |   U   |
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: |   3   | 172.31.16.1 |   0.0.0.0   | 255.255.255.255 |    enX0   |   UH  |
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: +-------+-------------+-------------+-----------------+-----------+-------+
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: +-------+-------------+---------+-----------+-------+
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: | Route | Destination | Gateway | Interface | Flags |
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: +-------+-------------+---------+-----------+-------+
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: |   0   |  fe80::/64  |    ::   |    enX0   |   U   |
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: |   2   |    local    |    ::   |    enX0   |   U   |
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: |   3   |  multicast  |    ::   |    enX0   |   U   |
+Aug 20 14:58:26 ip-172-31-21-130 cloud-init[519]: ci-info: +-------+-------------+---------+-----------+-------+
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Finished cloud-init.service - Cloud-init: Network Stage.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Reached target cloud-config.target - Cloud-config availability.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Reached target network-online.target - Network is Online.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Reached target sysinit.target - System Initialization.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started acpid.path - ACPI Events Check.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: apport-autoreport.path - Process error reports when automatic reporting is enabled (file watch) was skipped because of an unmet condition check (ConditionPathExists=/var/lib/apport/autoreport).
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: tpm-udev.path - Handle dynamically added tpm devices was skipped because of an unmet condition check (ConditionVirtualization=container).
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: apport-autoreport.timer - Process error reports when automatic reporting is enabled (timer based) was skipped because of an unmet condition check (ConditionPathExists=/var/lib/apport/autoreport).
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started systemd-tmpfiles-clean.timer - Daily Cleanup of Temporary Directories.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: ua-timer.timer - Ubuntu Pro Timer for running repeated jobs was skipped because of an unmet condition check (ConditionPathExists=/var/lib/ubuntu-advantage/private/machine-token.json).
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started update-notifier-download.timer - Download data for packages that failed at package install time.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Reached target paths.target - Path Units.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Listening on acpid.socket - ACPID Listen Socket.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: apport-forward.socket - Unix socket for apport crash forwarding was skipped because of an unmet condition check (ConditionVirtualization=container).
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Listening on cloud-init-hotplugd.socket - cloud-init hotplug hook socket.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Listening on dbus.socket - D-Bus System Message Bus Socket.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Listening on iscsid.socket - Open-iSCSI iscsid Socket.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting lxd-installer.socket - Helper to install lxd snap on demand...
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting snapd.socket - Socket activation for snappy daemon...
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Listening on ssh.socket - OpenBSD Secure Shell server socket.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Listening on uuidd.socket - UUID daemon activation socket.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: open-iscsi.service - Login to default iSCSI targets was skipped because no trigger condition checks were met.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Reached target remote-fs-pre.target - Preparation for Remote File Systems.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Reached target remote-fs.target - Remote File Systems.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Finished blk-availability.service - Availability of block devices.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: systemd-pcrphase-sysinit.service - TPM2 PCR Barrier (Initialization) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Listening on lxd-installer.socket - Helper to install lxd snap on demand.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Listening on snapd.socket - Socket activation for snappy daemon.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Reached target sockets.target - Socket Units.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Reached target basic.target - Basic System.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started acpid.service - ACPI event daemon.
+Aug 20 14:58:26 ip-172-31-21-130 (acpid)[553]: acpid.service: Referenced but unset environment variable evaluates to an empty string: OPTIONS
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting apport.service - automatic crash report generation...
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting chrony.service - chrony, an NTP client/server...
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting cloud-config.service - Cloud-init: Config Stage...
+Aug 20 14:58:26 ip-172-31-21-130 acpid[553]: starting up with netlink and the input layer
+Aug 20 14:58:26 ip-172-31-21-130 acpid[553]: 2 rules loaded
+Aug 20 14:58:26 ip-172-31-21-130 acpid[553]: waiting for events: event logging is off
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started cron.service - Regular background program processing daemon.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting dbus.service - D-Bus System Message Bus...
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started dmesg.service - Save initial kernel messages after boot.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting e2scrub_reap.service - Remove Stale Online ext4 Metadata Check Snapshots...
+Aug 20 14:58:26 ip-172-31-21-130 (cron)[557]: cron.service: Referenced but unset environment variable evaluates to an empty string: EXTRA_OPTS
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting ec2-instance-connect-harvest-hostkeys.service - EC2 Instance Connect Host Key Harvesting...
+Aug 20 14:58:26 ip-172-31-21-130 cron[557]: (CRON) INFO (pidfile fd = 3)
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: getty-static.service - getty on tty2-tty6 if dbus and logind are not available was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/dbus-daemon).
+Aug 20 14:58:26 ip-172-31-21-130 cron[557]: (CRON) INFO (Running @reboot jobs)
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting grub-common.service - Record successful boot for GRUB...
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started irqbalance.service - irqbalance daemon.
+Aug 20 14:58:26 ip-172-31-21-130 (qbalance)[564]: irqbalance.service: Referenced but unset environment variable evaluates to an empty string: IRQBALANCE_ARGS
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting networkd-dispatcher.service - Dispatcher daemon for systemd-networkd...
+Aug 20 14:58:26 ip-172-31-21-130 dbus-daemon[558]: [system] AppArmor D-Bus mediation is enabled
+Aug 20 14:58:26 ip-172-31-21-130 dbus-daemon[558]: [system] Activating systemd to hand-off: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.0' (uid=998 pid=509 comm="/usr/lib/systemd/systemd-networkd" label="unconfined")
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting polkit.service - Authorization Manager...
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: pollinate.service - Pollinate to seed the pseudo random number generator was skipped because of an unmet condition check (ConditionPathExists=!/var/cache/pollinate/seeded).
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting rsyslog.service - System Logging Service...
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: secureboot-db.service - Secure Boot updates for DB and DBX was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/db-d719b2cb-3d3a-4596-a3bc-dad00e67656f).
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started snap.amazon-ssm-agent.amazon-ssm-agent.service - Service for snap application amazon-ssm-agent.amazon-ssm-agent.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: snapd.core-fixup.service - Automatically repair incorrect owner/permissions on core devices was skipped because no trigger condition checks were met.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: snapd.recovery-chooser-trigger.service - Wait for the Ubuntu Core chooser trigger was skipped because of an unmet condition check (ConditionKernelCommandLine=snapd_recovery_mode).
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Reached target getty-pre.target - Preparation for Logins.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting snapd.seeded.service - Wait until snapd is fully seeded...
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting snapd.service - Snap Daemon...
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting sysstat.service - Resets System Activity Logs...
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting systemd-logind.service - User Login Management...
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: systemd-pcrphase.service - TPM2 PCR Barrier (User) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting systemd-user-sessions.service - Permit User Sessions...
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: ua-reboot-cmds.service - Ubuntu Pro reboot cmds was skipped because of an unmet condition check (ConditionPathExists=/var/lib/ubuntu-advantage/private/machine-token.json).
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: ubuntu-advantage.service - Ubuntu Pro Background Auto Attach was skipped because no trigger condition checks were met.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting udisks2.service - Disk Manager...
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started dbus.service - D-Bus System Message Bus.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: e2scrub_reap.service: Deactivated successfully.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Finished e2scrub_reap.service - Remove Stale Online ext4 Metadata Check Snapshots.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Finished sysstat.service - Resets System Activity Logs.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Finished systemd-user-sessions.service - Permit User Sessions.
+Aug 20 14:58:26 ip-172-31-21-130 kernel: kauditd_printk_skb: 114 callbacks suppressed
+Aug 20 14:58:26 ip-172-31-21-130 kernel: audit: type=1400 audit(1787237906.576:125): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="rsyslogd" pid=582 comm="apparmor_parser"
+Aug 20 14:58:26 ip-172-31-21-130 dbus-daemon[558]: [system] Successfully activated service 'org.freedesktop.systemd1'
+Aug 20 14:58:26 ip-172-31-21-130 udisksd[596]: udisks daemon version 2.10.1 starting
+Aug 20 14:58:26 ip-172-31-21-130 networkd-dispatcher[566]: No valid path found for iwconfig
+Aug 20 14:58:26 ip-172-31-21-130 networkd-dispatcher[566]: No valid path found for iw
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting plymouth-quit-wait.service - Hold until boot process finishes up...
+Aug 20 14:58:26 ip-172-31-21-130 systemd-logind[584]: New seat seat0.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting plymouth-quit.service - Terminate Plymouth Boot Screen...
+Aug 20 14:58:26 ip-172-31-21-130 systemd-logind[584]: Watching system buttons on /dev/input/event0 (Power Button)
+Aug 20 14:58:26 ip-172-31-21-130 systemd-logind[584]: Watching system buttons on /dev/input/event1 (Sleep Button)
+Aug 20 14:58:26 ip-172-31-21-130 systemd-logind[584]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting systemd-hostnamed.service - Hostname Service...
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started systemd-logind.service - User Login Management.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started networkd-dispatcher.service - Dispatcher daemon for systemd-networkd.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: grub-common.service: Deactivated successfully.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Finished grub-common.service - Record successful boot for GRUB.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Finished plymouth-quit-wait.service - Hold until boot process finishes up.
+Aug 20 14:58:26 ip-172-31-21-130 chronyd[668]: chronyd version 4.5 starting (+CMDMON +NTP +REFCLOCK +RTC +PRIVDROP +SCFILTER +SIGND +ASYNCDNS +NTS +SECHASH +IPV6 -DEBUG)
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Finished plymouth-quit.service - Terminate Plymouth Boot Screen.
+Aug 20 14:58:26 ip-172-31-21-130 chronyd[668]: Loaded 0 symmetric keys
+Aug 20 14:58:26 ip-172-31-21-130 polkitd[568]: Started polkitd version 124
+Aug 20 14:58:26 ip-172-31-21-130 chronyd[668]: Frequency 16.689 +/- 0.545 ppm read from /var/lib/chrony/chrony.drift
+Aug 20 14:58:26 ip-172-31-21-130 chronyd[668]: Using right/UTC timezone to obtain leap second data
+Aug 20 14:58:26 ip-172-31-21-130 dbus-daemon[558]: [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkit.service' requested by ':1.3' (uid=0 pid=596 comm="/usr/libexec/udisks2/udisksd" label="unconfined")
+Aug 20 14:58:26 ip-172-31-21-130 chronyd[668]: Loaded seccomp filter (level 1)
+Aug 20 14:58:26 ip-172-31-21-130 polkitd[568]: Loading rules from directory /etc/polkit-1/rules.d
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started chrony.service - chrony, an NTP client/server.
+Aug 20 14:58:26 ip-172-31-21-130 polkitd[568]: Loading rules from directory /usr/share/polkit-1/rules.d
+Aug 20 14:58:26 ip-172-31-21-130 rsyslogd[623]: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2312.0]
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started rsyslog.service - System Logging Service.
+Aug 20 14:58:26 ip-172-31-21-130 rsyslogd[623]: rsyslogd's groupid changed to 102
+Aug 20 14:58:26 ip-172-31-21-130 rsyslogd[623]: rsyslogd's userid changed to 102
+Aug 20 14:58:26 ip-172-31-21-130 rsyslogd[623]: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="623" x-info="https://www.rsyslog.com"] start
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Reached target time-sync.target - System Time Synchronized.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started apt-daily.timer - Daily apt download activities.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started apt-daily-upgrade.timer - Daily apt upgrade and clean activities.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started dpkg-db-backup.timer - Daily dpkg database backup timer.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started e2scrub_all.timer - Periodic ext4 Online Metadata Check for All Filesystems.
+Aug 20 14:58:26 ip-172-31-21-130 polkitd[568]: Finished loading, compiling and executing 6 rules
+Aug 20 14:58:26 ip-172-31-21-130 dbus-daemon[558]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+Aug 20 14:58:26 ip-172-31-21-130 polkitd[568]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started fstrim.timer - Discard unused filesystem blocks once a week.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started fwupd-refresh.timer - Refresh fwupd metadata regularly.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started logrotate.timer - Daily rotation of log files.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started man-db.timer - Daily man-db regeneration.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started motd-news.timer - Message of the Day.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: snapd.snap-repair.timer - Timer to automatically fetch and run repair assertions was skipped because no trigger condition checks were met.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started sysstat-collect.timer - Run system activity accounting tool every 10 minutes.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started sysstat-summary.timer - Generate summary of yesterday's process accounting.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started update-notifier-motd.timer - Check to see whether there is a new version of Ubuntu available.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Reached target timers.target - Timer Units.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting grub-initrd-fallback.service - GRUB failed boot detection...
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting setvtrgb.service - Set console scheme...
+Aug 20 14:58:26 ip-172-31-21-130 dbus-daemon[558]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started unattended-upgrades.service - Unattended Upgrades Shutdown.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Finished setvtrgb.service - Set console scheme.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started polkit.service - Authorization Manager.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Finished apport.service - automatic crash report generation.
+Aug 20 14:58:26 ip-172-31-21-130 udisksd[596]: Acquired the name org.freedesktop.UDisks2 on the system message bus
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started systemd-hostnamed.service - Hostname Service.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Started udisks2.service - Disk Manager.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Created slice system-getty.slice - Slice /system/getty.
+Aug 20 14:58:26 ip-172-31-21-130 systemd[1]: Starting ModemManager.service - Modem Manager...
+Aug 20 14:58:27 ip-172-31-21-130 systemd[1]: Started getty@tty1.service - Getty on tty1.
+Aug 20 14:58:27 ip-172-31-21-130 systemd[1]: Reached target getty.target - Login Prompts.
+Aug 20 14:58:27 ip-172-31-21-130 systemd[1]: grub-initrd-fallback.service: Deactivated successfully.
+Aug 20 14:58:27 ip-172-31-21-130 systemd[1]: Finished grub-initrd-fallback.service - GRUB failed boot detection.
+Aug 20 14:58:27 ip-172-31-21-130 systemd-hostnamed[653]: Hostname set to <ip-172-31-21-130> (static)
+Aug 20 14:58:27 ip-172-31-21-130 ModemManager[748]: <msg> ModemManager (version 1.23.4) starting in system bus...
+Aug 20 14:58:27 ip-172-31-21-130 systemd[1]: ec2-instance-connect-harvest-hostkeys.service: Deactivated successfully.
+Aug 20 14:58:27 ip-172-31-21-130 systemd[1]: Finished ec2-instance-connect-harvest-hostkeys.service - EC2 Instance Connect Host Key Harvesting.
+Aug 20 14:58:27 ip-172-31-21-130 kernel: NET: Registered PF_QIPCRTR protocol family
+Aug 20 14:58:27 ip-172-31-21-130 systemd[1]: Started ModemManager.service - Modem Manager.
+Aug 20 14:58:27 ip-172-31-21-130 cloud-init[769]: Cloud-init v. 26.1-0ubuntu1~24.04.1 running 'modules:config' at Thu, 20 Aug 2026 14:58:27 +0000. Up 8.20 seconds.
+Aug 20 14:58:27 ip-172-31-21-130 systemd[1]: Finished cloud-config.service - Cloud-init: Config Stage.
+Aug 20 14:58:27 ip-172-31-21-130 systemd[1]: Starting hibinit-agent.service - EC2 instance hibernation setup agent...
+Aug 20 14:58:27 ip-172-31-21-130 hibinit-agent[779]: Effective config: {'log_to_syslog': True, 'log_to_stderr': True, 'mkswap': 'mkswap {swapfile}', 'swapon': 'swapon {swapfile}', 'swapoff': 'swapoff {swapfile}', 'touch_swap': False, 'grub_update': True, 'swap_percentage': 100, 'swap_mb': 4000, 'state_dir': '/var/lib/hibinit-agent'}
+Aug 20 14:58:27 ip-172-31-21-130 hibinit-agent[779]: Effective config: {'log_to_syslog': True, 'log_to_stderr': True, 'mkswap': 'mkswap {swapfile}', 'swapon': 'swapon {swapfile}', 'swapoff': 'swapoff {swapfile}', 'touch_swap': False, 'grub_update': True, 'swap_percentage': 100, 'swap_mb': 4000, 'state_dir': '/var/lib/hibinit-agent'}
+Aug 20 14:58:27 ip-172-31-21-130 hibinit-agent[779]: Requesting new IMDSv2 token.
+Aug 20 14:58:27 ip-172-31-21-130 hibinit-agent[779]: Requesting new IMDSv2 token.
+Aug 20 14:58:27 ip-172-31-21-130 hibinit-agent[779]: Instance Launch has not enabled Hibernation Configured Flag. hibinit-agent exiting!!
+Aug 20 14:58:27 ip-172-31-21-130 hibinit-agent[779]: Instance Launch has not enabled Hibernation Configured Flag. hibinit-agent exiting!!
+Aug 20 14:58:27 ip-172-31-21-130 systemd[1]: hibinit-agent.service: Deactivated successfully.
+Aug 20 14:58:27 ip-172-31-21-130 systemd[1]: Started hibinit-agent.service - EC2 instance hibernation setup agent.
+Aug 20 14:58:28 ip-172-31-21-130 snapd[573]: seclog.go:174: security logger enabled
+Aug 20 14:58:28 ip-172-31-21-130 snapd[573]: overlord.go:313: Acquiring state lock file
+Aug 20 14:58:28 ip-172-31-21-130 snapd[573]: overlord.go:318: Acquired state lock file
+Aug 20 14:58:28 ip-172-31-21-130 snapd[573]: daemon.go:277: started snapd/2.76.2 (series 16; classic) ubuntu/24.04 (amd64) linux/7.0.0-1010-aws.
+Aug 20 14:58:28 ip-172-31-21-130 kernel: loop6: detected capacity change from 0 to 8
+Aug 20 14:58:28 ip-172-31-21-130 systemd[1]: tmp-syscheck\x2dmountpoint\x2d3718501250.mount: Deactivated successfully.
+Aug 20 14:58:29 ip-172-31-21-130 snapd[573]: daemon.go:371: adjusting startup timeout by 45s (pessimistic estimate of 30s plus 5s per snap)
+Aug 20 14:58:29 ip-172-31-21-130 snapd[573]: backends.go:70: AppArmor status: apparmor is enabled and all features are available (using snapd provided apparmor_parser)
+Aug 20 14:58:29 ip-172-31-21-130 snapd[573]: backend.go:141: delegating reload of snap-confine profiles to system snap security profiles setup
+Aug 20 14:58:29 ip-172-31-21-130 snapd[573]: standby.go:95: will consider standby after: 5s
+Aug 20 14:58:29 ip-172-31-21-130 systemd[1]: Started snapd.service - Snap Daemon.
+Aug 20 14:58:29 ip-172-31-21-130 dbus-daemon[558]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.12' (uid=0 pid=573 comm="/snap/snapd/current/usr/lib/snapd/snapd" label="unconfined")
+Aug 20 14:58:29 ip-172-31-21-130 systemd[1]: Starting systemd-timedated.service - Time & Date Service...
+Aug 20 14:58:29 ip-172-31-21-130 dbus-daemon[558]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Aug 20 14:58:29 ip-172-31-21-130 systemd[1]: Started systemd-timedated.service - Time & Date Service.
+Aug 20 14:58:29 ip-172-31-21-130 systemd[1]: Finished snapd.seeded.service - Wait until snapd is fully seeded.
+Aug 20 14:58:29 ip-172-31-21-130 systemd[1]: snapd.autoimport.service - Auto import assertions from block devices was skipped because no trigger condition checks were met.
+Aug 20 14:58:29 ip-172-31-21-130 systemd[1]: Reached target multi-user.target - Multi-User System.
+Aug 20 14:58:29 ip-172-31-21-130 systemd[1]: Reached target graphical.target - Graphical Interface.
+Aug 20 14:58:29 ip-172-31-21-130 systemd[1]: Starting cloud-final.service - Cloud-init: Final Stage...
+Aug 20 14:58:29 ip-172-31-21-130 snapd[573]: snapmgr.go:1675: performing periodic snap downloads cache cleanup
+Aug 20 14:58:29 ip-172-31-21-130 snapd[573]: cache.go:320: removed 0 entries/    0 from downloads cache
+Aug 20 14:58:29 ip-172-31-21-130 systemd[1]: Starting systemd-update-utmp-runlevel.service - Record Runlevel Change in UTMP...
+Aug 20 14:58:29 ip-172-31-21-130 systemd[1]: systemd-update-utmp-runlevel.service: Deactivated successfully.
+Aug 20 14:58:29 ip-172-31-21-130 systemd[1]: Finished systemd-update-utmp-runlevel.service - Record Runlevel Change in UTMP.
+Aug 20 14:58:29 ip-172-31-21-130 snapd[573]: autorepair.go:177: WARNING: the system booted with an old initrd without unlocked status reporting
+Aug 20 14:58:29 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: Error occurred fetching the seelog config file path:  open /etc/amazon/ssm/seelog.xml: no such file or directory
+Aug 20 14:58:29 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: Initializing new seelog logger
+Aug 20 14:58:29 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: New Seelog Logger Creation Complete
+Aug 20 14:58:29 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.3204 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
+Aug 20 14:58:29 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.3320 INFO Proxy environment variables:
+Aug 20 14:58:29 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.3320 INFO https_proxy:
+Aug 20 14:58:29 ip-172-31-21-130 cloud-init[880]: Cloud-init v. 26.1-0ubuntu1~24.04.1 running 'modules:final' at Thu, 20 Aug 2026 14:58:29 +0000. Up 10.47 seconds.
+Aug 20 14:58:29 ip-172-31-21-130 cloud-init[880]: Cloud-init v. 26.1-0ubuntu1~24.04.1 finished at Thu, 20 Aug 2026 14:58:29 +0000. Datasource DataSourceEc2Local.  Up 10.54 seconds
+Aug 20 14:58:29 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.3320 INFO http_proxy:
+Aug 20 14:58:29 ip-172-31-21-130 systemd[1]: Finished cloud-final.service - Cloud-init: Final Stage.
+Aug 20 14:58:29 ip-172-31-21-130 systemd[1]: Reached target cloud-init.target - Cloud-init target.
+Aug 20 14:58:29 ip-172-31-21-130 systemd[1]: Startup finished in 1.229s (kernel) + 9.384s (userspace) = 10.613s.
+Aug 20 14:58:29 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.3320 INFO no_proxy:
+Aug 20 14:58:29 ip-172-31-21-130 systemd[1]: dmesg.service: Deactivated successfully.
+Aug 20 14:58:29 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.3320 INFO Checking if agent identity type OnPrem can be assumed
+Aug 20 14:58:29 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.3356 INFO Checking if agent identity type EC2 can be assumed
+Aug 20 14:58:30 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.4990 INFO Agent will take identity from EC2
+Aug 20 14:58:30 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.5011 INFO Telemetry initialized
+Aug 20 14:58:30 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.5021 INFO [amazon-ssm-agent] amazon-ssm-agent - v3.3.4793.0
+Aug 20 14:58:30 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.5021 INFO [amazon-ssm-agent] OS: linux, Arch: amd64
+Aug 20 14:58:30 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.5021 INFO [amazon-ssm-agent] Starting Core Agent
+Aug 20 14:58:30 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.5021 INFO [amazon-ssm-agent] Registrar detected. Attempting registration
+Aug 20 14:58:30 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.5021 INFO [Registrar] Starting registrar module
+Aug 20 14:58:30 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.5035 INFO [EC2Identity] Checking disk for registration info
+Aug 20 14:58:30 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.5061 INFO [EC2Identity] Registration info found for ec2 instance
+Aug 20 14:58:30 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.5062 INFO [amazon-ssm-agent] Registration attempted. Resuming core agent startup.
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.5062 INFO [CredentialRefresher] credentialRefresher has started
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.5062 INFO [CredentialRefresher] Starting credentials refresher loop
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.5078 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: <?xml version="1.0" encoding="iso-8859-1"?>
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]:  <head>
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]:   <title>404 - Not Found</title>
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]:  </head>
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]:  <body>
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]:   <h1>404 - Not Found</h1>
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]:  </body>
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: </html>
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]:         status code: 404, request id:
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.5397 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 756418066642
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]:         status code: 400, request id: 39ba75ab-85e2-476f-8fc1-d224c24af663
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.5397 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could be retrieved for ec2 identity. Default Host Management Err: error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 756418066642
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]:         status code: 400, request id: 39ba75ab-85e2-476f-8fc1-d224c24af663
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.5397 INFO [CredentialRefresher] Sleeping for 28m6s before retrying retrieve credentials
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 14:58:29.5399 INFO [SerialPort] Write to serial port: SSM Agent unable to acquire credentials: <error>no valid credentials could be retrieved for ec2 identity. Default Host Management Err: error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 756418066642
+Aug 20 14:58:31 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]:         status code: 400, request id: 39ba75ab-85e2-476f-8fc1-d224c24af663</error>
+Aug 20 14:58:33 ip-172-31-21-130 chronyd[668]: Selected source 169.254.169.123
+Aug 20 14:58:33 ip-172-31-21-130 chronyd[668]: System clock TAI offset set to 37 seconds
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: Cannot change IRQ 0 affinity: No such file or directory
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: IRQ 0 affinity is now unmanaged
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: Cannot change IRQ 48 affinity: No such file or directory
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: IRQ 48 affinity is now unmanaged
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: Cannot change IRQ 49 affinity: No such file or directory
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: IRQ 49 affinity is now unmanaged
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: Cannot change IRQ 50 affinity: No such file or directory
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: IRQ 50 affinity is now unmanaged
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: Cannot change IRQ 51 affinity: No such file or directory
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: IRQ 51 affinity is now unmanaged
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: Cannot change IRQ 52 affinity: No such file or directory
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: IRQ 52 affinity is now unmanaged
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: Cannot change IRQ 53 affinity: No such file or directory
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: IRQ 53 affinity is now unmanaged
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: Cannot change IRQ 54 affinity: No such file or directory
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: IRQ 54 affinity is now unmanaged
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: Cannot change IRQ 55 affinity: No such file or directory
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: IRQ 55 affinity is now unmanaged
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: Cannot change IRQ 56 affinity: No such file or directory
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: IRQ 56 affinity is now unmanaged
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: Cannot change IRQ 57 affinity: No such file or directory
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: IRQ 57 affinity is now unmanaged
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: Cannot change IRQ 58 affinity: No such file or directory
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: IRQ 58 affinity is now unmanaged
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: Cannot change IRQ 59 affinity: No such file or directory
+Aug 20 14:58:37 ip-172-31-21-130 irqbalance[564]: IRQ 59 affinity is now unmanaged
+Aug 20 14:58:51 ip-172-31-21-130 systemd[1]: systemd-fsckd.service: Deactivated successfully.
+Aug 20 14:58:57 ip-172-31-21-130 systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+Aug 20 14:58:59 ip-172-31-21-130 systemd[1]: systemd-timedated.service: Deactivated successfully.
+Aug 20 14:59:21 ip-172-31-21-130 systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Aug 20 14:59:21 ip-172-31-21-130 sshd[922]: Server listening on 0.0.0.0 port 22.
+Aug 20 14:59:21 ip-172-31-21-130 sshd[922]: Server listening on :: port 22.
+Aug 20 14:59:21 ip-172-31-21-130 systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Aug 20 14:59:23 ip-172-31-21-130 sshd[924]: Accepted publickey for ubuntu from 106.200.30.86 port 20942 ssh2: RSA SHA256:DmOUWSHsD4VR48RhKsonEQz1PorfIIIakzZbjEz+27M
+Aug 20 14:59:23 ip-172-31-21-130 sshd[924]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+Aug 20 14:59:23 ip-172-31-21-130 systemd[1]: Created slice user-1000.slice - User Slice of UID 1000.
+Aug 20 14:59:23 ip-172-31-21-130 systemd[1]: Starting user-runtime-dir@1000.service - User Runtime Directory /run/user/1000...
+Aug 20 14:59:23 ip-172-31-21-130 systemd-logind[584]: New session 1 of user ubuntu.
+Aug 20 14:59:23 ip-172-31-21-130 systemd[1]: Finished user-runtime-dir@1000.service - User Runtime Directory /run/user/1000.
+Aug 20 14:59:23 ip-172-31-21-130 systemd[1]: Starting user@1000.service - User Manager for UID 1000...
+Aug 20 14:59:23 ip-172-31-21-130 (systemd)[930]: pam_unix(systemd-user:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Queued start job for default target default.target.
+Aug 20 14:59:23 ip-172-31-21-130 systemd-journald[129]: /var/log/journal/ec25dbf92fa7a8cca14e3d5e3abd2657/user-1000.journal: Journal file uses a different sequence number ID, rotating.
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Created slice app.slice - User Application Slice.
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Started launchpadlib-cache-clean.timer - Clean up old files in the Launchpadlib cache.
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Reached target paths.target - Paths.
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Reached target timers.target - Timers.
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Starting dbus.socket - D-Bus User Message Bus Socket...
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Listening on dirmngr.socket - GnuPG network certificate management daemon.
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Listening on gpg-agent-browser.socket - GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Listening on gpg-agent-extra.socket - GnuPG cryptographic agent and passphrase cache (restricted).
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Listening on gpg-agent.socket - GnuPG cryptographic agent and passphrase cache.
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Listening on keyboxd.socket - GnuPG public key management service.
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Listening on pk-debconf-helper.socket - debconf communication socket.
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Listening on snapd.session-agent.socket - REST API socket for snapd user session agent.
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Listening on dbus.socket - D-Bus User Message Bus Socket.
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Reached target sockets.target - Sockets.
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Reached target basic.target - Basic System.
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Reached target default.target - Main User Target.
+Aug 20 14:59:23 ip-172-31-21-130 systemd[930]: Startup finished in 119ms.
+Aug 20 14:59:23 ip-172-31-21-130 systemd[1]: Started user@1000.service - User Manager for UID 1000.
+Aug 20 14:59:23 ip-172-31-21-130 systemd[1]: Started session-1.scope - Session 1 of User ubuntu.
+Aug 20 14:59:25 ip-172-31-21-130 sshd[926]: Accepted publickey for ubuntu from 106.200.30.86 port 10914 ssh2: RSA SHA256:DmOUWSHsD4VR48RhKsonEQz1PorfIIIakzZbjEz+27M
+Aug 20 14:59:25 ip-172-31-21-130 sshd[926]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+Aug 20 14:59:25 ip-172-31-21-130 systemd-logind[584]: New session 3 of user ubuntu.
+Aug 20 14:59:25 ip-172-31-21-130 systemd[1]: Started session-3.scope - Session 3 of User ubuntu.
+Aug 20 14:59:30 ip-172-31-21-130 crontab[1101]: (ubuntu) BEGIN EDIT (ubuntu)
+Aug 20 14:59:37 ip-172-31-21-130 crontab[1101]: (ubuntu) REPLACE (ubuntu)
+Aug 20 14:59:37 ip-172-31-21-130 crontab[1101]: (ubuntu) END EDIT (ubuntu)
+Aug 20 14:59:46 ip-172-31-21-130 sudo[1132]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/crontab -e
+Aug 20 14:59:46 ip-172-31-21-130 sudo[1132]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Aug 20 14:59:46 ip-172-31-21-130 crontab[1134]: (root) BEGIN EDIT (root)
+Aug 20 14:59:55 ip-172-31-21-130 crontab[1134]: (root) REPLACE (root)
+Aug 20 14:59:55 ip-172-31-21-130 crontab[1134]: (root) END EDIT (root)
+Aug 20 14:59:55 ip-172-31-21-130 sudo[1132]: pam_unix(sudo:session): session closed for user root
+Aug 20 15:00:01 ip-172-31-21-130 cron[557]: (root) RELOAD (crontabs/root)
+Aug 20 15:00:21 ip-172-31-21-130 systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+Aug 20 15:00:21 ip-172-31-21-130 systemd[1]: sysstat-collect.service: Deactivated successfully.
+Aug 20 15:00:21 ip-172-31-21-130 systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+Aug 20 15:02:18 ip-172-31-21-130 sudo[1147]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/linux-rcc-ai ; USER=root ; COMMAND=/usr/sbin/reboot
+Aug 20 15:02:18 ip-172-31-21-130 sudo[1147]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Aug 20 15:02:18 ip-172-31-21-130 systemd-logind[584]: The system will reboot now!
+Aug 20 15:02:18 ip-172-31-21-130 sudo[1147]: pam_unix(sudo:session): session closed for user root
+Aug 20 15:02:18 ip-172-31-21-130 systemd-logind[584]: System is rebooting.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: unattended-upgrades.service: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopping session-1.scope - Session 1 of User ubuntu...
+Aug 20 15:02:18 ip-172-31-21-130 sshd[924]: pam_unix(sshd:session): session closed for user ubuntu
+Aug 20 15:02:18 ip-172-31-21-130 sshd[926]: pam_unix(sshd:session): session closed for user ubuntu
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopping session-3.scope - Session 3 of User ubuntu...
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Removed slice system-modprobe.slice - Slice /system/modprobe.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped target cloud-init.target - Cloud-init target.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped target graphical.target - Graphical Interface.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped target nss-lookup.target - Host and Network Name Lookups.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped target timers.target - Timer Units.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: apt-daily-upgrade.timer: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped apt-daily-upgrade.timer - Daily apt upgrade and clean activities.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: apt-daily.timer: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped apt-daily.timer - Daily apt download activities.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: dpkg-db-backup.timer: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped dpkg-db-backup.timer - Daily dpkg database backup timer.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: e2scrub_all.timer: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped e2scrub_all.timer - Periodic ext4 Online Metadata Check for All Filesystems.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: fstrim.timer: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped fstrim.timer - Discard unused filesystem blocks once a week.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: fwupd-refresh.timer: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped fwupd-refresh.timer - Refresh fwupd metadata regularly.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: logrotate.timer: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped logrotate.timer - Daily rotation of log files.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: man-db.timer: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped man-db.timer - Daily man-db regeneration.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: motd-news.timer: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped motd-news.timer - Message of the Day.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: sysstat-collect.timer: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped sysstat-collect.timer - Run system activity accounting tool every 10 minutes.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: sysstat-summary.timer: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped sysstat-summary.timer - Generate summary of yesterday's process accounting.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: systemd-tmpfiles-clean.timer: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped systemd-tmpfiles-clean.timer - Daily Cleanup of Temporary Directories.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: update-notifier-download.timer: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped update-notifier-download.timer - Download data for packages that failed at package install time.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: update-notifier-motd.timer: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped update-notifier-motd.timer - Check to see whether there is a new version of Ubuntu available.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: cloud-init-hotplugd.socket: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Closed cloud-init-hotplugd.socket - cloud-init hotplug hook socket.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: lvm2-lvmpolld.socket: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Closed lvm2-lvmpolld.socket - LVM2 poll daemon socket.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: systemd-rfkill.socket: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Closed systemd-rfkill.socket - Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopping acpid.service - ACPI event daemon...
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopping blk-availability.service - Availability of block devices...
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: cloud-final.service: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped cloud-final.service - Cloud-init: Final Stage.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped target multi-user.target - Multi-User System.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped target getty.target - Login Prompts.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped target time-sync.target - System Time Synchronized.
+Aug 20 15:02:18 ip-172-31-21-130 ModemManager[748]: <msg> caught signal, shutting down...
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopping ModemManager.service - Modem Manager...
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopping apport.service - automatic crash report generation...
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopping chrony.service - chrony, an NTP client/server...
+Aug 20 15:02:18 ip-172-31-21-130 blkdeactivate[1152]: Deactivating block devices:
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: cloud-config.service: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped cloud-config.service - Cloud-init: Config Stage.
+Aug 20 15:02:18 ip-172-31-21-130 chronyd[668]: chronyd exiting
+Aug 20 15:02:18 ip-172-31-21-130 ModemManager[748]: <msg> ModemManager is shut down
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped target cloud-config.target - Cloud-config availability.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped target network-online.target - Network is Online.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopping cron.service - Regular background program processing daemon...
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopping finalrd.service - Create final runtime dir for shutdown pivot root...
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopping getty@tty1.service - Getty on tty1...
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopping irqbalance.service - irqbalance daemon...
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopping networkd-dispatcher.service - Dispatcher daemon for systemd-networkd...
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: plymouth-quit.service: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped plymouth-quit.service - Terminate Plymouth Boot Screen.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopping rsyslog.service - System Logging Service...
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopping serial-getty@ttyS0.service - Serial Getty on ttyS0...
+Aug 20 15:02:18 ip-172-31-21-130 rsyslogd[623]: [origin software="rsyslogd" swVersion="8.2312.0" x-pid="623" x-info="https://www.rsyslog.com"] exiting on signal 15.
+Aug 20 15:02:18 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 15:02:18.9695 INFO [amazon-ssm-agent] amazon-ssm-agent got signal:terminated value:0x791ddd1f70c0
+Aug 20 15:02:18 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 15:02:18.9703 INFO [amazon-ssm-agent] Received stop/termination signal from main routine
+Aug 20 15:02:18 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 15:02:18.9704 INFO [amazon-ssm-agent] Stopping Core Agent
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopping snap.amazon-ssm-agent.amazon-ssm-agent.service - Service for snap application amazon-ssm-agent.amazon-ssm-agent...
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: snapd.seeded.service: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped snapd.seeded.service - Wait until snapd is fully seeded.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopping snapd.service - Snap Daemon...
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: snapd.system-shutdown.service - Ubuntu core (all-snaps) system shutdown helper setup service was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/finalrd).
+Aug 20 15:02:18 ip-172-31-21-130 snapd[573]: main.go:197: Exiting on terminated signal.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...
+Aug 20 15:02:18 ip-172-31-21-130 sshd[922]: Received signal 15; terminating.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: sysstat.service: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped sysstat.service - Resets System Activity Logs.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopping systemd-random-seed.service - Load/Save OS Random Seed...
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopping udisks2.service - Disk Manager...
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: acpid.service: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped acpid.service - ACPI event daemon.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: cron.service: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped cron.service - Regular background program processing daemon.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: irqbalance.service: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped irqbalance.service - irqbalance daemon.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: networkd-dispatcher.service: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped networkd-dispatcher.service - Dispatcher daemon for systemd-networkd.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: rsyslog.service: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped rsyslog.service - System Logging Service.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: chrony.service: Deactivated successfully.
+Aug 20 15:02:18 ip-172-31-21-130 systemd[1]: Stopped chrony.service - chrony, an NTP client/server.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: serial-getty@ttyS0.service: Deactivated successfully.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped serial-getty@ttyS0.service - Serial Getty on ttyS0.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: ModemManager.service: Deactivated successfully.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped ModemManager.service - Modem Manager.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: getty@tty1.service: Deactivated successfully.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped getty@tty1.service - Getty on tty1.
+Aug 20 15:02:19 ip-172-31-21-130 udisksd[596]: udisks daemon version 2.10.1 exiting
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: ssh.service: Deactivated successfully.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: blk-availability.service: Deactivated successfully.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped blk-availability.service - Availability of block devices.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: systemd-random-seed.service: Deactivated successfully.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped systemd-random-seed.service - Load/Save OS Random Seed.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: session-3.scope: Deactivated successfully.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped session-3.scope - Session 3 of User ubuntu.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: session-1.scope: Deactivated successfully.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped session-1.scope - Session 1 of User ubuntu.
+Aug 20 15:02:19 ip-172-31-21-130 systemd-logind[584]: Session 1 logged out. Waiting for processes to exit.
+Aug 20 15:02:19 ip-172-31-21-130 systemd-logind[584]: Session 3 logged out. Waiting for processes to exit.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: udisks2.service: Deactivated successfully.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped udisks2.service - Disk Manager.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Removed slice system-getty.slice - Slice /system/getty.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Removed slice system-serial\x2dgetty.slice - Slice /system/serial-getty.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped target getty-pre.target - Preparation for Logins.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: plymouth-quit-wait.service: Deactivated successfully.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped plymouth-quit-wait.service - Hold until boot process finishes up.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: plymouth-reboot.service - Show Plymouth Reboot Screen was skipped because of an unmet condition check (ConditionKernelCommandLine=splash).
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: plymouth-switch-root-initramfs.service - Tell Plymouth To Jump To initramfs was skipped because no trigger condition checks were met.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopping polkit.service - Authorization Manager...
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopping systemd-logind.service - User Login Management...
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopping user@1000.service - User Manager for UID 1000...
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Activating special unit exit.target...
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Stopped target default.target - Main User Target.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Stopped target basic.target - Basic System.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Stopped target paths.target - Paths.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Stopped target sockets.target - Sockets.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Stopped target timers.target - Timers.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Stopped launchpadlib-cache-clean.timer - Clean up old files in the Launchpadlib cache.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Closed dbus.socket - D-Bus User Message Bus Socket.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Closed dirmngr.socket - GnuPG network certificate management daemon.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Closed gpg-agent-browser.socket - GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Closed gpg-agent-extra.socket - GnuPG cryptographic agent and passphrase cache (restricted).
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Stopping gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Closed gpg-agent.socket - GnuPG cryptographic agent and passphrase cache.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Closed keyboxd.socket - GnuPG public key management service.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Closed pk-debconf-helper.socket - debconf communication socket.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Closed snapd.session-agent.socket - REST API socket for snapd user session agent.
+Aug 20 15:02:19 ip-172-31-21-130 systemd-logind[584]: Removed session 3.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: polkit.service: Deactivated successfully.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped polkit.service - Authorization Manager.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: systemd-logind.service: Deactivated successfully.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped systemd-logind.service - User Login Management.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Closed gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Removed slice app.slice - User Application Slice.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Reached target shutdown.target - Shutdown.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Finished systemd-exit.service - Exit the Session.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Reached target exit.target - Exit the Session.
+Aug 20 15:02:19 ip-172-31-21-130 (sd-pam)[931]: pam_unix(systemd-user:session): session closed for user ubuntu
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: user@1000.service: Deactivated successfully.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped user@1000.service - User Manager for UID 1000.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopping systemd-user-sessions.service - Permit User Sessions...
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopping user-runtime-dir@1000.service - User Runtime Directory /run/user/1000...
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: systemd-user-sessions.service: Deactivated successfully.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped systemd-user-sessions.service - Permit User Sessions.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: run-user-1000.mount: Deactivated successfully.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Unmounted run-user-1000.mount - /run/user/1000.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: user-runtime-dir@1000.service: Deactivated successfully.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped user-runtime-dir@1000.service - User Runtime Directory /run/user/1000.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Removed slice user-1000.slice - User Slice of UID 1000.
+Aug 20 15:02:19 ip-172-31-21-130 systemd-tmpfiles[1295]: /run/finalrd-libs.conf:47: Duplicate line for path "/run/initramfs/lib64", ignoring.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: apport.service: Deactivated successfully.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped apport.service - automatic crash report generation.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped target remote-fs.target - Remote File Systems.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped target remote-fs-pre.target - Preparation for Remote File Systems.
+Aug 20 15:02:19 ip-172-31-21-130 finalrd[1296]: run-parts: executing /usr/share/finalrd/mdadm.finalrd setup
+Aug 20 15:02:19 ip-172-31-21-130 finalrd[1296]: run-parts: executing /usr/share/finalrd/open-iscsi.finalrd setup
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: finalrd.service: Deactivated successfully.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped finalrd.service - Create final runtime dir for shutdown pivot root.
+Aug 20 15:02:21 ip-172-31-21-130 snapd[573]: standby.go:121: standby monitoring stop requested
+Aug 20 15:02:21 ip-172-31-21-130 snapd[573]: overlord.go:568: Released state lock file
+Aug 20 15:02:21 ip-172-31-21-130 snapd[573]: seclog.go:189: security logger disabled
+Aug 20 15:02:21 ip-172-31-21-130 systemd[1]: snapd.service: Deactivated successfully.
+Aug 20 15:02:21 ip-172-31-21-130 systemd[1]: Stopped snapd.service - Snap Daemon.
+Aug 20 15:02:21 ip-172-31-21-130 systemd[1]: snapd.service: Consumed 1.655s CPU time.
+Aug 20 15:02:21 ip-172-31-21-130 systemd[1]: Stopped target time-set.target - System Time Set.
+Aug 20 15:02:25 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 15:02:25.9769 INFO [CredentialRefresher] Sending credential refresher stop signal
+Aug 20 15:02:25 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 15:02:25.9769 INFO [Registrar] Registrar is already stopped
+Aug 20 15:02:25 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 15:02:25.9770 INFO [CredentialRefresher] Stopping credentials refresher
+Aug 20 15:02:25 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[570]: 2026-08-20 15:02:25.9770 INFO [amazon-ssm-agent] Bye.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: snap.amazon-ssm-agent.amazon-ssm-agent.service: Deactivated successfully.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: Stopped snap.amazon-ssm-agent.amazon-ssm-agent.service - Service for snap application amazon-ssm-agent.amazon-ssm-agent.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: snap.amazon-ssm-agent.amazon-ssm-agent.service: Consumed 1.427s CPU time.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: Stopped target basic.target - Basic System.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: Stopped target network.target - Network.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: Stopped target paths.target - Path Units.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: acpid.path: Deactivated successfully.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: Stopped acpid.path - ACPI Events Check.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: Stopped target slices.target - Slice Units.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: Removed slice user.slice - User and Session Slice.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: Stopped target sockets.target - Socket Units.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: acpid.socket: Deactivated successfully.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: Closed acpid.socket - ACPID Listen Socket.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: iscsid.socket: Deactivated successfully.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: Closed iscsid.socket - Open-iSCSI iscsid Socket.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: lxd-installer.socket: Deactivated successfully.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: Closed lxd-installer.socket - Helper to install lxd snap on demand.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: snapd.socket: Deactivated successfully.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: Closed snapd.socket - Socket activation for snappy daemon.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: ssh.socket: Deactivated successfully.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: Closed ssh.socket - OpenBSD Secure Shell server socket.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: syslog.socket: Deactivated successfully.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: Closed syslog.socket - Syslog Socket.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: uuidd.socket: Deactivated successfully.
+Aug 20 15:02:25 ip-172-31-21-130 systemd[1]: Closed uuidd.socket - UUID daemon activation socket.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped target sysinit.target - System Initialization.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped target cryptsetup.target - Local Encrypted Volumes.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: systemd-ask-password-console.path: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: systemd-ask-password-wall.path: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped target integritysetup.target - Local Integrity Protected Volumes.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped target swap.target - Swaps.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped target veritysetup.target - Local Verity Protected Volumes.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: cloud-init.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped cloud-init.service - Cloud-init: Network Stage.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopping systemd-binfmt.service - Set Up Additional Binary Formats...
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: systemd-networkd-wait-online.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped systemd-networkd-wait-online.service - Wait for Network to be Configured.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopping systemd-networkd.service - Network Configuration...
+Aug 20 15:02:26 ip-172-31-21-130 systemd-networkd[509]: enX0: DHCP lease lost
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopping systemd-resolved.service - Network Name Resolution...
+Aug 20 15:02:26 ip-172-31-21-130 systemd-networkd[509]: enX0: DHCPv6 lease lost
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopping systemd-update-utmp.service - Record System Boot/Shutdown in UTMP...
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: systemd-binfmt.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped systemd-binfmt.service - Set Up Additional Binary Formats.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: proc-sys-fs-binfmt_misc.automount: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Unset automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: proc-sys-fs-binfmt_misc.mount: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: systemd-resolved.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped systemd-resolved.service - Network Name Resolution.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: systemd-networkd.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped systemd-networkd.service - Network Configuration.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped target network-pre.target - Preparation for Network.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: systemd-networkd.socket: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Closed systemd-networkd.socket - Network Service Netlink Socket.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: cloud-init-local.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped cloud-init-local.service - Cloud-init: Local Stage (pre-network).
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: systemd-sysctl.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped systemd-sysctl.service - Apply Kernel Variables.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: systemd-modules-load.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped systemd-modules-load.service - Load Kernel Modules.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: systemd-update-utmp.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped systemd-update-utmp.service - Record System Boot/Shutdown in UTMP.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: systemd-tmpfiles-setup.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped systemd-tmpfiles-setup.service - Create Volatile Files and Directories.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped target local-fs.target - Local File Systems.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped target snapd.mounts.target - Mounted snaps.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Unmounting boot-efi.mount - /boot/efi...
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Unmounting snap-amazon\x2dssm\x2dagent-13009.mount - Mount unit for amazon-ssm-agent, revision 13009...
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Unmounting snap-amazon\x2dssm\x2dagent-13349.mount - Mount unit for amazon-ssm-agent, revision 13349...
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Unmounting snap-core22-2411.mount - Mount unit for core22, revision 2411...
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Unmounting snap-core22-2437.mount - Mount unit for core22, revision 2437...
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Unmounting snap-snapd-26865.mount - Mount unit for snapd, revision 26865...
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Unmounting snap-snapd-27710.mount - Mount unit for snapd, revision 27710...
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: boot-efi.mount: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Unmounted boot-efi.mount - /boot/efi.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: snap-amazon\x2dssm\x2dagent-13009.mount: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Unmounted snap-amazon\x2dssm\x2dagent-13009.mount - Mount unit for amazon-ssm-agent, revision 13009.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: snap-amazon\x2dssm\x2dagent-13349.mount: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Unmounted snap-amazon\x2dssm\x2dagent-13349.mount - Mount unit for amazon-ssm-agent, revision 13349.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: snap-core22-2437.mount: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Unmounted snap-core22-2437.mount - Mount unit for core22, revision 2437.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: snap-core22-2411.mount: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Unmounted snap-core22-2411.mount - Mount unit for core22, revision 2411.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: snap-snapd-26865.mount: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Unmounted snap-snapd-26865.mount - Mount unit for snapd, revision 26865.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Unmounting boot.mount - /boot...
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: systemd-fsck@dev-disk-by\x2dlabel-UEFI.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped systemd-fsck@dev-disk-by\x2dlabel-UEFI.service - File System Check on /dev/disk/by-label/UEFI.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: snap-snapd-27710.mount: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Unmounted snap-snapd-27710.mount - Mount unit for snapd, revision 27710.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped target snapd.mounts-pre.target - Mounting snaps.
+Aug 20 15:02:26 ip-172-31-21-130 kernel: EXT4-fs (xvda16): unmounting filesystem 8fb95cef-95fc-48ca-aaab-3f1b1df59748.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: boot.mount: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Unmounted boot.mount - /boot.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Reached target umount.target - Unmount All Filesystems.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: systemd-fsck@dev-disk-by\x2dlabel-BOOT.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped systemd-fsck@dev-disk-by\x2dlabel-BOOT.service - File System Check on /dev/disk/by-label/BOOT.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Removed slice system-systemd\x2dfsck.slice - Slice /system/systemd-fsck.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped target local-fs-pre.target - Preparation for Local File Systems.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopping lvm2-monitor.service - Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopping multipathd.service - Device-Mapper Multipath Device Controller...
+Aug 20 15:02:26 ip-172-31-21-130 multipathd[188]: multipathd: shut down
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: systemd-tmpfiles-setup-dev.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped systemd-tmpfiles-setup-dev.service - Create Static Device Nodes in /dev.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: systemd-tmpfiles-setup-dev-early.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: multipathd.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped multipathd.service - Device-Mapper Multipath Device Controller.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: systemd-remount-fs.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped systemd-remount-fs.service - Remount Root and Kernel File Systems.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: systemd-fsck-root.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped systemd-fsck-root.service - File System Check on Root Device.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: lvm2-monitor.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped lvm2-monitor.service - Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Reached target shutdown.target - System Shutdown.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Reached target final.target - Late Shutdown Services.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: systemd-reboot.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Finished systemd-reboot.service - System Reboot.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Reached target reboot.target - System Reboot.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Shutting down.
+Aug 20 15:02:26 ip-172-31-21-130 systemd-shutdown[1]: Syncing filesystems and block devices.
+Aug 20 15:02:26 ip-172-31-21-130 systemd-shutdown[1]: Sending SIGTERM to remaining processes...
+Aug 20 15:02:26 ip-172-31-21-130 systemd-journald[129]: Received SIGTERM from PID 1 (systemd-shutdow).
+Aug 20 15:02:26 ip-172-31-21-130 systemd-journald[129]: Journal stopped

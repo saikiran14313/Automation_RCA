@@ -1,0 +1,37 @@
+============================================================
+LINUX REBOOT INTELLIGENCE CENTER
+============================================================
+
+Server: ip-172-31-21-130
+Analysis Time: 2026-08-20 17:21:27
+Evidence File: ai_evidence_20260820_150403.txt
+
+Probable Root Cause: Kernel Panic
+Confidence: HIGH
+
+Cause of Reboot:
+The server rebooted following a kernel panic detected in the system logs.
+
+Health Score: 65/100
+Health Status: WARNING
+
+Root Cause Checks:
+Kernel Panic: Detected
+Kernel OOPS: Not detected
+OOM: Not detected
+Hardware Error: Not detected
+Storage / I/O: Not detected
+Filesystem: Not detected
+Watchdog / Lockup: Not detected
+Systemd Failure: Not detected
+Cron Reboot: Detected
+Manual Reboot: Detected
+Kdump: Unknown
+VMcore: Available
+
+Health Impact:
+Kernel panic: -30
+Recent reboot: -5
+
+Recommended Action:
+Review kernel logs and configure/verify kdump for future kernel crash analysis.

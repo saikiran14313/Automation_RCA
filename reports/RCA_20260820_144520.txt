@@ -1,0 +1,75 @@
+========================================
+LINUX REBOOT RCA
+========================================
+
+Server:
+ip-172-31-21-130
+
+Incident:
+Server performed a series of rapid reboots, culminating in an execution of the reboot command by a root-level CRON job.
+
+Probable Root Cause:
+Planned/manual reboot
+
+Confidence:
+HIGH
+
+Timeline:
+- 2026-08-20 14:30:59 - System booted
+- 2026-08-20 14:34:04 - System booted
+- 2026-08-20 14:38:24 - System booted
+- 2026-08-20 14:44:01 - CRON job initiated /usr/sbin/reboot
+
+Key Evidence:
+1. Aug 20 14:44:01 log entry: `CRON[1170]: (root) CMD (/usr/sbin/reboot)` confirming a scheduled or manual task triggered the restart.
+2. The systemd shutdown sequence initiated immediately following the CRON command, showing a clean shutdown path.
+3. Absence of any kernel panic, hardware error, or OOM event in the logs preceding the shutdown.
+
+Root Cause Checks:
+
+Kernel Panic:
+Not detected
+
+Kernel OOPS:
+Not detected
+
+OOM:
+Not detected
+
+Hardware Error:
+Not detected
+
+Storage / I/O Error:
+Not detected
+
+Filesystem Error:
+Not detected
+
+Watchdog / Lockup:
+Not detected
+
+Systemd Failure:
+Not detected
+
+Manual / Planned Reboot:
+Detected
+
+Kdump:
+Not configured
+
+VMcore:
+Not available
+
+Final RCA:
+The server underwent multiple reboots due to an active CRON job executing `/usr/sbin/reboot` as the root user. The logs show a clean shutdown process initiated by systemd following this command, with no evidence of system instability, hardware failure, or kernel-level errors.
+
+Recommended Action:
+Check the root crontab (`sudo crontab -l`) and system-wide cron directories (e.g., `/etc/cron.*`) to identify and remove the task triggering the recurring reboot.
+
+Evidence File:
+LINUX REBOOT AI EVIDENCE
+
+Cause of Reboot:
+The system rebooted due to a root-level CRON job executing the reboot command.
+
+========================================

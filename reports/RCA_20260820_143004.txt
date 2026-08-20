@@ -1,0 +1,71 @@
+========================================
+LINUX REBOOT RCA
+========================================
+
+Server:
+ip-172-31-21-130
+
+Incident:
+System rebooted on Aug 20 at 14:03 UTC.
+
+Probable Root Cause:
+Planned/manual reboot
+
+Confidence:
+HIGH
+
+Timeline:
+- 2026-08-20 14:03:03 - User 'ubuntu' executed `sudo /usr/sbin/reboot`
+- 2026-08-20 14:03:03 - systemd-logind initiated system reboot
+- 2026-08-20 14:03:10 - System finalized shutdown and reboot process
+
+Key Evidence:
+1. `sudo` logs show user 'ubuntu' executing the command `/usr/sbin/reboot` at 14:03:03.
+2. `systemd-logind` confirms the command and initiates the shutdown sequence immediately.
+3. No kernel panic, OOM, or hardware error signatures were found in the logs leading up to the reboot.
+
+Root Cause Checks:
+
+Kernel Panic:
+Not detected
+
+Kernel OOPS:
+Not detected
+
+OOM:
+Not detected
+
+Hardware Error:
+Not detected
+
+Storage / I/O Error:
+Not detected
+
+Filesystem Error:
+Not detected
+
+Watchdog / Lockup:
+Not detected
+
+Systemd Failure:
+Not detected
+
+Manual / Planned Reboot:
+Detected
+
+Kdump:
+Not configured
+
+VMcore:
+Not available
+
+Final RCA:
+The evidence confirms that the server reboot was triggered by a manual command executed by the user 'ubuntu' via sudo. There are no signs of system instability, hardware failure, or kernel-level panics preceding the event.
+
+Recommended Action:
+No technical intervention is required; the reboot was a standard administrative action.
+
+Evidence File:
+LINUX REBOOT AI EVIDENCE
+
+========================================

@@ -1,0 +1,72 @@
+========================================
+LINUX REBOOT RCA
+========================================
+
+Server:
+ip-172-31-21-130
+
+Incident:
+System rebooted following a user-initiated command.
+
+Probable Root Cause:
+Planned/manual reboot
+
+Confidence:
+HIGH
+
+Timeline:
+- 2026-08-20 14:30:41 - User 'ubuntu' executes sudo reboot command.
+- 2026-08-20 14:30:41 - systemd-logind confirms system reboot intent.
+- 2026-08-20 14:30:48 - systemd-shutdown begins syncing filesystems and terminating processes.
+- 2026-08-20 14:30:59 - System boot process initializes.
+
+Key Evidence:
+1. `sudo[2021]: ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/linux-rcc-ai ; USER=root ; COMMAND=/usr/sbin/reboot`
+2. `systemd-logind[604]: The system will reboot now!`
+3. Log entries show a graceful transition to `shutdown.target` and successful unmounting/syncing of filesystems.
+
+Root Cause Checks:
+
+Kernel Panic:
+Not detected
+
+Kernel OOPS:
+Not detected
+
+OOM:
+Not detected
+
+Hardware Error:
+Not detected
+
+Storage / I/O Error:
+Not detected
+
+Filesystem Error:
+Not detected
+
+Watchdog / Lockup:
+Not detected
+
+Systemd Failure:
+Not detected
+
+Manual / Planned Reboot:
+Detected
+
+Kdump:
+Not configured
+
+VMcore:
+Not available
+
+Final RCA:
+The server rebooted due to a manual `reboot` command executed by the user 'ubuntu' via `sudo` on terminal `pts/0` at 14:30:41 UTC. The system logs show a standard, graceful shutdown sequence initiated by systemd immediately following the command.
+
+Recommended Action:
+No further technical intervention required; this was an intentional administrative action.
+
+Evidence File:
+LINUX REBOOT AI EVIDENCE
+
+========================================

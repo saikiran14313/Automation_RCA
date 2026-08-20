@@ -1,0 +1,75 @@
+========================================
+LINUX REBOOT RCA
+========================================
+
+Server:
+ip-172-31-21-130
+
+Incident:
+Server rebooted following a sequence of rapid, repeated reboots.
+
+Probable Root Cause:
+Planned/manual reboot
+
+Confidence:
+HIGH
+
+Timeline:
+- 2026-08-20 14:50:21 - System booted (Boot ID e3234...)
+- 2026-08-20 14:52:21 - System booted (Boot ID 24785...)
+- 2026-08-20 14:54:22 - System booted (Boot ID 9f038...)
+- 2026-08-20 14:56:19 - System booted (Boot ID 188fe...)
+- 2026-08-20 14:58:21 - System booted (Boot ID 5c3d9...)
+- 2026-08-20 15:02:18 - sudo user 'ubuntu' executed /usr/sbin/reboot
+
+Key Evidence:
+1. `sudo` logs show user 'ubuntu' explicitly executing `/usr/sbin/reboot` at 15:02:18.
+2. `last` command output confirms multiple consecutive reboots triggered by the 'ubuntu' user via pts/0.
+3. Systemd shutdown logs confirm a clean transition to `reboot.target` following the sudo command.
+
+Root Cause Checks:
+
+Kernel Panic:
+Not detected
+
+Kernel OOPS:
+Not detected
+
+OOM:
+Not detected
+
+Hardware Error:
+Not detected
+
+Storage / I/O Error:
+Not detected
+
+Filesystem Error:
+Not detected
+
+Watchdog / Lockup:
+Not detected
+
+Systemd Failure:
+Not detected
+
+Manual / Planned Reboot:
+Detected
+
+Kdump:
+Not configured
+
+VMcore:
+Not available
+
+Final RCA:
+The server underwent a series of rapid reboots, culminating in an explicit manual reboot command issued by the user 'ubuntu' via the terminal at 15:02:18. There is no evidence of system instability, kernel panics, or hardware failures in the logs; all reboots were clean system shutdowns.
+
+Recommended Action:
+Review user access logs and command history for the 'ubuntu' account to determine why the user repeatedly invoked the reboot command.
+
+Evidence File:
+LINUX REBOOT AI EVIDENCE
+
+Cause of Reboot:
+The system was manually rebooted by the user 'ubuntu' executing the reboot command.

@@ -1,0 +1,74 @@
+========================================
+LINUX REBOOT RCA
+========================================
+
+Server:
+ip-172-31-21-130
+
+Incident:
+Server performed a planned reboot command issued by an authenticated user.
+
+Probable Root Cause:
+Manual / Planned reboot
+
+Confidence:
+HIGH
+
+Timeline:
+- 2026-08-20 14:38:04 - User 'ubuntu' executes sudo /usr/sbin/reboot via pts/0.
+- 2026-08-20 14:38:04 - systemd-logind confirms receipt of reboot request.
+- 2026-08-20 14:38:11 - System reaches shutdown.target and initiates final sync.
+
+Key Evidence:
+1. `sudo[1148]: ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/linux-rcc-ai ; USER=root ; COMMAND=/usr/sbin/reboot`
+2. `systemd-logind[578]: The system will reboot now!`
+3. Consistent log entries showing an orderly transition through systemd targets for a planned shutdown/reboot process.
+
+Root Cause Checks:
+
+Kernel Panic:
+Not detected
+
+Kernel OOPS:
+Not detected
+
+OOM:
+Not detected
+
+Hardware Error:
+Not detected
+
+Storage / I/O Error:
+Not detected
+
+Filesystem Error:
+Not detected
+
+Watchdog / Lockup:
+Not detected
+
+Systemd Failure:
+Not detected
+
+Manual / Planned Reboot:
+Detected
+
+Kdump:
+Not configured
+
+VMcore:
+Not available
+
+Final RCA:
+The server rebooted due to an explicitly issued `reboot` command by the user 'ubuntu' via an interactive shell session. System logs confirm the standard shutdown sequence was triggered immediately following the command, with no signs of kernel, hardware, or service failures preceding the event.
+
+Recommended Action:
+No technical intervention is required as this was a manual administrative action.
+
+Evidence File:
+LINUX REBOOT AI EVIDENCE
+
+Cause of Reboot:
+The system was rebooted manually by an authorized user executing the reboot command.
+
+========================================

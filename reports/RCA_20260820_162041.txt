@@ -1,0 +1,51 @@
+========================================
+LINUX REBOOT RCA
+========================================
+
+Server:
+ip-172-31-21-130
+
+Incident:
+Manual reboot initiated by user via sudo
+
+Probable Root Cause:
+Manual / Planned reboot
+
+Confidence:
+HIGH
+
+Timeline:
+- 2026-08-20 15:02:18 - User 'ubuntu' executes 'sudo /usr/sbin/reboot'
+- 2026-08-20 15:02:18 - systemd-logind logs 'The system will reboot now!'
+- 2026-08-20 15:02:26 - systemd-reboot.service finishes and shutdown sequence commences
+
+Key Evidence:
+1. Aug 20 15:02:18 ip-172-31-21-130 sudo[1147]: ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/linux-rcc-ai ; USER=root ; COMMAND=/usr/sbin/reboot
+2. Aug 20 15:02:18 ip-172-31-21-130 systemd-logind[584]: The system will reboot now!
+3. Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Finished systemd-reboot.service - System Reboot.
+
+Root Cause Checks:
+Kernel Panic: Not detected
+Kernel OOPS: Not detected
+OOM: Not detected
+Hardware Error: Not detected
+Storage / I/O Error: Not detected
+Filesystem Error: Not detected
+Watchdog / Lockup: Not detected
+Systemd Failure: Not detected
+Manual / Planned Reboot: Detected
+Cron Scheduled Reboot: Not detected
+Kdump: Not configured
+VMcore: Not available
+
+Final RCA:
+The server performed a clean, planned reboot initiated by the 'ubuntu' user via the command line. Logs indicate an explicit execution of the reboot command with root privileges, followed by a standard systemd shutdown procedure. No system errors or unexpected anomalies were observed preceding the event.
+
+Recommended Action:
+Verify if the manual reboot was authorized as part of standard maintenance procedures.
+
+Evidence File:
+ai_evidence_20260820_150403.txt
+
+Cause of Reboot:
+The reboot was manually triggered by a user executing the 'reboot' command with sudo privileges.

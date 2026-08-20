@@ -1,0 +1,150 @@
+LINUX REBOOT AI EVIDENCE
+================================================================================
+Hostname: ip-172-31-21-130
+Collection Time: 2026-08-20 14:28:15.208847
+
+IMPORTANT:
+Evidence below is extracted from the previous boot. Raw logs are preserved separately.
+
+### BOOT HISTORY ###
+----------------------------------------------------------------------
+IDX BOOT ID                          FIRST ENTRY                 LAST ENTRY
+ -3 d4317b1e8b334c80a6331cb3a3a6390e Tue 2026-08-11 09:17:11 UTC Thu 2026-08-13 14:01:55 UTC
+ -2 5f6b1da89cf94084bdba937887f43cf3 Thu 2026-08-13 14:02:16 UTC Sun 2026-08-16 16:53:23 UTC
+ -1 5409d595aa6a4469965dcc744a977de8 Sun 2026-08-16 19:09:50 UTC Thu 2026-08-20 14:03:10 UTC
+  0 c8772017ea8f461fbe88776fd4ae8402 Thu 2026-08-20 14:03:23 UTC Thu 2026-08-20 14:26:51 UTC
+
+### UPTIME ###
+----------------------------------------------------------------------
+ 14:28:15 up 24 min,  2 users,  load average: 0.08, 0.19, 0.16
+
+### LAST REBOOTS ###
+----------------------------------------------------------------------
+ubuntu   pts/0        106.200.30.86    Thu Aug 20 14:03   still logged in
+runlevel (to lvl 5)   7.0.0-1010-aws   Thu Aug 20 14:03   still running
+reboot   system boot  7.0.0-1010-aws   Thu Aug 20 14:03   still running
+shutdown system down  7.0.0-1010-aws   Thu Aug 20 14:03 - 14:03  (00:00)
+ubuntu   pts/1        106.200.30.86    Thu Aug 20 14:02 - 14:03  (00:00)
+ubuntu   pts/1        106.200.30.86    Thu Aug 20 13:54 - 14:02  (00:07)
+ubuntu   pts/3        106.200.30.86    Thu Aug 20 11:27 - 14:03  (02:35)
+ubuntu   pts/2        106.200.30.86    Thu Aug 20 11:27 - 14:03  (02:36)
+ubuntu   pts/1        106.200.30.86    Thu Aug 20 09:09 - 11:58  (02:48)
+ubuntu   pts/0        106.200.30.86    Thu Aug 20 08:46 - 10:04  (01:17)
+ubuntu   pts/0        106.200.29.48    Sun Aug 16 19:10 - 00:54  (05:44)
+runlevel (to lvl 5)   7.0.0-1010-aws   Sun Aug 16 19:09 - 14:03 (3+18:53)
+reboot   system boot  7.0.0-1010-aws   Sun Aug 16 19:09 - 14:03 (3+18:53)
+shutdown system down  7.0.0-1010-aws   Sun Aug 16 16:53 - 19:09  (02:16)
+ubuntu   pts/0        106.200.26.188   Thu Aug 13 14:02 - 19:05  (05:02)
+runlevel (to lvl 5)   7.0.0-1010-aws   Thu Aug 13 14:02 - 16:53 (3+02:50)
+reboot   system boot  7.0.0-1010-aws   Thu Aug 13 14:02 - 16:53 (3+02:51)
+shutdown system down  6.17.0-1017-aws  Thu Aug 13 14:02 - 14:02  (00:00)
+ubuntu   pts/0        106.200.26.188   Thu Aug 13 13:55 - 14:01  (00:05)
+ubuntu   pts/0        106.200.26.188   Wed Aug 12 09:12 - 18:28  (09:15)
+
+### OOM / MEMORY ###
+----------------------------------------------------------------------
+NO EVENTS FOUND
+
+### KERNEL PANIC / OOPS ###
+----------------------------------------------------------------------
+NO EVENTS FOUND
+
+### HARDWARE ###
+----------------------------------------------------------------------
+Aug 16 19:09:51 ip-172-31-21-130 kernel: EDAC MC: Ver: 3.0.0
+Aug 16 19:09:51 ip-172-31-21-130 systemd[1]: systemd 255.4-1ubuntu8.17 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+Aug 16 19:09:56 ip-172-31-21-130 chronyd[654]: Loaded seccomp filter (level 1)
+Aug 19 08:27:33 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[562]:         status code: 400, request id: ac6604b6-cf64-4ecc-a459-f6b72c8b5328
+
+### STORAGE / I/O ###
+----------------------------------------------------------------------
+Aug 16 19:09:50 ip-172-31-21-130 kernel: Command line: BOOT_IMAGE=/vmlinuz-7.0.0-1010-aws root=PARTUUID=fe814a98-f7fd-4c3d-9642-c18fe64c6e5d ro console=tty1 console=ttyS0 nvme_core.io_timeout=4294967295 panic=-1
+Aug 16 19:09:51 ip-172-31-21-130 kernel: Kernel command line: BOOT_IMAGE=/vmlinuz-7.0.0-1010-aws root=PARTUUID=fe814a98-f7fd-4c3d-9642-c18fe64c6e5d ro console=tty1 console=ttyS0 nvme_core.io_timeout=4294967295 panic=-1
+Aug 16 19:09:51 ip-172-31-21-130 kernel: SCSI subsystem initialized
+Aug 16 19:09:51 ip-172-31-21-130 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+Aug 16 19:09:51 ip-172-31-21-130 kernel: scsi host0: ata_piix
+Aug 16 19:09:51 ip-172-31-21-130 kernel: scsi host1: ata_piix
+Aug 16 19:09:55 ip-172-31-21-130 systemd[1]: Listening on iscsid.socket - Open-iSCSI iscsid Socket.
+Aug 16 19:09:55 ip-172-31-21-130 systemd[1]: open-iscsi.service - Login to default iSCSI targets was skipped because no trigger condition checks were met.
+Aug 20 14:03:03 ip-172-31-21-130 finalrd[20674]: run-parts: executing /usr/share/finalrd/open-iscsi.finalrd setup
+Aug 20 14:03:10 ip-172-31-21-130 systemd[1]: iscsid.socket: Deactivated successfully.
+Aug 20 14:03:10 ip-172-31-21-130 systemd[1]: Closed iscsid.socket - Open-iSCSI iscsid Socket.
+
+### FILESYSTEM ###
+----------------------------------------------------------------------
+NO EVENTS FOUND
+
+### WATCHDOG / LOCKUP ###
+----------------------------------------------------------------------
+Aug 16 19:09:51 ip-172-31-21-130 kernel: NMI watchdog: Perf NMI watchdog permanently disabled
+
+### SEGFAULT ###
+----------------------------------------------------------------------
+NO EVENTS FOUND
+
+### NETWORK ###
+----------------------------------------------------------------------
+Aug 16 19:09:53 ip-172-31-21-130 systemd-networkd[501]: enX0: Link DOWN
+
+### REBOOT / SHUTDOWN ###
+----------------------------------------------------------------------
+Aug 16 19:09:52 ip-172-31-21-130 systemd[1]: Starting finalrd.service - Create final runtime dir for shutdown pivot root...
+Aug 16 19:09:52 ip-172-31-21-130 systemd[1]: Finished finalrd.service - Create final runtime dir for shutdown pivot root.
+Aug 16 19:09:52 ip-172-31-21-130 systemd[1]: Starting systemd-update-utmp.service - Record System Boot/Shutdown in UTMP...
+Aug 16 19:09:52 ip-172-31-21-130 systemd[1]: Finished systemd-update-utmp.service - Record System Boot/Shutdown in UTMP.
+Aug 16 19:09:55 ip-172-31-21-130 cron[549]: (CRON) INFO (Running @reboot jobs)
+Aug 16 19:09:55 ip-172-31-21-130 systemd[1]: secureboot-db.service - Secure Boot updates for DB and DBX was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/db-d719b2cb-3d3a-4596-a3bc-dad00e67656f).
+Aug 16 19:09:55 ip-172-31-21-130 systemd[1]: ua-reboot-cmds.service - Ubuntu Pro reboot cmds was skipped because of an unmet condition check (ConditionPathExists=/var/lib/ubuntu-advantage/private/machine-token.json).
+Aug 16 19:09:56 ip-172-31-21-130 systemd[1]: Started unattended-upgrades.service - Unattended Upgrades Shutdown.
+Aug 17 00:55:05 ip-172-31-21-130 systemd[898]: Reached target shutdown.target - Shutdown.
+Aug 20 14:03:03 ip-172-31-21-130 sudo[20540]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai ; USER=root ; COMMAND=/usr/sbin/reboot
+Aug 20 14:03:03 ip-172-31-21-130 systemd-logind[573]: The system will reboot now!
+Aug 20 14:03:03 ip-172-31-21-130 systemd-logind[573]: System is rebooting.
+Aug 20 14:03:03 ip-172-31-21-130 systemd[1]: Stopped unattended-upgrades.service - Unattended Upgrades Shutdown.
+Aug 20 14:03:03 ip-172-31-21-130 systemd[1]: Stopping finalrd.service - Create final runtime dir for shutdown pivot root...
+Aug 20 14:03:03 ip-172-31-21-130 systemd[1]: snapd.system-shutdown.service - Ubuntu core (all-snaps) system shutdown helper setup service was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/finalrd).
+Aug 20 14:03:03 ip-172-31-21-130 systemd[1]: plymouth-reboot.service - Show Plymouth Reboot Screen was skipped because of an unmet condition check (ConditionKernelCommandLine=splash).
+Aug 20 14:03:03 ip-172-31-21-130 systemd[15438]: Reached target shutdown.target - Shutdown.
+Aug 20 14:03:03 ip-172-31-21-130 systemd[1]: Stopped finalrd.service - Create final runtime dir for shutdown pivot root.
+Aug 20 14:03:10 ip-172-31-21-130 systemd[1]: Stopping systemd-update-utmp.service - Record System Boot/Shutdown in UTMP...
+Aug 20 14:03:10 ip-172-31-21-130 systemd[1]: Stopped systemd-update-utmp.service - Record System Boot/Shutdown in UTMP.
+Aug 20 14:03:10 ip-172-31-21-130 systemd[1]: Reached target shutdown.target - System Shutdown.
+Aug 20 14:03:10 ip-172-31-21-130 systemd[1]: Reached target final.target - Late Shutdown Services.
+Aug 20 14:03:10 ip-172-31-21-130 systemd[1]: systemd-reboot.service: Deactivated successfully.
+Aug 20 14:03:10 ip-172-31-21-130 systemd[1]: Finished systemd-reboot.service - System Reboot.
+Aug 20 14:03:10 ip-172-31-21-130 systemd[1]: Reached target reboot.target - System Reboot.
+Aug 20 14:03:10 ip-172-31-21-130 systemd-shutdown[1]: Syncing filesystems and block devices.
+Aug 20 14:03:10 ip-172-31-21-130 systemd-shutdown[1]: Sending SIGTERM to remaining processes...
+
+### SYSTEMD FAILURE ###
+----------------------------------------------------------------------
+NO EVENTS FOUND
+
+### MEMORY STATUS AFTER BOOT ###
+----------------------------------------------------------------------
+total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       519Mi       6.5Gi       1.8Mi       1.0Gi       7.2Gi
+Swap:             0B          0B          0B
+
+### DISK STATUS AFTER BOOT ###
+----------------------------------------------------------------------
+Filesystem     Type   Size  Used Avail Use% Mounted on
+/dev/root      ext4    77G  9.7G   67G  13% /
+tmpfs          tmpfs  3.9G     0  3.9G   0% /dev/shm
+tmpfs          tmpfs  1.6G  888K  1.6G   1% /run
+tmpfs          tmpfs  5.0M     0  5.0M   0% /run/lock
+/dev/xvda16    ext4   881M  183M  637M  23% /boot
+/dev/xvda15    vfat   105M  6.2M   99M   6% /boot/efi
+tmpfs          tmpfs  794M   12K  794M   1% /run/user/1000
+
+### KDUMP SERVICE ###
+----------------------------------------------------------------------
+inactive
+
+### KDUMP CONFIGURATION ###
+----------------------------------------------------------------------
+/bin/sh: 1: kdump-config: not found
+
+### CRASH / VMCORE FILES ###
+----------------------------------------------------------------------
+NO EVENTS FOUND
