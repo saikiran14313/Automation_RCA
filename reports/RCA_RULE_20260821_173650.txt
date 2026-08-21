@@ -1,0 +1,58 @@
+LINUX REBOOT RCA REPORT
+========================================
+
+Server: ip-172-31-21-130
+Analysis Time: 2026-08-21 17:36:50.065324
+Analysis Mode: LOCAL RULE ENGINE
+Gemini Model: N/A
+Evidence File: ai_evidence_20260821_162546.txt
+Evidence Size: 164,608 characters
+
+PROBABLE ROOT CAUSE
+-------------------
+Kernel Panic
+
+CAUSE OF REBOOT
+---------------
+The reboot is associated with a kernel panic signature in the previous-boot evidence.
+
+REBOOT TYPE
+-----------
+UNKNOWN
+
+CONFIDENCE
+----------
+HIGH
+
+SERVER HEALTH
+-------------
+60/100
+WARNING
+
+KDUMP
+-----
+READY
+
+VMCORE
+------
+AVAILABLE
+
+SUPPORTING EVIDENCE
+-------------------
+
+
+RECOMMENDED ACTION
+------------------
+Review kernel logs and VMcore if available; verify kdump configuration for future crash analysis.
+
+AI FINAL SUMMARY
+----------------
+Gemini explanation unavailable.
+
+AI PRIMARY RCA (VALIDATED)
+--------------------------
+Kernel Panic
+
+RAW EVIDENCE
+------------
+/home/ubuntu/linux-rcc-ai/logs/evidence/ai_evidence_20260821_162546.txt

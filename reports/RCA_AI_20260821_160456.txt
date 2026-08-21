@@ -1,0 +1,169 @@
+LINUX REBOOT INTELLIGENCE CENTER
+=================================
+
+Server:
+ip-172-31-21-130
+
+Analysis Time:
+2026-08-21 16:04:56.180741
+
+Evidence:
+/home/ubuntu/linux-rcc-ai/logs/evidence/ai_evidence_20260821_110956.txt
+
+Evidence Size:
+183,294 characters
+
+
+PRIMARY RCA
+===========
+
+Root Cause:
+UNKNOWN
+
+Confidence:
+HIGH
+
+Health Score:
+95/100
+
+Kdump:
+READY
+
+VMcore:
+NOT AVAILABLE
+
+
+RCA AUTHORITY
+=============
+
+Primary RCA Engine:
+LOCAL RULE ENGINE
+
+AI Role:
+EXPLANATION / CORRELATION ONLY
+
+AI MAY NOT OVERRIDE LOCAL RCA.
+
+
+LOCAL RULE REPORT
+=================
+
+LINUX REBOOT LOCAL RULE ENGINE RCA REPORT
+================================================================================
+
+Server: ip-172-31-21-130
+Evidence: ai_evidence_20260821_110956.txt
+Analysis Time: 2026-08-21 16:04:35.990573
+Analysis Mode: LOCAL RULE ENGINE
+Confidence: HIGH
+Health Score: 95/100
+Health Status: HEALTHY
+
+PROBABLE ROOT CAUSE
+--------------------------------------------------------------------------------
+Manual / Planned Reboot
+
+CAUSE OF REBOOT
+--------------------------------------------------------------------------------
+The server was manually/planned rebooted by a user through a user-initiated reboot command.
+
+Evidence:
+Aug 21 11:07:44 ip-172-31-21-130 sudo[6179]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=root ; COMMAND=/usr/sbin/shutdown -r
+
+REBOOT TYPE
+--------------------------------------------------------------------------------
+MANUAL
+
+ROOT CAUSE MATRIX
+--------------------------------------------------------------------------------
+Kernel Panic: NOT DETECTED
+Kernel OOPS: NOT DETECTED
+OOM: NOT DETECTED
+Hardware Error: NOT DETECTED
+Storage / I/O: NOT DETECTED
+Filesystem: NOT DETECTED
+Watchdog / Lockup: NOT DETECTED
+Systemd Failure: NOT DETECTED
+Manual Reboot: DETECTED
+Cron Reboot: NOT DETECTED
+Kdump: READY
+VMcore: NOT AVAILABLE
+
+HEALTH IMPACT
+--------------------------------------------------------------------------------
+Recent reboot detected: -5
+
+REBOOT TIMELINE
+--------------------------------------------------------------------------------
+Aug 21 11:07:44 ip-172-31-21-130 sudo[6179]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=root ; COMMAND=/usr/sbin/shutdown -r
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: systemd-reboot.service: Deactivated successfully.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Finished systemd-reboot.service - System Reboot.
+
+RECOMMENDED ACTION
+--------------------------------------------------------------------------------
+Verify the reboot against the approved change or maintenance window.
+
+
+
+AI ANALYSIS
+===========
+
+### 1. INCIDENT SUMMARY
+Server **ip-172-31-21-130** experienced a system reboot on August 21, 2026, completing system startup at 11:09:04 UTC. The local system health score is **95/100 (HEALTHY)**, with a minor 5-point deduction attributed solely to the recent reboot event. Confidence in the analysis is **HIGH**.
+
+---
+
+### 2. PRIMARY RCA
+**UNKNOWN**
+
+---
+
+### 3. WHY THIS RCA WAS SELECTED
+The primary root cause status provided by the authoritative rule engine is **UNKNOWN**. 
+
+While rule engine logs reflect a clean user-initiated system reboot via `shutdown -r`, the primary classification output designates the state as UNKNOWN. No critical system anomalies—such as kernel panics, Out-Of-Memory (OOM) kills, storage failures, hardware faults, or watchdog resets—were detected leading up to the shutdown event.
+
+---
+
+### 4. SUPPORTING EVIDENCE
+* **User Command Log:**
+  `Aug 21 11:07:44 ip-172-31-21-130 sudo[6179]: ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=root ; COMMAND=/usr/sbin/shutdown -r`
+* **Clean Shutdown Completion Log:**
+  `Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: systemd-reboot.service: Deactivated successfully.`
+  `Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Finished systemd-reboot.service - System Reboot.`
+* **System Uptime:**
+  `Fri Aug 21 11:09:56 UTC 2026` — `up 0 min`
+
+---
+
+### 5. OTHER DETECTED EVENTS
+The following background events and non-fatal boot warnings were observed in the kernel and journal logs. These are standard operational messages and did **not** contribute to the reboot:
+
+* **irqbalance Warnings:** `irqbalance[647]: Cannot change IRQ 0/48-59 affinity: No such file or directory` (unmanaged affinity handling during boot).
+* **Firmware/Hardware Warnings:** Direct load failure for `regulatory.db` (error -2) and Xen HVM ACPI `PNP0A03` MMCONFIG config warnings.
+* **Service Environment Warnings:** Unset environment variables evaluated to empty strings for `acpid.service`, `cron.service`, and `irqbalance.service`.
+
+---
+
+### 6. KDUMP / VMCORE ANALYSIS
+* **Kdump:** **READY**. The crashdump service is configured with `crashkernel=2G-4G:320M,4G-32G:512M...` (512MB reserved) and is fully prepared to capture system memory state in the event of a future unexpected kernel crash.
+* **VMcore:** **NOT AVAILABLE**. No crash dump file was generated because the reboot was clean and was not triggered by a kernel panic or hard system crash.
+
+---
+
+### 7. RECOMMENDED INVESTIGATION
+1. **Change Control Verification:** Cross-reference the reboot timestamp (`2026-08-21 11:07:44 UTC`) with change request tickets or scheduled maintenance windows.
+2. **Operator Inquiry:** Verify with user `ubuntu` regarding the explicit execution of `/usr/sbin/shutdown -r` from terminal `pts/1`.
+3. **No Further Technical Action Needed:** No underlying OS, hardware, or kernel instability was identified.
+
+
+FINAL DECISION
+==============
+
+The Local Rule Engine is the authoritative source
+for the primary reboot RCA.
+
+Gemini AI is used only to provide additional
+explanation and contextual analysis.
+
+Evidence was preserved separately.

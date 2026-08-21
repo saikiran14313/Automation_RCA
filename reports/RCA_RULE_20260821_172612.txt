@@ -1,0 +1,49 @@
+LINUX REBOOT LOCAL RULE ENGINE RCA REPORT
+================================================================================
+
+Server: ip-172-31-21-130
+Evidence: ai_evidence_20260821_162546.txt
+Analysis Time: 2026-08-21 17:26:12.746504
+Analysis Mode: LOCAL RULE ENGINE
+Confidence: HIGH
+Health Score: 70/100
+Health Status: WARNING
+
+PROBABLE ROOT CAUSE
+--------------------------------------------------------------------------------
+Kernel Panic
+
+CAUSE OF REBOOT
+--------------------------------------------------------------------------------
+The server rebooted following a kernel panic detected in the previous-boot kernel logs.
+
+REBOOT TYPE
+--------------------------------------------------------------------------------
+KERNEL
+
+ROOT CAUSE MATRIX
+--------------------------------------------------------------------------------
+Kernel Panic: DETECTED
+Kernel OOPS: NOT DETECTED
+OOM: NOT DETECTED
+Hardware Error: NOT DETECTED
+Storage / I/O: NOT DETECTED
+Filesystem: NOT DETECTED
+Watchdog / Lockup: NOT DETECTED
+Systemd Failure: NOT DETECTED
+Manual Reboot: NOT DETECTED
+Cron Reboot: NOT DETECTED
+Kdump: READY
+VMcore: AVAILABLE
+
+HEALTH IMPACT
+--------------------------------------------------------------------------------
+Kernel panic detected: -30
+
+REBOOT TIMELINE
+--------------------------------------------------------------------------------
+No reboot timeline events found.
+
+RECOMMENDED ACTION
+--------------------------------------------------------------------------------
+Review kernel panic messages and verify kdump/VMcore availability.

@@ -1,0 +1,164 @@
+LINUX REBOOT INTELLIGENCE CENTER
+=================================
+
+Server:
+ip-172-31-21-130
+
+Analysis Time:
+2026-08-21 16:13:36.567351
+
+Evidence:
+/home/ubuntu/linux-rcc-ai/logs/evidence/ai_evidence_20260821_110956.txt
+
+Evidence Size:
+183,294 characters
+
+
+PRIMARY RCA
+===========
+
+Root Cause:
+UNKNOWN
+
+Confidence:
+HIGH
+
+Health Score:
+95/100
+
+Kdump:
+READY
+
+VMcore:
+NOT AVAILABLE
+
+
+RCA AUTHORITY
+=============
+
+Primary RCA Engine:
+LOCAL RULE ENGINE
+
+AI Role:
+EXPLANATION / CORRELATION ONLY
+
+AI MAY NOT OVERRIDE LOCAL RCA.
+
+
+LOCAL RULE REPORT
+=================
+
+LINUX REBOOT LOCAL RULE ENGINE RCA REPORT
+================================================================================
+
+Server: ip-172-31-21-130
+Evidence: ai_evidence_20260821_110956.txt
+Analysis Time: 2026-08-21 16:13:18.253985
+Analysis Mode: LOCAL RULE ENGINE
+Confidence: HIGH
+Health Score: 95/100
+Health Status: HEALTHY
+
+PROBABLE ROOT CAUSE
+--------------------------------------------------------------------------------
+Manual / Planned Reboot
+
+CAUSE OF REBOOT
+--------------------------------------------------------------------------------
+The server was manually/planned rebooted by a user through a user-initiated reboot command.
+
+Evidence:
+Aug 21 11:07:44 ip-172-31-21-130 sudo[6179]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=root ; COMMAND=/usr/sbin/shutdown -r
+
+REBOOT TYPE
+--------------------------------------------------------------------------------
+MANUAL
+
+ROOT CAUSE MATRIX
+--------------------------------------------------------------------------------
+Kernel Panic: NOT DETECTED
+Kernel OOPS: NOT DETECTED
+OOM: NOT DETECTED
+Hardware Error: NOT DETECTED
+Storage / I/O: NOT DETECTED
+Filesystem: NOT DETECTED
+Watchdog / Lockup: NOT DETECTED
+Systemd Failure: NOT DETECTED
+Manual Reboot: DETECTED
+Cron Reboot: NOT DETECTED
+Kdump: READY
+VMcore: NOT AVAILABLE
+
+HEALTH IMPACT
+--------------------------------------------------------------------------------
+Recent reboot detected: -5
+
+REBOOT TIMELINE
+--------------------------------------------------------------------------------
+Aug 21 11:07:44 ip-172-31-21-130 sudo[6179]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=root ; COMMAND=/usr/sbin/shutdown -r
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: systemd-reboot.service: Deactivated successfully.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Finished systemd-reboot.service - System Reboot.
+
+RECOMMENDED ACTION
+--------------------------------------------------------------------------------
+Verify the reboot against the approved change or maintenance window.
+
+
+
+AI ANALYSIS
+===========
+
+### 1. INCIDENT SUMMARY
+Server `ip-172-31-21-130` experienced a system reboot on August 21, 2026, at approximately 11:08:51 UTC. The system health score is currently 95/100 (Healthy), with the minor score reduction attributed solely to the recent reboot event. The reboot completed gracefully following a user-initiated shutdown command.
+
+---
+
+### 2. PRIMARY RCA
+**UNKNOWN**
+
+---
+
+### 3. WHY THIS RCA WAS SELECTED
+The primary root cause classification output from the authoritative Local Rule Engine is set to **UNKNOWN**. 
+
+Although evidence shows a manual shutdown command was issued, no system failures, kernel panics, Out-Of-Memory (OOM) conditions, hardware faults, or service crashes were detected prior to the reboot.
+
+---
+
+### 4. SUPPORTING EVIDENCE
+* **User-Initiated Command:**
+  `Aug 21 11:07:44 ip-172-31-21-130 sudo[6179]: ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=root ; COMMAND=/usr/sbin/shutdown -r`
+* **Clean System Shutdown:**
+  `Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: systemd-reboot.service: Deactivated successfully.`
+* **Matrix Checks:** Kernel Panic, Kernel OOPS, OOM, Hardware, Storage/IO, Filesystem, and Systemd failures all evaluated to **NOT DETECTED**.
+
+---
+
+### 5. OTHER DETECTED EVENTS
+The following routine warnings were logged during system boot and are identified as background operational noise rather than reboot triggers:
+* **Hypervisor / Device Initialization:** `Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!` and WakeOnLan configuration warnings (`Operation not supported`).
+* **Interrupt Balancing:** `irqbalance` messages indicating inability to change affinity for unmanaged IRQs (e.g., `IRQ 0 affinity is now unmanaged`).
+
+---
+
+### 6. KDUMP / VMCORE ANALYSIS
+* **Kdump:** **READY** — Kdump is properly configured (`crashkernel` reserved in kernel cmdline) and active to capture crash dumps in the event of a future fatal kernel fault.
+* **VMcore:** **NOT AVAILABLE** — No vmcore dump was created because the kernel did not crash.
+
+---
+
+### 7. RECOMMENDED INVESTIGATION
+1. **Cross-Reference Change Requests:** Verify if the `/usr/sbin/shutdown -r` executed by user `ubuntu` at 11:07:44 UTC corresponds to an approved maintenance window or administrative task.
+2. **User Audit:** Confirm with the user/administrator who initiated the command to close out the incident.
+
+
+FINAL DECISION
+==============
+
+The Local Rule Engine is the authoritative source
+for the primary reboot RCA.
+
+Gemini AI is used only to provide additional
+explanation and contextual analysis.
+
+Evidence was preserved separately.

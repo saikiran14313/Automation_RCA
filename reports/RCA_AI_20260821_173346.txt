@@ -1,0 +1,62 @@
+LINUX REBOOT RCA REPORT
+========================================
+
+Server: ip-172-31-21-130
+Analysis Time: 2026-08-21 17:33:46.123807
+Analysis Mode: LOCAL RCA + GEMINI EXPLANATION
+Gemini Model: gemini-3.6-flash
+Evidence File: ai_evidence_20260821_162546.txt
+Evidence Size: 164,608 characters
+
+PROBABLE ROOT CAUSE
+-------------------
+Watchdog / Lockup
+
+CAUSE OF REBOOT
+---------------
+The evidence contains watchdog, lockup, or hung-task signatures associated with the incident.
+
+REBOOT TYPE
+-----------
+CRON
+
+CONFIDENCE
+----------
+HIGH
+
+SERVER HEALTH
+-------------
+60/100
+WARNING
+
+KDUMP
+-----
+READY
+
+VMCORE
+------
+NOT AVAILABLE
+
+SUPPORTING EVIDENCE
+-------------------
+- Authoritative Local Rule Engine output indicates Watchdog / Lockup with HIGH confidence.
+- Deterministic facts report watchdog=true, cron_reboot=true, and recurring=true.
+- Kdump service state is active and current state shows 'ready to kdump' targeting /var/crash.
+- No kernel panic, oops, or crash vmcore files were recorded in the evidence.
+- Systemd logs record shutdown activity for finalrd.service and systemd-update-utmp.service at Aug 21 16:24:04.
+
+RECOMMENDED ACTION
+------------------
+Inspect syslogs or journald logs prior to Aug 21 16:24:04 for potential NMI, hung task, or soft/hard lockup traces. Review system cron schedules to identify tasks executing immediately prior to the reboot event. Verify hardware/software watchdog daemon configurations and timeout settings. Trigger a test kdump crash to confirm that crash dump files successfully write to /var/crash during kernel lockups.
+
+AI FINAL SUMMARY
+----------------
+The system experienced an incident attributed to a Watchdog / Lockup condition as determined by the authoritative Local Rule Engine. The incident occurred in a recurring context with cron reboot flags set and standard systemd shutdown activity recorded around Aug 21 16:24:04. Kdump was configured and active in a ready state, but no crash dump files were created. The exact failing subsystem is not established by the available evidence.
+
+AI PRIMARY RCA (VALIDATED)
+--------------------------
+Watchdog / Lockup
+
+RAW EVIDENCE
+------------
+/home/ubuntu/linux-rcc-ai/logs/evidence/ai_evidence_20260821_162546.txt

@@ -283,9 +283,29 @@ kdump_section = (
     + kdump_config_section
 )
 
-crash_section = get_section(
+# ============================================================
+# EXTRACT CRASH / VMCORE EVIDENCE
+# ============================================================
+
+# Ubuntu collector uses "VMCORE / CRASH FILES".
+# Keep the old heading as a fallback for older evidence files.
+
+# ============================================================
+# EXTRACT CRASH / VMCORE EVIDENCE
+# ============================================================
+
+# Support both headings used by different collector versions.
+crash_section_match = re.search(
+    r"###\s*(?:VMCORE\s*/\s*CRASH\s*FILES|CRASH\s*/\s*VMCORE\s*FILES)\s*###"
+    r"(.*?)(?=\n###|\Z)",
     evidence,
-    "CRASH / VMCORE FILES",
+    re.IGNORECASE | re.DOTALL,
+)
+
+crash_section = (
+    crash_section_match.group(1).strip()
+    if crash_section_match
+    else ""
 )
 
 
@@ -555,28 +575,50 @@ else:
 
 
 # ============================================================
-# VMCORE
+# VMCORE / KDUMP CRASH DUMP
 # ============================================================
 
 vmcore_status = "NOT AVAILABLE"
 
 vmcore_real_patterns = [
-    r"^\s*.*\/vmcore(?:\s|$)",
-    r"^\s*.*vmcore-dmesg(?:\s|$)",
-    r"^\s*.*vmcore\.[0-9]+",
+    # Standard Kdump VMcore
+    r"/(?:var/)?crash/.*/vmcore(?:\s|$)",
+    r"/(?:var/)?crash/.*/vmcore-dmesg(?:\s|$)",
+    r"/(?:var/)?crash/.*/vmcore\.[0-9]+(?:\s|$)",
+
+    # Ubuntu Kdump format
+    r"/(?:var/)?crash/.*/dump\.[0-9]+(?:\s|$)",
+    r"/(?:var/)?crash/.*/dmesg\.[0-9]+(?:\s|$)",
 ]
 
+# First inspect the extracted crash section.
 for pattern in vmcore_real_patterns:
-
     if re.search(
         pattern,
         crash_section,
         re.IGNORECASE | re.MULTILINE,
     ):
-
         vmcore_status = "AVAILABLE"
         break
 
+# Fallback: if the collector placed the crash files in another
+# section, search the complete evidence as well.
+if vmcore_status != "AVAILABLE":
+    for pattern in vmcore_real_patterns:
+        if re.search(
+            pattern,
+            evidence,
+            re.IGNORECASE | re.MULTILINE,
+        ):
+            vmcore_status = "AVAILABLE"
+            break
+
+# A generated Kdump dump is strong evidence that the previous
+# boot entered the crash-dump path.
+kdump_crash_dump = vmcore_status == "AVAILABLE"
+
+if kdump_crash_dump:
+    kernel_panic = True
 
 # ============================================================
 # REBOOT TIMELINE
@@ -893,6 +935,34 @@ elif systemd_failure:
 
 
 # ============================================================
+# FINAL CRASH-DUMP RCA RECONCILIATION
+# ============================================================
+
+# Kdump detection occurs after the initial rule-priority decision.
+# Reconcile the final RCA here so an actual crash dump cannot end
+# with "Unknown" simply because it was discovered later.
+if kdump_crash_dump:
+    kernel_panic = True
+
+    if root_cause == "Unknown":
+        root_cause = "Kernel Panic"
+
+        cause = (
+            "The server entered the Kdump crash path and a crash dump "
+            "was generated. This is strong evidence of a kernel crash "
+            "preceding the reboot."
+        )
+
+        confidence = "HIGH"
+        reboot_type = "KERNEL"
+
+        recommended_action = (
+            "Analyze the generated crash dump and dmesg file, "
+            "review the kernel panic evidence, and retain the dump "
+            "for further investigation."
+        )
+
+# ============================================================
 # DETECTED EVENTS
 # ============================================================
 
@@ -902,6 +972,12 @@ if kernel_panic:
 
     detected_events.append(
         ("Kernel Panic", "HIGH")
+    )
+
+if kdump_crash_dump:
+
+    detected_events.append(
+        ("Kdump Crash Dump", "HIGH")
     )
 
 if kernel_oops:
@@ -1331,7 +1407,7 @@ if vmcore_status == "AVAILABLE":
 
     matrix.add_row(
         "VMcore",
-        "[bold green]✓ AVAILABLE[/bold green]",
+        "[bold green]● AVAILABLE[/bold green]",
     )
 
 else:

@@ -1,0 +1,120 @@
+LINUX REBOOT INTELLIGENCE CENTER
+=================================
+
+Server:
+ip-172-31-21-130
+
+Analysis Time:
+2026-08-21 16:14:33.812632
+
+Evidence:
+/home/ubuntu/linux-rcc-ai/logs/evidence/ai_evidence_20260821_161353.txt
+
+Evidence Size:
+188,335 characters
+
+
+PRIMARY RCA
+===========
+
+Root Cause:
+UNKNOWN
+
+Confidence:
+LOW
+
+Health Score:
+100/100
+
+Kdump:
+READY
+
+VMcore:
+NOT AVAILABLE
+
+
+RCA AUTHORITY
+=============
+
+Primary RCA Engine:
+LOCAL RULE ENGINE
+
+AI Role:
+EXPLANATION / CORRELATION ONLY
+
+AI MAY NOT OVERRIDE LOCAL RCA.
+
+
+LOCAL RULE REPORT
+=================
+
+LINUX REBOOT LOCAL RULE ENGINE RCA REPORT
+================================================================================
+
+Server: ip-172-31-21-130
+Evidence: ai_evidence_20260821_161353.txt
+Analysis Time: 2026-08-21 16:14:21.047509
+Analysis Mode: LOCAL RULE ENGINE
+Confidence: LOW
+Health Score: 100/100
+Health Status: HEALTHY
+
+PROBABLE ROOT CAUSE
+--------------------------------------------------------------------------------
+Unknown
+
+CAUSE OF REBOOT
+--------------------------------------------------------------------------------
+The exact cause of the reboot could not be determined from the available evidence.
+
+REBOOT TYPE
+--------------------------------------------------------------------------------
+UNKNOWN
+
+ROOT CAUSE MATRIX
+--------------------------------------------------------------------------------
+Kernel Panic: NOT DETECTED
+Kernel OOPS: NOT DETECTED
+OOM: NOT DETECTED
+Hardware Error: NOT DETECTED
+Storage / I/O: NOT DETECTED
+Filesystem: NOT DETECTED
+Watchdog / Lockup: NOT DETECTED
+Systemd Failure: NOT DETECTED
+Manual Reboot: NOT DETECTED
+Cron Reboot: NOT DETECTED
+Kdump: READY
+VMcore: NOT AVAILABLE
+
+HEALTH IMPACT
+--------------------------------------------------------------------------------
+No health-impacting events detected.
+
+REBOOT TIMELINE
+--------------------------------------------------------------------------------
+No reboot timeline events found.
+
+RECOMMENDED ACTION
+--------------------------------------------------------------------------------
+Review the raw previous-boot logs and correlate the reboot with the approved change or maintenance window.
+
+
+
+AI ANALYSIS
+===========
+
+Gemini AI was unavailable.
+
+The Local Rule Engine remains the authoritative RCA source. No AI conclusion was used.
+
+
+FINAL DECISION
+==============
+
+The Local Rule Engine is the authoritative source
+for the primary reboot RCA.
+
+Gemini AI is used only to provide additional
+explanation and contextual analysis.
+
+Evidence was preserved separately.

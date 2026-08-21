@@ -1,0 +1,120 @@
+LINUX REBOOT INTELLIGENCE CENTER
+=================================
+
+Server:
+ip-172-31-21-130
+
+Analysis Time:
+2026-08-21 17:17:56.084200
+
+Evidence:
+/home/ubuntu/linux-rcc-ai/logs/evidence/ai_evidence_20260821_162546.txt
+
+Evidence Size:
+164,608 characters
+
+
+PRIMARY RCA
+===========
+
+Root Cause:
+UNKNOWN
+
+Confidence:
+HIGH
+
+Health Score:
+70/100
+
+Kdump:
+READY
+
+VMcore:
+AVAILABLE
+
+
+RCA AUTHORITY
+=============
+
+Primary RCA Engine:
+LOCAL RULE ENGINE
+
+AI Role:
+EXPLANATION / CORRELATION ONLY
+
+AI MAY NOT OVERRIDE LOCAL RCA.
+
+
+LOCAL RULE REPORT
+=================
+
+LINUX REBOOT LOCAL RULE ENGINE RCA REPORT
+================================================================================
+
+Server: ip-172-31-21-130
+Evidence: ai_evidence_20260821_162546.txt
+Analysis Time: 2026-08-21 17:17:43.607486
+Analysis Mode: LOCAL RULE ENGINE
+Confidence: HIGH
+Health Score: 70/100
+Health Status: WARNING
+
+PROBABLE ROOT CAUSE
+--------------------------------------------------------------------------------
+Kernel Panic
+
+CAUSE OF REBOOT
+--------------------------------------------------------------------------------
+The server rebooted following a kernel panic detected in the previous-boot kernel logs.
+
+REBOOT TYPE
+--------------------------------------------------------------------------------
+KERNEL
+
+ROOT CAUSE MATRIX
+--------------------------------------------------------------------------------
+Kernel Panic: DETECTED
+Kernel OOPS: NOT DETECTED
+OOM: NOT DETECTED
+Hardware Error: NOT DETECTED
+Storage / I/O: NOT DETECTED
+Filesystem: NOT DETECTED
+Watchdog / Lockup: NOT DETECTED
+Systemd Failure: NOT DETECTED
+Manual Reboot: NOT DETECTED
+Cron Reboot: NOT DETECTED
+Kdump: READY
+VMcore: AVAILABLE
+
+HEALTH IMPACT
+--------------------------------------------------------------------------------
+Kernel panic detected: -30
+
+REBOOT TIMELINE
+--------------------------------------------------------------------------------
+No reboot timeline events found.
+
+RECOMMENDED ACTION
+--------------------------------------------------------------------------------
+Review kernel panic messages and verify kdump/VMcore availability.
+
+
+
+AI ANALYSIS
+===========
+
+Gemini AI was unavailable.
+
+The Local Rule Engine remains the authoritative RCA source. No AI conclusion was used.
+
+
+FINAL DECISION
+==============
+
+The Local Rule Engine is the authoritative source
+for the primary reboot RCA.
+
+Gemini AI is used only to provide additional
+explanation and contextual analysis.
+
+Evidence was preserved separately.

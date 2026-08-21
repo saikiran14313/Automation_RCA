@@ -1,0 +1,148 @@
+LINUX REBOOT INTELLIGENCE CENTER
+=================================
+
+Server:
+ip-172-31-21-130
+
+Analysis Time:
+2026-08-21 17:26:29.978724
+
+Evidence:
+/home/ubuntu/linux-rcc-ai/logs/evidence/ai_evidence_20260821_162546.txt
+
+Evidence Size:
+164,608 characters
+
+
+PRIMARY RCA
+===========
+
+Root Cause:
+UNKNOWN
+
+Confidence:
+HIGH
+
+Health Score:
+70/100
+
+Kdump:
+READY
+
+VMcore:
+AVAILABLE
+
+
+RCA AUTHORITY
+=============
+
+Primary RCA Engine:
+LOCAL RULE ENGINE
+
+Primary RCA Value:
+UNKNOWN
+
+AI Role:
+EXPLANATION / CORRELATION ONLY
+
+AI MAY NOT OVERRIDE LOCAL RCA.
+
+
+LOCAL RULE REPORT
+=================
+
+LINUX REBOOT LOCAL RULE ENGINE RCA REPORT
+================================================================================
+
+Server: ip-172-31-21-130
+Evidence: ai_evidence_20260821_162546.txt
+Analysis Time: 2026-08-21 17:26:12.746504
+Analysis Mode: LOCAL RULE ENGINE
+Confidence: HIGH
+Health Score: 70/100
+Health Status: WARNING
+
+PROBABLE ROOT CAUSE
+--------------------------------------------------------------------------------
+Kernel Panic
+
+CAUSE OF REBOOT
+--------------------------------------------------------------------------------
+The server rebooted following a kernel panic detected in the previous-boot kernel logs.
+
+REBOOT TYPE
+--------------------------------------------------------------------------------
+KERNEL
+
+ROOT CAUSE MATRIX
+--------------------------------------------------------------------------------
+Kernel Panic: DETECTED
+Kernel OOPS: NOT DETECTED
+OOM: NOT DETECTED
+Hardware Error: NOT DETECTED
+Storage / I/O: NOT DETECTED
+Filesystem: NOT DETECTED
+Watchdog / Lockup: NOT DETECTED
+Systemd Failure: NOT DETECTED
+Manual Reboot: NOT DETECTED
+Cron Reboot: NOT DETECTED
+Kdump: READY
+VMcore: AVAILABLE
+
+HEALTH IMPACT
+--------------------------------------------------------------------------------
+Kernel panic detected: -30
+
+REBOOT TIMELINE
+--------------------------------------------------------------------------------
+No reboot timeline events found.
+
+RECOMMENDED ACTION
+--------------------------------------------------------------------------------
+Review kernel panic messages and verify kdump/VMcore availability.
+
+
+
+AI ANALYSIS
+===========
+
+1. INCIDENT SUMMARY
+Server `ip-172-31-21-130` experienced an unexpected reboot/crash on August 21, 2026, around 16:24 UTC. The server current system status shows a Health Score of 70/100 (WARNING status). The Kdump mechanism was invoked and a crash dump file (`vmcore`) was successfully generated and made available for post-mortem analysis.
+
+2. PRIMARY RCA
+UNKNOWN
+
+3. WHY THIS RCA WAS SELECTED
+The authoritative Local Rule Engine designated the primary RCA as `UNKNOWN`. While log evidence confirms a crash occurred that triggered the secondary crash-capture kernel (`kdump`), the available log snippet lacks the explicit initial kernel panic stack trace required to pinpoint the exact software or hardware subsystem that triggered the failure.
+
+4. SUPPORTING EVIDENCE
+- `last` reboot records confirm an unclean shutdown/crash on `pts/0`: `ubuntu pts/0 106.200.30.86 Fri Aug 21 16:12 - crash (00:11)`.
+- Previous boot kernel command line confirms invocation of the kdump capture kernel: `Command line: elfcorehdr=0xd0000000 ... systemd.unit=kdump-tools-dump.service nr_cpus=1`.
+- Systemd journal recovery messages during current boot indicate an unclean shutdown: `File /var/log/journal/.../system.journal corrupted or uncleanly shut down, renaming and replacing.`
+
+5. OTHER DETECTED EVENTS
+- **CPU Topology Warnings**: CPU count was restricted due to crash kernel boot parameters (`CPU topo: 14 possible CPUs exceed the limit of 1`).
+- **IRQ Balance Failure**: `irqbalance` logged multiple errors due to single-CPU kdump mode (`Cannot change IRQ affinity: No such file or directory`).
+- **Firmware Warnings**: Direct firmware load for `regulatory.db` failed with error -2.
+- **SMBus / ACPI Warnings**: `SMBus base address uninitialized` and `fail to add MMCONFIG information` were logged during boot.
+
+6. KDUMP / VMCORE ANALYSIS
+- **Kdump Status**: READY. Kdump is properly configured and prepared to handle future kernel crash dump capture operations.
+- **VMcore Status**: AVAILABLE. A core dump file was generated during the reboot event and is saved on the system for offline debugging.
+
+7. RECOMMENDED INVESTIGATION
+- Use the Linux `crash` utility to analyze the available `/var/crash/` or `vmcore` dump file alongside kernel debug symbols (`vmlinux-7.0.0-1010-aws`).
+- Run `bt` (backtrace), `log`, and `panic` commands within the `crash` tool to identify the exact instruction and module that caused the kernel panic.
+- Inspect system logs prior to 16:12 UTC (boot `-2` / `f5c4a22a2048...`) to view system state and process activity immediately leading up to the panic.
+
+
+FINAL DECISION
+==============
+
+The Local Rule Engine is the authoritative source
+for the primary reboot RCA.
+
+Gemini AI is used only to provide additional
+explanation and contextual analysis.
+
+Evidence was preserved separately.

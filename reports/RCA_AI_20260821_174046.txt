@@ -1,0 +1,62 @@
+LINUX REBOOT RCA REPORT
+========================================
+
+Server: ip-172-31-21-130
+Analysis Time: 2026-08-21 17:40:46.312231
+Analysis Mode: LOCAL RCA + GEMINI EXPLANATION
+Gemini Model: gemini-3.6-flash
+Evidence File: ai_evidence_20260821_162546.txt
+Evidence Size: 164,608 characters
+
+PROBABLE ROOT CAUSE
+-------------------
+Kernel Panic
+
+CAUSE OF REBOOT
+---------------
+The reboot is associated with a kernel panic signature in the previous-boot evidence.
+
+REBOOT TYPE
+-----------
+UNKNOWN
+
+CONFIDENCE
+----------
+HIGH
+
+SERVER HEALTH
+-------------
+60/100
+WARNING
+
+KDUMP
+-----
+READY
+
+VMCORE
+------
+AVAILABLE
+
+SUPPORTING EVIDENCE
+-------------------
+- Previous-boot kernel evidence contains a kernel panic / not-syncing signature.
+- Kdump service is READY and configured with a crash kernel.
+- A Kdump crash-dump file was found under /var/crash.
+- No hardware MCE/ECC/EDAC error was detected by the local rules.
+- No OOM / memory-exhaustion event was detected by the local rules.
+
+RECOMMENDED ACTION
+------------------
+Examine /var/crash for generated crash dump files and dmesg logs. Analyze crash dump files using the kernel crash debugging utility to extract the panic stack trace. Check system logs preceding Aug 21 16:24:04 for system events prior to the crash. Verify kernel and module stability for kernel version 7.0.0-1010-aws.
+
+AI FINAL SUMMARY
+----------------
+The system rebooted due to a kernel panic as indicated by previous-boot reboot evidence. Kdump was active and configured in a ready state to capture diagnostic dumps. A crash dump was generated following the kernel panic event. The exact failing subsystem is not established by the available evidence.
+
+AI PRIMARY RCA (VALIDATED)
+--------------------------
+Kernel Panic
+
+RAW EVIDENCE
+------------
+/home/ubuntu/linux-rcc-ai/logs/evidence/ai_evidence_20260821_162546.txt
