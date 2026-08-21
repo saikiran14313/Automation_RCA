@@ -1,0 +1,57 @@
+LINUX REBOOT LOCAL RULE ENGINE RCA REPORT
+================================================================================
+
+Server: ip-172-31-21-130
+Evidence: ai_evidence_20260821_102236.txt
+Analysis Time: 2026-08-21 10:23:35.984522
+Analysis Mode: LOCAL RULE ENGINE
+Confidence: HIGH
+Health Score: 95/100
+Health Status: HEALTHY
+
+PROBABLE ROOT CAUSE
+--------------------------------------------------------------------------------
+Manual / Planned Reboot
+
+CAUSE OF REBOOT
+--------------------------------------------------------------------------------
+The server was manually rebooted by a user through a sudo reboot command. The evidence shows the reboot command being executed from a user session.
+
+REBOOT TYPE
+--------------------------------------------------------------------------------
+MANUAL
+
+ROOT CAUSE MATRIX
+--------------------------------------------------------------------------------
+Kernel Panic: NOT DETECTED
+Kernel OOPS: NOT DETECTED
+OOM: NOT DETECTED
+Hardware Error: NOT DETECTED
+Storage / I/O: NOT DETECTED
+Filesystem: NOT DETECTED
+Watchdog / Lockup: NOT DETECTED
+Systemd Failure: NOT DETECTED
+Manual Reboot: DETECTED
+Cron Reboot: NOT DETECTED
+Kdump: READY
+VMcore: NOT AVAILABLE
+
+HEALTH IMPACT
+--------------------------------------------------------------------------------
+Recent reboot detected: -5
+
+REBOOT TIMELINE
+--------------------------------------------------------------------------------
+Aug 21 01:21:13 ip-172-31-21-130 systemd[919]: Reached target shutdown.target - Shutdown.
+Aug 21 09:07:24 ip-172-31-21-130 sudo[13293]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/linux-rcc-ai ; USER=root ; COMMAND=/usr/sbin/reboot
+Aug 21 09:07:24 ip-172-31-21-130 systemd-logind[586]: The system will reboot now!
+Aug 21 09:07:24 ip-172-31-21-130 systemd-logind[586]: System is rebooting.
+Aug 21 09:07:24 ip-172-31-21-130 systemd[3221]: Reached target shutdown.target - Shutdown.
+Aug 21 09:07:31 ip-172-31-21-130 systemd[1]: Reached target shutdown.target - System Shutdown.
+Aug 21 09:07:31 ip-172-31-21-130 systemd[1]: systemd-reboot.service: Deactivated successfully.
+Aug 21 09:07:31 ip-172-31-21-130 systemd[1]: Finished systemd-reboot.service - System Reboot.
+Aug 21 09:07:31 ip-172-31-21-130 systemd[1]: Reached target reboot.target - System Reboot.
+
+RECOMMENDED ACTION
+--------------------------------------------------------------------------------
+Verify the reboot against the approved change or maintenance window.

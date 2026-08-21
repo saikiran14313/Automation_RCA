@@ -1,0 +1,34 @@
+LINUX AI REBOOT RCA REPORT
+================================================================================
+
+Server: ip-172-31-21-130
+Evidence: ai_evidence_20260821_110956.txt
+Analysis Time: 2026-08-21 11:13:23.562793
+Model: gemini-3.6-flash
+Analysis Mode: GEMINI AI
+Confidence: HIGH
+
+PROBABLE ROOT CAUSE
+--------------------------------------------------------------------------------
+Manual / Planned Reboot
+
+CAUSE OF REBOOT
+--------------------------------------------------------------------------------
+The system was manually rebooted by user 'ubuntu' executing 'sudo /usr/sbin/shutdown -r' from terminal pts/1.
+
+REBOOT TYPE
+--------------------------------------------------------------------------------
+MANUAL
+
+HEALTH SCORE
+--------------------------------------------------------------------------------
+95/100 - HEALTHY
+
+RECOMMENDED ACTION
+--------------------------------------------------------------------------------
+No corrective action required as the system reboot was intentionally initiated by an authorized user.
+
+SUPPORTING EVIDENCE
+--------------------------------------------------------------------------------
+- Aug 21 11:07:44 ip-172-31-21-130 sudo[6179]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=root ; COMMAND=/usr/sbin/shutdown -r
+- Aug 21 11:07:44 ip-172-31-21-130 systemd-logind[4235]: The system will reboot at Fri 2026-08-21 11:08:44 UTC!

@@ -1,0 +1,41 @@
+======================================================================
+LINUX REBOOT INTELLIGENCE CENTER
+======================================================================
+
+Server: ip-172-31-21-130
+Analysis Time: 2026-08-20 19:24:56
+Evidence File: ai_evidence_20260820_150403.txt
+
+Probable Root Cause: Manual / Planned Reboot
+Confidence: HIGH
+
+Cause of Reboot:
+The server was manually rebooted by the ubuntu user using /usr/sbin/reboot at 15:02:18.
+
+Reboot Pattern:
+Recurring reboot pattern detected. Recent reboot interval is approximately 2.4 minutes.
+
+Health Score: 80/100
+Health Status: GOOD
+
+ROOT CAUSE CHECKS
+----------------------------------------
+Kernel Panic: Not detected
+Kernel OOPS: Not detected
+OOM: Not detected
+Hardware Error: Not detected
+Storage / I/O: Not detected
+Filesystem: Not detected
+Watchdog / Lockup: Not detected
+Systemd Failure: Not detected
+Cron Reboot: Not detected
+Manual Reboot: Detected
+Recurring Reboot: Detected
+Kdump: Unknown
+VMcore: Not available
+
+HEALTH IMPACT
+----------------------------------------
+Recent reboot: -5
+Recurring reboot pattern: -15
+

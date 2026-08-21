@@ -1,0 +1,76 @@
+LINUX AI REBOOT RCA REPORT
+================================================================================
+
+Server: ip-172-31-21-130
+Evidence: ai_evidence_20260821_102236.txt
+Analysis Time: 2026-08-21 10:23:10.546893
+Analysis Mode: Gemini AI + Local Health Engine
+Confidence: UNKNOWN
+Health Score: 0/100
+Health Status: SEVERE
+
+PROBABLE ROOT CAUSE
+--------------------------------------------------------------------------------
+AI analysis unavailable
+
+CAUSE OF REBOOT
+--------------------------------------------------------------------------------
+The AI analysis could not be completed. Review the collected Linux evidence manually.
+
+REBOOT TYPE
+--------------------------------------------------------------------------------
+UNKNOWN
+
+RCA REASONING
+--------------------------------------------------------------------------------
+503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+
+SUPPORTING EVIDENCE
+--------------------------------------------------------------------------------
+
+ROOT CAUSE MATRIX
+--------------------------------------------------------------------------------
+Kernel Panic: DETECTED
+Kernel OOPS: DETECTED
+OOM: NOT DETECTED
+Hardware Error: DETECTED
+Storage / I/O: DETECTED
+Filesystem: NOT DETECTED
+Watchdog / Lockup: DETECTED
+Systemd Failure: NOT DETECTED
+Manual Reboot: DETECTED
+Cron Reboot: DETECTED
+Kdump: READY
+VMcore: AVAILABLE
+
+HEALTH IMPACT
+--------------------------------------------------------------------------------
+Kernel panic detected: -30
+Kernel OOPS detected: -25
+Hardware / MCE / ECC error detected: -30
+Storage / I/O error detected: -25
+Watchdog / lockup detected: -25
+Recent reboot detected: -5
+
+RECOMMENDED ACTION
+--------------------------------------------------------------------------------
+Review the evidence file and perform manual RCA.
+
+REBOOT TIMELINE
+--------------------------------------------------------------------------------
+Aug 21 09:07:31 ip-172-31-21-130 systemd[1]: Stopping systemd-update-utmp.service - Record System Boot/Shutdown in UTMP...
+Aug 21 09:07:31 ip-172-31-21-130 systemd[1]: Stopped systemd-update-utmp.service - Record System Boot/Shutdown in UTMP.
+Aug 21 09:07:31 ip-172-31-21-130 systemd[1]: Reached target shutdown.target - System Shutdown.
+Aug 21 09:07:31 ip-172-31-21-130 systemd[1]: Reached target final.target - Late Shutdown Services.
+Aug 21 09:07:31 ip-172-31-21-130 systemd[1]: systemd-reboot.service: Deactivated successfully.
+Aug 21 09:07:31 ip-172-31-21-130 systemd[1]: Finished systemd-reboot.service - System Reboot.
+Aug 21 09:07:31 ip-172-31-21-130 systemd[1]: Reached target reboot.target - System Reboot.
+### MANUAL / SUDO REBOOT ###
+### CRON REBOOT ###
+### SYSTEMD REBOOT ###
+root        4376  0.0  0.3 110024 23220 ?        Ssl  09:07   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+### FILTERED REBOOT / SHUTDOWN ###
+
+EVIDENCE FILE
+--------------------------------------------------------------------------------
+/home/ubuntu/linux-rcc-ai/logs/evidence/ai_evidence_20260821_102236.txt

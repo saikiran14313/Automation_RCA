@@ -1,0 +1,51 @@
+========================================
+LINUX REBOOT RCA
+========================================
+
+Server:
+ip-172-31-21-130
+
+Incident:
+Repeated system reboots observed in short intervals
+
+Probable Root Cause:
+Manual / Planned reboot
+
+Confidence:
+HIGH
+
+Timeline:
+- 2026-08-20 14:58:21 - System boot sequence initiated
+- 2026-08-20 15:02:18 - User 'ubuntu' executed 'sudo /usr/sbin/reboot' via pts/0
+- 2026-08-20 15:02:18 - Systemd-logind received shutdown signal and began reboot procedure
+
+Key Evidence:
+1. Aug 20 15:02:18 ip-172-31-21-130 sudo[1147]: ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/linux-rcc-ai ; USER=root ; COMMAND=/usr/sbin/reboot
+2. Aug 20 15:02:18 ip-172-31-21-130 systemd-logind[584]: The system will reboot now!
+3. Boot history shows multiple rapid reboots throughout the 14:30 - 15:02 window
+
+Root Cause Checks:
+Kernel Panic: Not detected
+Kernel OOPS: Not detected
+OOM: Not detected
+Hardware Error: Not detected
+Storage / I/O Error: Not detected
+Filesystem Error: Not detected
+Watchdog / Lockup: Not detected
+Systemd Failure: Not detected
+Manual / Planned Reboot: Detected
+Cron Scheduled Reboot: Not detected
+Kdump: Not configured
+VMcore: Not available
+
+Final RCA:
+The system underwent a series of rapid, intentional reboots initiated by the user 'ubuntu' via the CLI. The audit logs confirm the execution of the '/usr/sbin/reboot' command at 15:02:18, which triggered the standard system shutdown sequence.
+
+Recommended Action:
+Review user access logs and command history to identify the intent behind the frequent manual reboots; investigate if automated scripts are triggering manual reboot commands.
+
+Evidence File:
+ai_evidence_20260820_150403.txt
+
+Cause of Reboot:
+The system was rebooted manually by the user 'ubuntu' via the execution of the reboot command.

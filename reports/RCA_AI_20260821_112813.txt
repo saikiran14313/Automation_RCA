@@ -1,0 +1,175 @@
+LINUX REBOOT INTELLIGENCE CENTER
+=================================
+
+Server:
+ip-172-31-21-130
+
+Analysis Time:
+2026-08-21 11:28:13.954796
+
+Evidence:
+/home/ubuntu/linux-rcc-ai/logs/evidence/ai_evidence_20260821_110956.txt
+
+Evidence Size:
+183,294 characters
+
+
+PRIMARY RCA
+===========
+
+Root Cause:
+UNKNOWN
+
+Confidence:
+HIGH
+
+Health Score:
+95/100
+
+Kdump:
+READY
+
+VMcore:
+NOT AVAILABLE
+
+
+RCA AUTHORITY
+=============
+
+Primary RCA Engine:
+LOCAL RULE ENGINE
+
+AI Role:
+EXPLANATION / CORRELATION ONLY
+
+AI MAY NOT OVERRIDE LOCAL RCA.
+
+
+LOCAL RULE REPORT
+=================
+
+LINUX REBOOT LOCAL RULE ENGINE RCA REPORT
+================================================================================
+
+Server: ip-172-31-21-130
+Evidence: ai_evidence_20260821_110956.txt
+Analysis Time: 2026-08-21 11:27:42.422104
+Analysis Mode: LOCAL RULE ENGINE
+Confidence: HIGH
+Health Score: 95/100
+Health Status: HEALTHY
+
+PROBABLE ROOT CAUSE
+--------------------------------------------------------------------------------
+Manual / Planned Reboot
+
+CAUSE OF REBOOT
+--------------------------------------------------------------------------------
+The server was manually/planned rebooted by a user through a user-initiated reboot command.
+
+Evidence:
+Aug 21 11:07:44 ip-172-31-21-130 sudo[6179]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=root ; COMMAND=/usr/sbin/shutdown -r
+
+REBOOT TYPE
+--------------------------------------------------------------------------------
+MANUAL
+
+ROOT CAUSE MATRIX
+--------------------------------------------------------------------------------
+Kernel Panic: NOT DETECTED
+Kernel OOPS: NOT DETECTED
+OOM: NOT DETECTED
+Hardware Error: NOT DETECTED
+Storage / I/O: NOT DETECTED
+Filesystem: NOT DETECTED
+Watchdog / Lockup: NOT DETECTED
+Systemd Failure: NOT DETECTED
+Manual Reboot: DETECTED
+Cron Reboot: NOT DETECTED
+Kdump: READY
+VMcore: NOT AVAILABLE
+
+HEALTH IMPACT
+--------------------------------------------------------------------------------
+Recent reboot detected: -5
+
+REBOOT TIMELINE
+--------------------------------------------------------------------------------
+Aug 21 11:07:44 ip-172-31-21-130 sudo[6179]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=root ; COMMAND=/usr/sbin/shutdown -r
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: systemd-reboot.service: Deactivated successfully.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Finished systemd-reboot.service - System Reboot.
+
+RECOMMENDED ACTION
+--------------------------------------------------------------------------------
+Verify the reboot against the approved change or maintenance window.
+
+
+
+AI ANALYSIS
+===========
+
+### 1. INCIDENT SUMMARY
+* **Server:** ip-172-31-21-130
+* **Analysis Time:** 2026-08-21 11:27:42 UTC
+* **Health Score:** 95/100 (HEALTHY; -5 penalty due strictly to the recent reboot)
+* **Confidence Level:** HIGH
+* **Incident Overview:** Server `ip-172-31-21-130` experienced a system reboot on August 21, 2026, shutting down cleanly at 11:08:51 UTC and coming back online at 11:09:04 UTC. System resources (CPU, Memory, Disk, Inodes) remain in a healthy operational state.
+
+---
+
+### 2. PRIMARY RCA
+**UNKNOWN**
+
+---
+
+### 3. WHY THIS RCA WAS SELECTED
+* **Rule Engine Classification:** The authoritative Local Rule Engine primary RCA classification is designated as **UNKNOWN**.
+* **System State:** Analysis of kernel logs and system health metrics indicates no system-driven crashes. specifically:
+  * Kernel Panic: NOT DETECTED
+  * Kernel OOPS: NOT DETECTED
+  * Out of Memory (OOM): NOT DETECTED
+  * Hardware / Storage / Filesystem Errors: NOT DETECTED
+  * Systemd / Watchdog Failures: NOT DETECTED
+* **Context:** Although telemetry captured a user-initiated shutdown command (`/usr/sbin/shutdown -r`) immediately preceding the event, the primary platform output retains the authoritative label of `UNKNOWN`.
+
+---
+
+### 4. SUPPORTING EVIDENCE
+* **User Command Log:**
+  `Aug 21 11:07:44 ip-172-31-21-130 sudo[6179]: ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=root ; COMMAND=/usr/sbin/shutdown -r`
+* **Clean Systemd Reboot Logs:**
+  `Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: systemd-reboot.service: Deactivated successfully.`
+  `Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Finished systemd-reboot.service - System Reboot.`
+
+---
+
+### 5. OTHER DETECTED EVENTS
+The following non-fatal background initialization messages were noted in the boot logs. These are common virtualized hardware/firmware warnings and did **not** trigger or contribute to the reboot:
+* **ACPI / Firmware Warning:** `acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge`
+* **SMBus Base Address Warning:** `piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr`
+* **Regulatory DB Warning:** `faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2`
+* **IRQ Balance Warnings:** `irqbalance[647]: Cannot change IRQ <ID> affinity: No such file or directory`
+
+---
+
+### 6. KDUMP / VMCORE ANALYSIS
+* **Kdump Status:** **READY** (Kdump is fully configured with memory reserved (`crashkernel=2G-4G:320M,4G-32G:512M...`) and actively prepared to capture kernel core dumps during any future panic or crash).
+* **VMcore Status:** **NOT AVAILABLE** (No `vmcore` dump file was generated because the system underwent a standard shut-down sequence rather than a kernel panic).
+
+---
+
+### 7. RECOMMENDED INVESTIGATION
+1. **Audit User Activity:** Cross-reference the user reboot execution (`COMMAND=/usr/sbin/shutdown -r` executed by user `ubuntu` at 11:07:44 UTC) against scheduled maintenance windows, automated deployment jobs, or operational change requests.
+2. **System Health Verification:** No further hardware or kernel remediation is required at this time, as all core subsystems remain functional and healthy (95/100).
+
+
+FINAL DECISION
+==============
+
+The Local Rule Engine is the authoritative source
+for the primary reboot RCA.
+
+Gemini AI is used only to provide additional
+explanation and contextual analysis.
+
+Evidence was preserved separately.

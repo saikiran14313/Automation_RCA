@@ -1,0 +1,2150 @@
+LINUX REBOOT INTELLIGENCE EVIDENCE
+================================================================================
+Hostname: ip-172-31-21-130
+Collection Time: 2026-08-21 11:10:00.030334
+
+IMPORTANT:
+This evidence contains system state, previous/current boot logs, reboot events, kernel errors, hardware/storage events, cron information, kdump configuration and crash dump information.
+
+### SYSTEM INFORMATION ###
+--------------------------------------------------------------------------------
+Linux ip-172-31-21-130 7.0.0-1010-aws #10~24.04.1-Ubuntu SMP PREEMPT Mon Jul 27 17:41:33 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+
+### KERNEL VERSION ###
+--------------------------------------------------------------------------------
+7.0.0-1010-aws
+
+### OS RELEASE ###
+--------------------------------------------------------------------------------
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+
+### DATE ###
+--------------------------------------------------------------------------------
+Fri Aug 21 11:09:56 UTC 2026
+
+### UPTIME ###
+--------------------------------------------------------------------------------
+11:09:56 up 0 min,  2 users,  load average: 0.29, 0.09, 0.03
+
+### CURRENT USERS ###
+--------------------------------------------------------------------------------
+ubuntu   pts/0        2026-08-21 11:09 (106.200.30.86)
+
+### MEMORY STATUS ###
+--------------------------------------------------------------------------------
+total        used        free      shared  buff/cache   available
+Mem:           7.2Gi       507Mi       6.6Gi       1.8Mi       412Mi       6.8Gi
+Swap:             0B          0B          0B
+
+### MEMORY DETAILS ###
+--------------------------------------------------------------------------------
+MemTotal:        7599692 kB
+MemFree:         6911572 kB
+MemAvailable:    7080408 kB
+Buffers:           23556 kB
+Cached:           378232 kB
+SwapCached:            0 kB
+Active:           332920 kB
+Inactive:         132616 kB
+Active(anon):      89024 kB
+Inactive(anon):        0 kB
+Active(file):     243896 kB
+Inactive(file):   132616 kB
+Unevictable:       42912 kB
+Mlocked:           27216 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:               144 kB
+Writeback:             0 kB
+AnonPages:        106660 kB
+Mapped:            95576 kB
+Shmem:              1840 kB
+KReclaimable:      20372 kB
+Slab:              71868 kB
+SReclaimable:      20372 kB
+SUnreclaim:        51496 kB
+KernelStack:        2864 kB
+PageTables:         3860 kB
+SecPageTables:         0 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     3799844 kB
+Committed_AS:     518844 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       11360 kB
+VmallocChunk:          0 kB
+Percpu:             8320 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+CmaTotal:              0 kB
+CmaFree:         2031616 kB
+Unaccepted:            0 kB
+Balloon:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:       75776 kB
+DirectMap2M:     8312832 kB
+
+### DISK STATUS ###
+--------------------------------------------------------------------------------
+Filesystem     Type   Size  Used Avail Use% Mounted on
+/dev/root      ext4    77G   10G   67G  13% /
+tmpfs          tmpfs  3.7G     0  3.7G   0% /dev/shm
+tmpfs          tmpfs  1.5G  888K  1.5G   1% /run
+tmpfs          tmpfs  5.0M     0  5.0M   0% /run/lock
+/dev/xvda16    ext4   881M  183M  637M  23% /boot
+/dev/xvda15    vfat   105M  6.2M   99M   6% /boot/efi
+tmpfs          tmpfs  743M   12K  743M   1% /run/user/1000
+
+### INODE STATUS ###
+--------------------------------------------------------------------------------
+Filesystem     Inodes IUsed IFree IUse% Mounted on
+/dev/root        9.9M  155K  9.8M    2% /
+tmpfs            928K     2  928K    1% /dev/shm
+tmpfs            800K   641  800K    1% /run
+tmpfs            928K     3  928K    1% /run/lock
+/dev/xvda16       58K   605   57K    2% /boot
+/dev/xvda15         0     0     0     - /boot/efi
+tmpfs            186K    32  186K    1% /run/user/1000
+
+### BLOCK DEVICES ###
+--------------------------------------------------------------------------------
+NAME     FSTYPE   FSVER LABEL           UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+loop0    squashfs 4.0                                                              0   100% /snap/amazon-ssm-agent/13009
+loop1    squashfs 4.0                                                              0   100% /snap/core22/2411
+loop2    squashfs 4.0                                                              0   100% /snap/amazon-ssm-agent/13349
+loop3    squashfs 4.0                                                              0   100% /snap/core22/2437
+loop4    squashfs 4.0                                                              0   100% /snap/snapd/26865
+loop5    squashfs 4.0                                                              0   100% /snap/snapd/27710
+xvda                                                                                        
+├─xvda1  ext4     1.0   cloudimg-rootfs 0ef35759-eb42-4358-9a2a-1f74696d7007   66.5G    13% /
+├─xvda14                                                                                    
+├─xvda15 vfat     FAT32 UEFI            886D-F892                              98.2M     6% /boot/efi
+└─xvda16 ext4     1.0   BOOT            8fb95cef-95fc-48ca-aaab-3f1b1df59748  636.6M    21% /boot
+
+### MOUNT INFORMATION ###
+--------------------------------------------------------------------------------
+/dev/xvda1 on / type ext4 (rw,relatime,discard,errors=remount-ro,commit=30)
+devtmpfs on /dev type devtmpfs (rw,nosuid,noexec,relatime,size=2761980k,nr_inodes=690495,mode=755,inode64)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev,inode64)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,size=1519940k,nr_inodes=819200,mode=755,inode64)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k,inode64)
+cgroup2 on /sys/fs/cgroup type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot)
+none on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=32,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=2110)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,nosuid,nodev,relatime,pagesize=2M)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)
+tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)
+configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
+/var/lib/snapd/snaps/amazon-ssm-agent_13009.snap on /snap/amazon-ssm-agent/13009 type squashfs (ro,nodev,relatime,errors=continue,threads=single,x-gdu.hide,x-gvfs-hide)
+/var/lib/snapd/snaps/amazon-ssm-agent_13349.snap on /snap/amazon-ssm-agent/13349 type squashfs (ro,nodev,relatime,errors=continue,threads=single,x-gdu.hide,x-gvfs-hide)
+/var/lib/snapd/snaps/core22_2411.snap on /snap/core22/2411 type squashfs (ro,nodev,relatime,errors=continue,threads=single,x-gdu.hide,x-gvfs-hide)
+/var/lib/snapd/snaps/core22_2437.snap on /snap/core22/2437 type squashfs (ro,nodev,relatime,errors=continue,threads=single,x-gdu.hide,x-gvfs-hide)
+/var/lib/snapd/snaps/snapd_26865.snap on /snap/snapd/26865 type squashfs (ro,nodev,relatime,errors=continue,threads=single,x-gdu.hide,x-gvfs-hide)
+/var/lib/snapd/snaps/snapd_27710.snap on /snap/snapd/27710 type squashfs (ro,nodev,relatime,errors=continue,threads=single,x-gdu.hide,x-gvfs-hide)
+/dev/xvda16 on /boot type ext4 (rw,relatime)
+/dev/xvda15 on /boot/efi type vfat (rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro)
+binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=759968k,nr_inodes=189992,mode=700,uid=1000,gid=1000,inode64)
+
+### FILESYSTEM CONFIGURATION ###
+--------------------------------------------------------------------------------
+LABEL=cloudimg-rootfs	/	 ext4	discard,commit=30,errors=remount-ro	0 1
+LABEL=BOOT	/boot	ext4	defaults	0 2
+LABEL=UEFI	/boot/efi	vfat	umask=0077	0 1
+
+### KERNEL CMDLINE ###
+--------------------------------------------------------------------------------
+BOOT_IMAGE=/vmlinuz-7.0.0-1010-aws root=PARTUUID=fe814a98-f7fd-4c3d-9642-c18fe64c6e5d ro console=tty1 console=ttyS0 nvme_core.io_timeout=4294967295 crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M panic=-1
+
+### LOADED KERNEL MODULES ###
+--------------------------------------------------------------------------------
+Module                  Size  Used by
+qrtr                   53248  2
+cfg80211             1507328  0
+8021q                  49152  0
+garp                   24576  1 8021q
+mrp                    24576  1 8021q
+stp                    12288  1 garp
+llc                    16384  2 stp,garp
+binfmt_misc            24576  1
+nls_iso8859_1          12288  1
+intel_rapl_msr         20480  0
+intel_rapl_common      57344  1 intel_rapl_msr
+intel_uncore_frequency_common    20480  0
+ghash_clmulni_intel    12288  0
+aesni_intel            98304  0
+rapl                   20480  0
+i2c_piix4              32768  0
+psmouse               217088  0
+cirrus_qemu            20480  0
+vga16fb                36864  0
+i2c_smbus              20480  1 i2c_piix4
+vgastate               20480  1 vga16fb
+pata_acpi              12288  0
+input_leds             12288  0
+mac_hid                12288  0
+serio_raw              20480  0
+sch_fq_codel           28672  2
+nf_conntrack          192512  0
+nf_defrag_ipv6         24576  1 nf_conntrack
+nf_defrag_ipv4         12288  1 nf_conntrack
+dm_multipath           45056  0
+msr                    12288  0
+efi_pstore             12288  0
+nfnetlink              20480  2
+dmi_sysfs              24576  0
+ip_tables              32768  0
+x_tables               65536  1 ip_tables
+autofs4                57344  2
+
+### BOOT HISTORY ###
+--------------------------------------------------------------------------------
+IDX BOOT ID                          FIRST ENTRY                 LAST ENTRY
+-22 d4317b1e8b334c80a6331cb3a3a6390e Tue 2026-08-11 09:17:11 UTC Thu 2026-08-13 14:01:55 UTC
+-21 5f6b1da89cf94084bdba937887f43cf3 Thu 2026-08-13 14:02:16 UTC Sun 2026-08-16 16:53:23 UTC
+-20 5409d595aa6a4469965dcc744a977de8 Sun 2026-08-16 19:09:50 UTC Thu 2026-08-20 14:03:10 UTC
+-19 c8772017ea8f461fbe88776fd4ae8402 Thu 2026-08-20 14:03:23 UTC Thu 2026-08-20 14:30:48 UTC
+-18 916316043fbb45d3818bba5239bf7651 Thu 2026-08-20 14:30:59 UTC Thu 2026-08-20 14:33:52 UTC
+-17 bc0b128800c44cf2b9207815795c7aa0 Thu 2026-08-20 14:34:04 UTC Thu 2026-08-20 14:38:11 UTC
+-16 5644ad7d222b48958a1495ee1ecfe16d Thu 2026-08-20 14:38:24 UTC Thu 2026-08-20 14:44:08 UTC
+-15 d1ec93710119453ab6c584bf36b894d6 Thu 2026-08-20 14:44:21 UTC Thu 2026-08-20 14:46:09 UTC
+-14 660a5707849a420aaac3045c3a8a27ab Thu 2026-08-20 14:46:22 UTC Thu 2026-08-20 14:48:08 UTC
+-13 b3c590e7a7d0482d95b5c1bd99c6db63 Thu 2026-08-20 14:48:21 UTC Thu 2026-08-20 14:50:08 UTC
+-12 e32347fda8674a8a9280d6ece081f80e Thu 2026-08-20 14:50:21 UTC Thu 2026-08-20 14:52:08 UTC
+-11 2478522ad99e429d81504839331d0aae Thu 2026-08-20 14:52:21 UTC Thu 2026-08-20 14:54:09 UTC
+-10 9f03883c745f42768cb7e425811df675 Thu 2026-08-20 14:54:22 UTC Thu 2026-08-20 14:56:08 UTC
+ -9 188fe70c4bcd4bd68b6a144c78460f32 Thu 2026-08-20 14:56:19 UTC Thu 2026-08-20 14:58:08 UTC
+ -8 5c3d91428ee441cd860155bf336d0e60 Thu 2026-08-20 14:58:21 UTC Thu 2026-08-20 15:02:26 UTC
+ -7 80f40a8171b74442a35a0c787a052f2c Thu 2026-08-20 15:02:38 UTC Thu 2026-08-20 15:42:07 UTC
+ -6 507bb4489fe24a29bacd455156d2f522 Thu 2026-08-20 15:42:19 UTC Thu 2026-08-20 19:03:35 UTC
+ -5 a942caf7132946d3bca023e05a16d9d5 Thu 2026-08-20 19:03:48 UTC Thu 2026-08-20 19:18:08 UTC
+ -4 a7eb5b5567d349b5bd473f9be978459b Thu 2026-08-20 19:18:21 UTC Thu 2026-08-20 19:20:08 UTC
+ -3 03b6cffb46154ba1b6a0cd674bccd468 Thu 2026-08-20 19:20:21 UTC Thu 2026-08-20 19:22:08 UTC
+ -2 5d8ef04b494942e19098de54486aaff4 Thu 2026-08-20 19:22:21 UTC Fri 2026-08-21 09:07:32 UTC
+ -1 3e6b758cb7cc4c6a9897072cf3c97007 Fri 2026-08-21 09:07:44 UTC Fri 2026-08-21 11:08:51 UTC
+  0 e01bb03862434ff8aacc05cf8814cf3e Fri 2026-08-21 11:09:04 UTC Fri 2026-08-21 11:09:43 UTC
+
+### LAST REBOOTS ###
+--------------------------------------------------------------------------------
+ubuntu   pts/0        106.200.30.86    Fri Aug 21 11:09   still logged in
+runlevel (to lvl 5)   7.0.0-1010-aws   Fri Aug 21 11:09   still running
+reboot   system boot  7.0.0-1010-aws   Fri Aug 21 11:09   still running
+shutdown system down  7.0.0-1010-aws   Fri Aug 21 11:08 - 11:09  (00:00)
+ubuntu   pts/1        106.200.30.86    Fri Aug 21 09:46 - 11:08  (01:21)
+ubuntu   pts/0        106.200.30.86    Fri Aug 21 09:07 - 11:08  (02:00)
+runlevel (to lvl 5)   7.0.0-1010-aws   Fri Aug 21 09:07 - 11:08  (02:00)
+reboot   system boot  7.0.0-1010-aws   Fri Aug 21 09:07 - 11:08  (02:01)
+shutdown system down  7.0.0-1010-aws   Fri Aug 21 09:07 - 09:07  (00:00)
+ubuntu   pts/0        106.200.30.86    Fri Aug 21 08:57 - 09:07  (00:09)
+ubuntu   pts/0        106.200.30.86    Thu Aug 20 19:22 - 01:21  (05:58)
+runlevel (to lvl 5)   7.0.0-1010-aws   Thu Aug 20 19:22 - 09:07  (13:45)
+reboot   system boot  7.0.0-1010-aws   Thu Aug 20 19:22 - 09:07  (13:45)
+shutdown system down  7.0.0-1010-aws   Thu Aug 20 19:22 - 19:22  (00:00)
+ubuntu   pts/0        106.200.30.86    Thu Aug 20 19:20 - 19:22  (00:01)
+runlevel (to lvl 5)   7.0.0-1010-aws   Thu Aug 20 19:20 - 19:22  (00:01)
+reboot   system boot  7.0.0-1010-aws   Thu Aug 20 19:20 - 19:22  (00:01)
+shutdown system down  7.0.0-1010-aws   Thu Aug 20 19:20 - 19:20  (00:00)
+ubuntu   pts/0        106.200.30.86    Thu Aug 20 19:19 - 19:20  (00:00)
+runlevel (to lvl 5)   7.0.0-1010-aws   Thu Aug 20 19:18 - 19:20  (00:01)
+reboot   system boot  7.0.0-1010-aws   Thu Aug 20 19:18 - 19:20  (00:01)
+shutdown system down  7.0.0-1010-aws   Thu Aug 20 19:18 - 19:18  (00:00)
+ubuntu   pts/0        106.200.30.86    Thu Aug 20 19:04 - 19:18  (00:14)
+runlevel (to lvl 5)   7.0.0-1010-aws   Thu Aug 20 19:03 - 19:18  (00:14)
+reboot   system boot  7.0.0-1010-aws   Thu Aug 20 19:03 - 19:18  (00:14)
+shutdown system down  7.0.0-1010-aws   Thu Aug 20 19:03 - 19:03  (00:00)
+ubuntu   pts/0        106.200.30.86    Thu Aug 20 15:42 - 19:03  (03:20)
+runlevel (to lvl 5)   7.0.0-1010-aws   Thu Aug 20 15:42 - 19:03  (03:21)
+reboot   system boot  7.0.0-1010-aws   Thu Aug 20 15:42 - 19:03  (03:21)
+shutdown system down  7.0.0-1010-aws   Thu Aug 20 15:42 - 15:42  (00:00)
+ubuntu   pts/0        106.200.30.86    Thu Aug 20 15:02 - 15:42  (00:39)
+runlevel (to lvl 5)   7.0.0-1010-aws   Thu Aug 20 15:02 - 15:42  (00:39)
+reboot   system boot  7.0.0-1010-aws   Thu Aug 20 15:02 - 15:42  (00:39)
+shutdown system down  7.0.0-1010-aws   Thu Aug 20 15:02 - 15:02  (00:00)
+ubuntu   pts/0        106.200.30.86    Thu Aug 20 14:59 - 15:02  (00:02)
+runlevel (to lvl 5)   7.0.0-1010-aws   Thu Aug 20 14:58 - 15:02  (00:03)
+reboot   system boot  7.0.0-1010-aws   Thu Aug 20 14:58 - 15:02  (00:04)
+shutdown system down  7.0.0-1010-aws   Thu Aug 20 14:58 - 14:58  (00:00)
+runlevel (to lvl 5)   7.0.0-1010-aws   Thu Aug 20 14:56 - 14:58  (00:01)
+reboot   system boot  7.0.0-1010-aws   Thu Aug 20 14:56 - 14:58  (00:01)
+
+### LAST LOGINS ###
+--------------------------------------------------------------------------------
+ubuntu   pts/0        106.200.30.86    Fri Aug 21 11:09   still logged in
+reboot   system boot  7.0.0-1010-aws   Fri Aug 21 11:09   still running
+ubuntu   pts/1        106.200.30.86    Fri Aug 21 09:46 - 11:08  (01:21)
+ubuntu   pts/0        106.200.30.86    Fri Aug 21 09:07 - 11:08  (02:00)
+reboot   system boot  7.0.0-1010-aws   Fri Aug 21 09:07 - 11:08  (02:01)
+ubuntu   pts/0        106.200.30.86    Fri Aug 21 08:57 - 09:07  (00:09)
+ubuntu   pts/0        106.200.30.86    Thu Aug 20 19:22 - 01:21  (05:58)
+reboot   system boot  7.0.0-1010-aws   Thu Aug 20 19:22 - 09:07  (13:45)
+ubuntu   pts/0        106.200.30.86    Thu Aug 20 19:20 - 19:22  (00:01)
+reboot   system boot  7.0.0-1010-aws   Thu Aug 20 19:20 - 19:22  (00:01)
+ubuntu   pts/0        106.200.30.86    Thu Aug 20 19:19 - 19:20  (00:00)
+reboot   system boot  7.0.0-1010-aws   Thu Aug 20 19:18 - 19:20  (00:01)
+ubuntu   pts/0        106.200.30.86    Thu Aug 20 19:04 - 19:18  (00:14)
+reboot   system boot  7.0.0-1010-aws   Thu Aug 20 19:03 - 19:18  (00:14)
+ubuntu   pts/0        106.200.30.86    Thu Aug 20 15:42 - 19:03  (03:20)
+reboot   system boot  7.0.0-1010-aws   Thu Aug 20 15:42 - 19:03  (03:21)
+ubuntu   pts/0        106.200.30.86    Thu Aug 20 15:02 - 15:42  (00:39)
+reboot   system boot  7.0.0-1010-aws   Thu Aug 20 15:02 - 15:42  (00:39)
+ubuntu   pts/0        106.200.30.86    Thu Aug 20 14:59 - 15:02  (00:02)
+reboot   system boot  7.0.0-1010-aws   Thu Aug 20 14:58 - 15:02  (00:04)
+
+wtmp begins Tue Aug 11 09:16:34 2026
+
+### PREVIOUS BOOT ERRORS ###
+--------------------------------------------------------------------------------
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+Aug 21 09:07:44 ip-172-31-21-130 kernel: cpu 0 spinlock event irq 53
+Aug 21 09:07:44 ip-172-31-21-130 kernel: cpu 1 spinlock event irq 59
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+Aug 21 09:07:44 ip-172-31-21-130 kernel: * Found PM-Timer Bug on the chipset. Due to workarounds for a bug,
+                                         * this clock source is slow. Consider trying other clock sources
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Grant table initialized
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+Aug 21 09:07:44 ip-172-31-21-130 kernel: i8042: Warning: Keylock active
+Aug 21 09:07:44 ip-172-31-21-130 (udev-worker)[236]: eth0: Could not set WakeOnLan to off, ignoring: Operation not supported
+Aug 21 09:07:44 ip-172-31-21-130 kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Aug 21 09:07:44 ip-172-31-21-130 (udev-worker)[223]: enX0: Could not set WakeOnLan to off, ignoring: Operation not supported
+Aug 21 09:07:46 ip-172-31-21-130 kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+Aug 21 09:07:50 ip-172-31-21-130 (acpid)[4209]: acpid.service: Referenced but unset environment variable evaluates to an empty string: OPTIONS
+Aug 21 09:07:50 ip-172-31-21-130 (cron)[4213]: cron.service: Referenced but unset environment variable evaluates to an empty string: EXTRA_OPTS
+Aug 21 09:07:50 ip-172-31-21-130 (qbalance)[4219]: irqbalance.service: Referenced but unset environment variable evaluates to an empty string: IRQBALANCE_ARGS
+Aug 21 09:07:51 ip-172-31-21-130 kernel: kauditd_printk_skb: 114 callbacks suppressed
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: Cannot change IRQ 0 affinity: No such file or directory
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: IRQ 0 affinity is now unmanaged
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: Cannot change IRQ 48 affinity: No such file or directory
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: IRQ 48 affinity is now unmanaged
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: Cannot change IRQ 49 affinity: No such file or directory
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: IRQ 49 affinity is now unmanaged
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: Cannot change IRQ 50 affinity: No such file or directory
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: IRQ 50 affinity is now unmanaged
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: Cannot change IRQ 51 affinity: No such file or directory
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: IRQ 51 affinity is now unmanaged
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: Cannot change IRQ 52 affinity: No such file or directory
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: IRQ 52 affinity is now unmanaged
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: Cannot change IRQ 53 affinity: No such file or directory
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: IRQ 53 affinity is now unmanaged
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: Cannot change IRQ 54 affinity: No such file or directory
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: IRQ 54 affinity is now unmanaged
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: Cannot change IRQ 55 affinity: No such file or directory
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: IRQ 55 affinity is now unmanaged
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: Cannot change IRQ 56 affinity: No such file or directory
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: IRQ 56 affinity is now unmanaged
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: Cannot change IRQ 57 affinity: No such file or directory
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: IRQ 57 affinity is now unmanaged
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: Cannot change IRQ 58 affinity: No such file or directory
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: IRQ 58 affinity is now unmanaged
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: Cannot change IRQ 59 affinity: No such file or directory
+Aug 21 09:08:01 ip-172-31-21-130 irqbalance[4219]: IRQ 59 affinity is now unmanaged
+
+### CURRENT BOOT ERRORS ###
+--------------------------------------------------------------------------------
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+Aug 21 11:09:04 ip-172-31-21-130 kernel: cpu 0 spinlock event irq 53
+Aug 21 11:09:04 ip-172-31-21-130 kernel: cpu 1 spinlock event irq 59
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+Aug 21 11:09:04 ip-172-31-21-130 kernel: * Found PM-Timer Bug on the chipset. Due to workarounds for a bug,
+                                         * this clock source is slow. Consider trying other clock sources
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Grant table initialized
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+Aug 21 11:09:04 ip-172-31-21-130 kernel: i8042: Warning: Keylock active
+Aug 21 11:09:04 ip-172-31-21-130 (udev-worker)[235]: eth0: Could not set WakeOnLan to off, ignoring: Operation not supported
+Aug 21 11:09:04 ip-172-31-21-130 kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Aug 21 11:09:04 ip-172-31-21-130 (udev-worker)[224]: enX0: Could not set WakeOnLan to off, ignoring: Operation not supported
+Aug 21 11:09:06 ip-172-31-21-130 kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+Aug 21 11:09:10 ip-172-31-21-130 (acpid)[636]: acpid.service: Referenced but unset environment variable evaluates to an empty string: OPTIONS
+Aug 21 11:09:10 ip-172-31-21-130 (cron)[640]: cron.service: Referenced but unset environment variable evaluates to an empty string: EXTRA_OPTS
+Aug 21 11:09:10 ip-172-31-21-130 (qbalance)[647]: irqbalance.service: Referenced but unset environment variable evaluates to an empty string: IRQBALANCE_ARGS
+Aug 21 11:09:10 ip-172-31-21-130 kernel: kauditd_printk_skb: 114 callbacks suppressed
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: Cannot change IRQ 0 affinity: No such file or directory
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: IRQ 0 affinity is now unmanaged
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: Cannot change IRQ 48 affinity: No such file or directory
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: IRQ 48 affinity is now unmanaged
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: Cannot change IRQ 49 affinity: No such file or directory
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: IRQ 49 affinity is now unmanaged
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: Cannot change IRQ 50 affinity: No such file or directory
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: IRQ 50 affinity is now unmanaged
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: Cannot change IRQ 51 affinity: No such file or directory
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: IRQ 51 affinity is now unmanaged
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: Cannot change IRQ 52 affinity: No such file or directory
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: IRQ 52 affinity is now unmanaged
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: Cannot change IRQ 53 affinity: No such file or directory
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: IRQ 53 affinity is now unmanaged
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: Cannot change IRQ 54 affinity: No such file or directory
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: IRQ 54 affinity is now unmanaged
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: Cannot change IRQ 55 affinity: No such file or directory
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: IRQ 55 affinity is now unmanaged
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: Cannot change IRQ 56 affinity: No such file or directory
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: IRQ 56 affinity is now unmanaged
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: Cannot change IRQ 57 affinity: No such file or directory
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: IRQ 57 affinity is now unmanaged
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: Cannot change IRQ 58 affinity: No such file or directory
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: IRQ 58 affinity is now unmanaged
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: Cannot change IRQ 59 affinity: No such file or directory
+Aug 21 11:09:21 ip-172-31-21-130 irqbalance[647]: IRQ 59 affinity is now unmanaged
+
+### JOURNAL DISK USAGE ###
+--------------------------------------------------------------------------------
+Archived and active journals take up 231.9M in the file system.
+
+### AVAILABLE JOURNAL BOOTS ###
+--------------------------------------------------------------------------------
+IDX BOOT ID                          FIRST ENTRY                 LAST ENTRY
+-22 d4317b1e8b334c80a6331cb3a3a6390e Tue 2026-08-11 09:17:11 UTC Thu 2026-08-13 14:01:55 UTC
+-21 5f6b1da89cf94084bdba937887f43cf3 Thu 2026-08-13 14:02:16 UTC Sun 2026-08-16 16:53:23 UTC
+-20 5409d595aa6a4469965dcc744a977de8 Sun 2026-08-16 19:09:50 UTC Thu 2026-08-20 14:03:10 UTC
+-19 c8772017ea8f461fbe88776fd4ae8402 Thu 2026-08-20 14:03:23 UTC Thu 2026-08-20 14:30:48 UTC
+-18 916316043fbb45d3818bba5239bf7651 Thu 2026-08-20 14:30:59 UTC Thu 2026-08-20 14:33:52 UTC
+-17 bc0b128800c44cf2b9207815795c7aa0 Thu 2026-08-20 14:34:04 UTC Thu 2026-08-20 14:38:11 UTC
+-16 5644ad7d222b48958a1495ee1ecfe16d Thu 2026-08-20 14:38:24 UTC Thu 2026-08-20 14:44:08 UTC
+-15 d1ec93710119453ab6c584bf36b894d6 Thu 2026-08-20 14:44:21 UTC Thu 2026-08-20 14:46:09 UTC
+-14 660a5707849a420aaac3045c3a8a27ab Thu 2026-08-20 14:46:22 UTC Thu 2026-08-20 14:48:08 UTC
+-13 b3c590e7a7d0482d95b5c1bd99c6db63 Thu 2026-08-20 14:48:21 UTC Thu 2026-08-20 14:50:08 UTC
+-12 e32347fda8674a8a9280d6ece081f80e Thu 2026-08-20 14:50:21 UTC Thu 2026-08-20 14:52:08 UTC
+-11 2478522ad99e429d81504839331d0aae Thu 2026-08-20 14:52:21 UTC Thu 2026-08-20 14:54:09 UTC
+-10 9f03883c745f42768cb7e425811df675 Thu 2026-08-20 14:54:22 UTC Thu 2026-08-20 14:56:08 UTC
+ -9 188fe70c4bcd4bd68b6a144c78460f32 Thu 2026-08-20 14:56:19 UTC Thu 2026-08-20 14:58:08 UTC
+ -8 5c3d91428ee441cd860155bf336d0e60 Thu 2026-08-20 14:58:21 UTC Thu 2026-08-20 15:02:26 UTC
+ -7 80f40a8171b74442a35a0c787a052f2c Thu 2026-08-20 15:02:38 UTC Thu 2026-08-20 15:42:07 UTC
+ -6 507bb4489fe24a29bacd455156d2f522 Thu 2026-08-20 15:42:19 UTC Thu 2026-08-20 19:03:35 UTC
+ -5 a942caf7132946d3bca023e05a16d9d5 Thu 2026-08-20 19:03:48 UTC Thu 2026-08-20 19:18:08 UTC
+ -4 a7eb5b5567d349b5bd473f9be978459b Thu 2026-08-20 19:18:21 UTC Thu 2026-08-20 19:20:08 UTC
+ -3 03b6cffb46154ba1b6a0cd674bccd468 Thu 2026-08-20 19:20:21 UTC Thu 2026-08-20 19:22:08 UTC
+ -2 5d8ef04b494942e19098de54486aaff4 Thu 2026-08-20 19:22:21 UTC Fri 2026-08-21 09:07:32 UTC
+ -1 3e6b758cb7cc4c6a9897072cf3c97007 Fri 2026-08-21 09:07:44 UTC Fri 2026-08-21 11:08:51 UTC
+  0 e01bb03862434ff8aacc05cf8814cf3e Fri 2026-08-21 11:09:04 UTC Fri 2026-08-21 11:09:59 UTC
+
+### PREVIOUS KERNEL LOG ###
+--------------------------------------------------------------------------------
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Linux version 7.0.0-1010-aws (buildd@lcy02-amd64-063) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #10~24.04.1-Ubuntu SMP PREEMPT Mon Jul 27 17:41:33 UTC 2026 (Ubuntu 7.0.0-1010.10~24.04.1-aws 7.0.12)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Command line: BOOT_IMAGE=/vmlinuz-7.0.0-1010-aws root=PARTUUID=fe814a98-f7fd-4c3d-9642-c18fe64c6e5d ro console=tty1 console=ttyS0 nvme_core.io_timeout=4294967295 crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M panic=-1
+Aug 21 09:07:44 ip-172-31-21-130 kernel: KERNEL supported cpus:
+Aug 21 09:07:44 ip-172-31-21-130 kernel:   Intel GenuineIntel
+Aug 21 09:07:44 ip-172-31-21-130 kernel:   AMD AuthenticAMD
+Aug 21 09:07:44 ip-172-31-21-130 kernel:   Hygon HygonGenuine
+Aug 21 09:07:44 ip-172-31-21-130 kernel:   Centaur CentaurHauls
+Aug 21 09:07:44 ip-172-31-21-130 kernel:   zhaoxin   Shanghai  
+Aug 21 09:07:44 ip-172-31-21-130 kernel: x86/CPU: Model not found in latest microcode list
+Aug 21 09:07:44 ip-172-31-21-130 kernel: BIOS-provided physical RAM map:
+Aug 21 09:07:44 ip-172-31-21-130 kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009dfff]  System RAM
+Aug 21 09:07:44 ip-172-31-21-130 kernel: BIOS-e820: [mem 0x000000000009e000-0x000000000009ffff]  device reserved
+Aug 21 09:07:44 ip-172-31-21-130 kernel: BIOS-e820: [gap 0x00000000000a0000-0x00000000000dffff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff]  device reserved
+Aug 21 09:07:44 ip-172-31-21-130 kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000efffffff]  System RAM
+Aug 21 09:07:44 ip-172-31-21-130 kernel: BIOS-e820: [gap 0x00000000f0000000-0x00000000fbffffff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: BIOS-e820: [mem 0x00000000fc000000-0x00000000ffffffff]  device reserved
+Aug 21 09:07:44 ip-172-31-21-130 kernel: BIOS-e820: [mem 0x0000000100000000-0x000000020fffffff]  System RAM
+Aug 21 09:07:44 ip-172-31-21-130 kernel: NX (Execute Disable) protection: active
+Aug 21 09:07:44 ip-172-31-21-130 kernel: APIC: Static calls initialized
+Aug 21 09:07:44 ip-172-31-21-130 kernel: SMBIOS 2.7 present.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: DMI: Xen HVM domU, BIOS 4.11.amazon 08/24/2006
+Aug 21 09:07:44 ip-172-31-21-130 kernel: DMI: Memory slots populated: 1/1
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Hypervisor detected: Xen HVM
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Xen version 4.11.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: platform_pci_unplug: Netfront and the Xen platform PCI driver have been compiled for this kernel: unplug emulated NICs.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: platform_pci_unplug: Blkfront and the Xen platform PCI driver have been compiled for this kernel: unplug emulated disks.
+                                         You might have to change the root device
+                                         from /dev/hd[a-d] to /dev/xvd[a-d]
+                                         in your root= kernel command line option
+Aug 21 09:07:44 ip-172-31-21-130 kernel: HVMOP_pagetable_dying not supported
+Aug 21 09:07:44 ip-172-31-21-130 kernel: tsc: Detected 2299.998 MHz processor
+Aug 21 09:07:44 ip-172-31-21-130 kernel: e820: update [mem 0x00000000-0x00000fff] System RAM ==> device reserved
+Aug 21 09:07:44 ip-172-31-21-130 kernel: e820: remove [mem 0x000a0000-0x000fffff] System RAM
+Aug 21 09:07:44 ip-172-31-21-130 kernel: last_pfn = 0x210000 max_arch_pfn = 0x400000000
+Aug 21 09:07:44 ip-172-31-21-130 kernel: MTRR map: 4 entries (3 fixed + 1 variable; max 19), built from 8 variable MTRRs
+Aug 21 09:07:44 ip-172-31-21-130 kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Aug 21 09:07:44 ip-172-31-21-130 kernel: last_pfn = 0xf0000 max_arch_pfn = 0x400000000
+Aug 21 09:07:44 ip-172-31-21-130 kernel: found SMP MP-table at [mem 0x000fbb70-0x000fbb7f]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: RAMDISK: [mem 0x3631f000-0x37186fff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: Early table checksum verification disabled
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: RSDP 0x00000000000EA020 000024 (v02 Xen   )
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: XSDT 0x00000000FC00D4F0 00005C (v01 Xen    HVM      00000000 HVML 00000000)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: FACP 0x00000000FC00D3F0 0000F4 (v04 Xen    HVM      00000000 HVML 00000000)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: DSDT 0x00000000FC001000 00BD14 (v02 Xen    HVM      00000000 INTL 20090123)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: FACS 0x00000000FC00D2F0 000040
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: FACS 0x00000000FC00D2F0 000040
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: SSDT 0x00000000FC00CD20 000033 (v02 Xen    HVM      00000000 INTL 20090123)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: SSDT 0x00000000FC00CD60 000031 (v02 Xen    HVM      00000000 INTL 20090123)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: APIC 0x00000000FC00CDA0 0000D8 (v02 Xen    HVM      00000000 HVML 00000000)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: HPET 0x00000000FC00D280 000038 (v01 Xen    HVM      00000000 HVML 00000000)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: WAET 0x00000000FC00D2C0 000028 (v01 Xen    HVM      00000000 HVML 00000000)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: Reserving FACP table memory at [mem 0xfc00d3f0-0xfc00d4e3]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: Reserving DSDT table memory at [mem 0xfc001000-0xfc00cd13]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: Reserving FACS table memory at [mem 0xfc00d2f0-0xfc00d32f]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: Reserving FACS table memory at [mem 0xfc00d2f0-0xfc00d32f]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: Reserving SSDT table memory at [mem 0xfc00cd20-0xfc00cd52]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: Reserving SSDT table memory at [mem 0xfc00cd60-0xfc00cd90]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: Reserving APIC table memory at [mem 0xfc00cda0-0xfc00ce77]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: Reserving HPET table memory at [mem 0xfc00d280-0xfc00d2b7]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: Reserving WAET table memory at [mem 0xfc00d2c0-0xfc00d2e7]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: No NUMA configuration found
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Faking a node at [mem 0x0000000000000000-0x000000020fffffff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: NODE_DATA(0) allocated [mem 0x20ffd2280-0x20fffcfff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: crashkernel reserved: 0x00000000d0000000 - 0x00000000f0000000 (512 MB)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: PM-Timer IO Port: 0xb008
+Aug 21 09:07:44 ip-172-31-21-130 kernel: IOAPIC[0]: apic_id 1, version 17, address 0xfec00000, GSI 0-47
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 low level)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 low level)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 low level)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000
+Aug 21 09:07:44 ip-172-31-21-130 kernel: TSC deadline timer available
+Aug 21 09:07:44 ip-172-31-21-130 kernel: CPU topo: Max. logical packages:   1
+Aug 21 09:07:44 ip-172-31-21-130 kernel: CPU topo: Max. logical nodes:      1
+Aug 21 09:07:44 ip-172-31-21-130 kernel: CPU topo: Num. nodes per package:  1
+Aug 21 09:07:44 ip-172-31-21-130 kernel: CPU topo: Max. logical dies:       1
+Aug 21 09:07:44 ip-172-31-21-130 kernel: CPU topo: Max. dies per package:   1
+Aug 21 09:07:44 ip-172-31-21-130 kernel: CPU topo: Max. threads per core:   1
+Aug 21 09:07:44 ip-172-31-21-130 kernel: CPU topo: Num. cores per package:     2
+Aug 21 09:07:44 ip-172-31-21-130 kernel: CPU topo: Num. threads per package:   2
+Aug 21 09:07:44 ip-172-31-21-130 kernel: CPU topo: Allowing 2 present CPUs plus 13 hotplug CPUs
+Aug 21 09:07:44 ip-172-31-21-130 kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: PM: hibernation: Registered nosave memory: [mem 0x0009e000-0x000fffff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: PM: hibernation: Registered nosave memory: [mem 0xf0000000-0xffffffff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: [gap 0xf0000000-0xfbffffff] available for PCI devices
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Booting paravirtualized kernel on Xen HVM
+Aug 21 09:07:44 ip-172-31-21-130 kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Zone ranges:
+Aug 21 09:07:44 ip-172-31-21-130 kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel:   Normal   [mem 0x0000000100000000-0x000000020fffffff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel:   Device   empty
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Movable zone start for each node
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Early memory node ranges
+Aug 21 09:07:44 ip-172-31-21-130 kernel:   node   0: [mem 0x0000000000001000-0x000000000009dfff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel:   node   0: [mem 0x0000000000100000-0x00000000efffffff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel:   node   0: [mem 0x0000000100000000-0x000000020fffffff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000020fffffff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Aug 21 09:07:44 ip-172-31-21-130 kernel: On node 0, zone DMA: 98 pages in unavailable ranges
+Aug 21 09:07:44 ip-172-31-21-130 kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:15 nr_cpu_ids:15 nr_node_ids:1
+Aug 21 09:07:44 ip-172-31-21-130 kernel: percpu: Embedded 85 pages/cpu s225280 r8192 d114688 u524288
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pcpu-alloc: s225280 r8192 d114688 u524288 alloc=1*2097152
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pcpu-alloc: [0] 00 01 02 03 [0] 04 05 06 07 
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pcpu-alloc: [0] 08 09 10 11 [0] 12 13 14 -- 
+Aug 21 09:07:44 ip-172-31-21-130 kernel: xen: PV spinlocks enabled
+Aug 21 09:07:44 ip-172-31-21-130 kernel: PV qspinlock hash table entries: 256 (order: 0, 4096 bytes, linear)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Kernel command line: BOOT_IMAGE=/vmlinuz-7.0.0-1010-aws root=PARTUUID=fe814a98-f7fd-4c3d-9642-c18fe64c6e5d ro console=tty1 console=ttyS0 nvme_core.io_timeout=4294967295 crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M panic=-1
+Aug 21 09:07:44 ip-172-31-21-130 kernel: random: crng init done
+Aug 21 09:07:44 ip-172-31-21-130 kernel: printk: log buffer data + meta data: 262144 + 1114112 = 1376256 bytes
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: software IO TLB: area num 16.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Fallback order for Node 0: 0 
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Built 1 zonelists, mobility grouping on.  Total pages: 2097053
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Policy zone: Normal
+Aug 21 09:07:44 ip-172-31-21-130 kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+Aug 21 09:07:44 ip-172-31-21-130 kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=15, Nodes=1
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Kernel/User page tables isolation: enabled
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ftrace section at ffffffffb0734260 sorted properly
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ftrace: allocating 63844 entries in 252 pages
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ftrace: allocated 252 pages with 6 groups
+Aug 21 09:07:44 ip-172-31-21-130 kernel: rcu: Hierarchical RCU implementation.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=15.
+Aug 21 09:07:44 ip-172-31-21-130 kernel:         Trampoline variant of Tasks RCU enabled.
+Aug 21 09:07:44 ip-172-31-21-130 kernel:         Rude variant of Tasks RCU enabled.
+Aug 21 09:07:44 ip-172-31-21-130 kernel:         Tracing variant of Tasks RCU enabled.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=15
+Aug 21 09:07:44 ip-172-31-21-130 kernel: RCU Tasks: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=15.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: RCU Tasks Rude: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=15.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: NR_IRQS: 524544, nr_irqs: 952, preallocated irqs: 16
+Aug 21 09:07:44 ip-172-31-21-130 kernel: xen:events: Using 2-level ABI
+Aug 21 09:07:44 ip-172-31-21-130 kernel: xen:events: Xen HVM callback vector for event delivery is enabled
+Aug 21 09:07:44 ip-172-31-21-130 kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Console: colour VGA+ 80x25
+Aug 21 09:07:44 ip-172-31-21-130 kernel: printk: legacy console [tty1] enabled
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+Aug 21 09:07:44 ip-172-31-21-130 kernel: printk: legacy console [ttyS0] enabled
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: Core revision 20251212
+Aug 21 09:07:44 ip-172-31-21-130 kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 30580167144 ns
+Aug 21 09:07:44 ip-172-31-21-130 kernel: APIC: Switch to symmetric I/O mode setup
+Aug 21 09:07:44 ip-172-31-21-130 kernel: x2apic enabled
+Aug 21 09:07:44 ip-172-31-21-130 kernel: APIC: Switched APIC routing to: physical x2apic
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=0 pin2=0
+Aug 21 09:07:44 ip-172-31-21-130 kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x212733415c7, max_idle_ns: 440795236380 ns
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 4599.99 BogoMIPS (lpj=2299998)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Last level dTLB entries: 4KB 64, 2MB 32, 4MB 32, 1GB 4
+Aug 21 09:07:44 ip-172-31-21-130 kernel: mitigations: Enabled attack vectors: user_kernel, user_user, guest_host, guest_guest, SMT mitigations: auto
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Speculative Store Bypass: Vulnerable
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Spectre V2 : Mitigation: Retpolines
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ITS: Mitigation: Aligned branch/return thunks
+Aug 21 09:07:44 ip-172-31-21-130 kernel: MDS: Vulnerable: Clear CPU buffers attempted, no microcode
+Aug 21 09:07:44 ip-172-31-21-130 kernel: MMIO Stale Data: Vulnerable: Clear CPU buffers attempted, no microcode
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Spectre V2 : Spectre v2 / SpectreRSB: Filling RSB on context switch and VMEXIT
+Aug 21 09:07:44 ip-172-31-21-130 kernel: active return thunk: its_return_thunk
+Aug 21 09:07:44 ip-172-31-21-130 kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Aug 21 09:07:44 ip-172-31-21-130 kernel: x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Freeing SMP alternatives memory: 56K
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pid_max: default: 32768 minimum: 301
+Aug 21 09:07:44 ip-172-31-21-130 kernel: landlock: Up and running.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Yama: becoming mindful.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: AppArmor: AppArmor initialized
+Aug 21 09:07:44 ip-172-31-21-130 kernel: AppArmor: AppArmor secmark mediation reserved: ready to be enabled
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: VFS: Finished mounting rootfs on nullfs
+Aug 21 09:07:44 ip-172-31-21-130 kernel: clocksource: xen: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Xen: using vcpuop timer interface
+Aug 21 09:07:44 ip-172-31-21-130 kernel: installing Xen timer for CPU 0
+Aug 21 09:07:44 ip-172-31-21-130 kernel: smpboot: CPU0: Intel(R) Xeon(R) CPU E5-2686 v4 @ 2.30GHz (family: 0x6, model: 0x4f, stepping: 0x1)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: cpu 0 spinlock event irq 53
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Performance Events: unsupported CPU family 6 model 79 no PMU driver, software events only.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: signal: max sigframe size: 1776
+Aug 21 09:07:44 ip-172-31-21-130 kernel: rcu: Hierarchical SRCU implementation.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: rcu:         Max phase no-delay instances is 400.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Timer migration: 2 hierarchy levels; 8 children per group; 2 crossnode level
+Aug 21 09:07:44 ip-172-31-21-130 kernel: NMI watchdog: Perf NMI watchdog permanently disabled
+Aug 21 09:07:44 ip-172-31-21-130 kernel: smp: Bringing up secondary CPUs ...
+Aug 21 09:07:44 ip-172-31-21-130 kernel: installing Xen timer for CPU 1
+Aug 21 09:07:44 ip-172-31-21-130 kernel: smpboot: x86: Booting SMP configuration:
+Aug 21 09:07:44 ip-172-31-21-130 kernel: .... node  #0, CPUs:        #1
+Aug 21 09:07:44 ip-172-31-21-130 kernel: cpu 1 spinlock event irq 59
+Aug 21 09:07:44 ip-172-31-21-130 kernel: smp: Brought up 1 node, 2 CPUs
+Aug 21 09:07:44 ip-172-31-21-130 kernel: smpboot: Total of 2 processors activated (386696.65 BogoMIPS)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Memory: 5513732K/8388212K available (23130K kernel code, 4948K rwdata, 16388K rodata, 5412K init, 5744K bss, 2864248K reserved, 0K cma-reserved)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: devtmpfs: initialized
+Aug 21 09:07:44 ip-172-31-21-130 kernel: x86/mm: Memory block size: 128MB
+Aug 21 09:07:44 ip-172-31-21-130 kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Aug 21 09:07:44 ip-172-31-21-130 kernel: posixtimers hash table entries: 8192 (order: 5, 131072 bytes, linear)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: futex hash table entries: 4096 (262144 bytes on 1 NUMA nodes, total 256 KiB, linear).
+Aug 21 09:07:44 ip-172-31-21-130 kernel: PM: RTC time: 09:07:41, date: 2026-08-21
+Aug 21 09:07:44 ip-172-31-21-130 kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Aug 21 09:07:44 ip-172-31-21-130 kernel: DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations
+Aug 21 09:07:44 ip-172-31-21-130 kernel: DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Aug 21 09:07:44 ip-172-31-21-130 kernel: DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Aug 21 09:07:44 ip-172-31-21-130 kernel: audit: initializing netlink subsys (disabled)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: audit: type=2000 audit(1787303257.224:1): state=initialized audit_enabled=0 res=1
+Aug 21 09:07:44 ip-172-31-21-130 kernel: thermal_sys: Registered thermal governor 'fair_share'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: thermal_sys: Registered thermal governor 'bang_bang'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: thermal_sys: Registered thermal governor 'step_wise'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: thermal_sys: Registered thermal governor 'user_space'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: thermal_sys: Registered thermal governor 'power_allocator'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: cpuidle: using governor ladder
+Aug 21 09:07:44 ip-172-31-21-130 kernel: cpuidle: using governor menu
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Aug 21 09:07:44 ip-172-31-21-130 kernel: PCI: Using configuration type 1 for base access
+Aug 21 09:07:44 ip-172-31-21-130 kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+Aug 21 09:07:44 ip-172-31-21-130 kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: Added _OSI(Module Device)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: Added _OSI(Processor Device)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: 3 ACPI AML tables successfully acquired and loaded
+Aug 21 09:07:44 ip-172-31-21-130 kernel: xen: --> pirq=16 -> irq=9 (gsi=9)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: \_SB_: platform _OSC: OS support mask [006e7eff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: Interpreter enabled
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: PM: (supports S0 S4 S5)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: Using IOAPIC for interrupt routing
+Aug 21 09:07:44 ip-172-31-21-130 kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Aug 21 09:07:44 ip-172-31-21-130 kernel: PCI: Using E820 reservations for host bridge windows
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: Enabled 2 GPEs in block 00 to 0F
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI EDR HPX-Type3]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0A03:00: _OSC: platform retains control of PCIe features (AE_ERROR)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [0] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [3] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [4] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [5] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [6] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [7] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [8] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [9] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [10] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [11] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [12] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [13] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [14] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [15] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [16] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [17] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [18] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [19] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [20] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [21] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [22] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [23] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [24] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [25] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [26] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [27] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [28] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [29] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [30] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpiphp: Slot [31] registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: PCI host bridge to bus 0000:00
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci_bus 0000:00: root bus resource [mem 0xf0000000-0xffffffff window]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000 conventional PCI endpoint
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:01.0: [8086:7000] type 00 class 0x060100 conventional PCI endpoint
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:01.1: [8086:7010] type 00 class 0x010180 conventional PCI endpoint
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:01.1: BAR 4 [io  0xc000-0xc00f]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:01.1: BAR 0 [io  0x01f0-0x01f7]: legacy IDE quirk
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:01.1: BAR 1 [io  0x03f6]: legacy IDE quirk
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:01.1: BAR 2 [io  0x0170-0x0177]: legacy IDE quirk
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:01.1: BAR 3 [io  0x0376]: legacy IDE quirk
+Aug 21 09:07:44 ip-172-31-21-130 kernel: * Found PM-Timer Bug on the chipset. Due to workarounds for a bug,
+                                         * this clock source is slow. Consider trying other clock sources
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:01.3: [8086:7113] type 00 class 0x068000 conventional PCI endpoint
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:02.0: [1013:00b8] type 00 class 0x030000 conventional PCI endpoint
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:02.0: BAR 0 [mem 0xf8000000-0xf9ffffff pref]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:02.0: BAR 1 [mem 0xfbfff000-0xfbffffff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:03.0: [5853:0001] type 00 class 0xff8000 conventional PCI endpoint
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:03.0: BAR 0 [io  0xc100-0xc1ff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:03.0: BAR 1 [mem 0xfa000000-0xfaffffff pref]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 5
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 5
+Aug 21 09:07:44 ip-172-31-21-130 kernel: xen:balloon: Initialising balloon driver
+Aug 21 09:07:44 ip-172-31-21-130 kernel: iommu: Default domain type: Translated
+Aug 21 09:07:44 ip-172-31-21-130 kernel: iommu: DMA domain TLB invalidation policy: lazy mode
+Aug 21 09:07:44 ip-172-31-21-130 kernel: SCSI subsystem initialized
+Aug 21 09:07:44 ip-172-31-21-130 kernel: libata version 3.00 loaded.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: bus type USB registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: usbcore: registered new interface driver usbfs
+Aug 21 09:07:44 ip-172-31-21-130 kernel: usbcore: registered new interface driver hub
+Aug 21 09:07:44 ip-172-31-21-130 kernel: usbcore: registered new device driver usb
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pps_core: LinuxPPS API ver. 1 registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Aug 21 09:07:44 ip-172-31-21-130 kernel: PTP clock support registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: EDAC MC: Ver: 3.0.0
+Aug 21 09:07:44 ip-172-31-21-130 kernel: NetLabel: Initializing
+Aug 21 09:07:44 ip-172-31-21-130 kernel: NetLabel:  domain hash size = 128
+Aug 21 09:07:44 ip-172-31-21-130 kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Aug 21 09:07:44 ip-172-31-21-130 kernel: NetLabel:  unlabeled traffic allowed by default
+Aug 21 09:07:44 ip-172-31-21-130 kernel: mctp: management component transport protocol core
+Aug 21 09:07:44 ip-172-31-21-130 kernel: NET: Registered PF_MCTP protocol family
+Aug 21 09:07:44 ip-172-31-21-130 kernel: PCI: Using ACPI for IRQ routing
+Aug 21 09:07:44 ip-172-31-21-130 kernel: PCI: pci_cache_line_size set to 64 bytes
+Aug 21 09:07:44 ip-172-31-21-130 kernel: e820: register RAM buffer resource [mem 0x0009e000-0x0009ffff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Aug 21 09:07:44 ip-172-31-21-130 kernel: vgaarb: loaded
+Aug 21 09:07:44 ip-172-31-21-130 kernel: hpet: 3 channels of 0 reserved for per-cpu timers
+Aug 21 09:07:44 ip-172-31-21-130 kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+Aug 21 09:07:44 ip-172-31-21-130 kernel: hpet0: 3 comparators, 64-bit 62.500000 MHz counter
+Aug 21 09:07:44 ip-172-31-21-130 kernel: clocksource: Switched to clocksource xen
+Aug 21 09:07:44 ip-172-31-21-130 kernel: VFS: Disk quotas dquot_6.6.0
+Aug 21 09:07:44 ip-172-31-21-130 kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: AppArmor: AppArmor Filesystem Enabled
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:00: Could not reserve [mem 0x00000000-0x0009ffff]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0010-0x001f]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0022-0x002d]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0030-0x003f]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0044-0x005f]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0062-0x0063]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0065-0x006f]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0072-0x007f]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0080]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0084-0x0086]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0088]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x008c-0x008e]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0090-0x009f]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x00a2-0x00bd]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x00e0-0x00ef]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:01: Reserved [io  0x08a0-0x08a3]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:01: Reserved [io  0x0cc0-0x0ccf]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:01: Reserved [io  0x04d0-0x04d1]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:02: Reserved [io  0x10c0-0x1141]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: acpi PNP0C02:02: Reserved [io  0xb044-0xb047]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pnp: PnP ACPI init
+Aug 21 09:07:44 ip-172-31-21-130 kernel: xen: --> pirq=17 -> irq=8 (gsi=8)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: xen: --> pirq=18 -> irq=12 (gsi=12)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: xen: --> pirq=19 -> irq=1 (gsi=1)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: xen: --> pirq=20 -> irq=6 (gsi=6)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pnp 00:03: [dma 2]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: xen: --> pirq=21 -> irq=4 (gsi=4)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pnp: PnP ACPI: found 5 devices
+Aug 21 09:07:44 ip-172-31-21-130 kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Aug 21 09:07:44 ip-172-31-21-130 kernel: NET: Registered PF_INET protocol family
+Aug 21 09:07:44 ip-172-31-21-130 kernel: IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: TCP: Hash tables configured (established 65536 bind 65536)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: MPTCP token hash table entries: 8192 (order: 6, 196608 bytes, linear)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: UDP hash table entries: 4096 (order: 6, 262144 bytes, linear)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: UDP-Lite hash table entries: 4096 (order: 6, 262144 bytes, linear)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+Aug 21 09:07:44 ip-172-31-21-130 kernel: NET: Registered PF_XDP protocol family
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci_bus 0000:00: resource 7 [mem 0xf0000000-0xffffffff window]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:01.0: PIIX3: Enabling Passive Release
+Aug 21 09:07:44 ip-172-31-21-130 kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Aug 21 09:07:44 ip-172-31-21-130 kernel: PCI: CLS 0 bytes, default 64
+Aug 21 09:07:44 ip-172-31-21-130 kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Trying to unpack rootfs image as initramfs...
+Aug 21 09:07:44 ip-172-31-21-130 kernel: software IO TLB: mapped [mem 0x00000000cc000000-0x00000000d0000000] (64MB)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x212733415c7, max_idle_ns: 440795236380 ns
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Initialise system trusted keyrings
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Freeing initrd memory: 14752K
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Key type blacklist registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: workingset: timestamp_bits=36 max_order=21 bucket_order=0
+Aug 21 09:07:44 ip-172-31-21-130 kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Aug 21 09:07:44 ip-172-31-21-130 kernel: fuse: init (API version 7.45)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: integrity: Platform Keyring initialized
+Aug 21 09:07:44 ip-172-31-21-130 kernel: integrity: Machine keyring initialized
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Key type asymmetric registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Asymmetric key parser 'x509' registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: io scheduler mq-deadline registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Aug 21 09:07:44 ip-172-31-21-130 kernel: input: Power Button as /devices/platform/LNXPWRBN:00/input/input0
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: button: Power Button [PWRF]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: input: Sleep Button as /devices/platform/LNXSLPBN:00/input/input1
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: button: Sleep Button [SLPF]
+Aug 21 09:07:44 ip-172-31-21-130 kernel: xen: --> pirq=22 -> irq=28 (gsi=28)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: xen:grant_table: Grant tables using version 1 layout
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Grant table initialized
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Aug 21 09:07:44 ip-172-31-21-130 kernel: 00:04: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Linux agpgart interface v0.103
+Aug 21 09:07:44 ip-172-31-21-130 kernel: loop: module loaded
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Invalid max_queues (4), will use default max: 2.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Key type psk registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: scsi host0: ata_piix
+Aug 21 09:07:44 ip-172-31-21-130 kernel: blkfront: xvda: barrier or flush: disabled; persistent grants: disabled; indirect descriptors: enabled; bounce buffer: disabled;
+Aug 21 09:07:44 ip-172-31-21-130 kernel: scsi host1: ata_piix
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc000 irq 14 lpm-pol 0
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc008 irq 15 lpm-pol 0
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ACPI: bus type drm_connector registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel:  xvda: xvda1 xvda14 xvda15 xvda16
+Aug 21 09:07:44 ip-172-31-21-130 kernel: tun: Universal TUN/TAP device driver, 1.6
+Aug 21 09:07:44 ip-172-31-21-130 kernel: PPP generic driver version 2.4.2
+Aug 21 09:07:44 ip-172-31-21-130 kernel: xen_netfront: Initialising Xen virtual ethernet driver
+Aug 21 09:07:44 ip-172-31-21-130 kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f13:PS2M] at 0x60,0x64 irq 1,12
+Aug 21 09:07:44 ip-172-31-21-130 kernel: i8042: Warning: Keylock active
+Aug 21 09:07:44 ip-172-31-21-130 kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Aug 21 09:07:44 ip-172-31-21-130 kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+Aug 21 09:07:44 ip-172-31-21-130 kernel: mousedev: PS/2 mouse device common for all mice
+Aug 21 09:07:44 ip-172-31-21-130 kernel: rtc_cmos 00:00: registered as rtc0
+Aug 21 09:07:44 ip-172-31-21-130 kernel: rtc_cmos 00:00: setting system clock to 2026-08-21T09:07:42 UTC (1787303262)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: rtc_cmos 00:00: alarms up to one day, 114 bytes nvram, hpet irqs
+Aug 21 09:07:44 ip-172-31-21-130 kernel: i2c_dev: i2c /dev entries driver
+Aug 21 09:07:44 ip-172-31-21-130 kernel: device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: device-mapper: uevent: version 1.0.3
+Aug 21 09:07:44 ip-172-31-21-130 kernel: device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+Aug 21 09:07:44 ip-172-31-21-130 kernel: intel_pstate: CPU model not supported
+Aug 21 09:07:44 ip-172-31-21-130 kernel: drop_monitor: Initializing network drop monitor service
+Aug 21 09:07:44 ip-172-31-21-130 kernel: NET: Registered PF_INET6 protocol family
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Segment Routing with IPv6
+Aug 21 09:07:44 ip-172-31-21-130 kernel: In-situ OAM (IOAM) with IPv6
+Aug 21 09:07:44 ip-172-31-21-130 kernel: NET: Registered PF_PACKET protocol family
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Key type dns_resolver registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: resctrl: No MBM correction factor available
+Aug 21 09:07:44 ip-172-31-21-130 kernel: IPI shorthand broadcast: enabled
+Aug 21 09:07:44 ip-172-31-21-130 kernel: sched_clock: Marking stable (433003582, 296347083)->(6101405592, -5372054927)
+Aug 21 09:07:44 ip-172-31-21-130 kernel: registered taskstats version 1
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Loading compiled-in X.509 certificates
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 2f24b06c1e624fb173fdac675ec9a919854884d7'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing 2025 Kmod: d541cef61dc7e793b7eb7e899970a2eef0b5dc8c'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing 2025 Kmod: 4627603d2357a2a3f81006370894c221175893e9'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: blacklist: Loading compiled-in revocation X.509 certificates
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Demotion targets for Node 0: null
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Key type .fscrypt registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Key type fscrypt-provisioning registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Key type big_key registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Key type encrypted registered
+Aug 21 09:07:44 ip-172-31-21-130 kernel: AppArmor: AppArmor sha256 policy hashing enabled
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ima: No TPM chip found, activating TPM-bypass!
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Loading compiled-in module X.509 certificates
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 2f24b06c1e624fb173fdac675ec9a919854884d7'
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ima: Allocated hash algorithm: sha256
+Aug 21 09:07:44 ip-172-31-21-130 kernel: ima: No architecture policies found
+Aug 21 09:07:44 ip-172-31-21-130 kernel: evm: Initialising EVM extended attributes:
+Aug 21 09:07:44 ip-172-31-21-130 kernel: evm: security.selinux
+Aug 21 09:07:44 ip-172-31-21-130 kernel: evm: security.SMACK64
+Aug 21 09:07:44 ip-172-31-21-130 kernel: evm: security.SMACK64EXEC
+Aug 21 09:07:44 ip-172-31-21-130 kernel: evm: security.SMACK64TRANSMUTE
+Aug 21 09:07:44 ip-172-31-21-130 kernel: evm: security.SMACK64MMAP
+Aug 21 09:07:44 ip-172-31-21-130 kernel: evm: security.apparmor
+Aug 21 09:07:44 ip-172-31-21-130 kernel: evm: security.ima
+Aug 21 09:07:44 ip-172-31-21-130 kernel: evm: security.capability
+Aug 21 09:07:44 ip-172-31-21-130 kernel: evm: HMAC attrs: 0x1
+Aug 21 09:07:44 ip-172-31-21-130 kernel: PM:   Magic number: 6:608:121
+Aug 21 09:07:44 ip-172-31-21-130 kernel: RAS: Correctable Errors collector initialized.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: clk: Disabling unused clocks
+Aug 21 09:07:44 ip-172-31-21-130 kernel: PM: genpd: Disabling unused power domains
+Aug 21 09:07:44 ip-172-31-21-130 kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+Aug 21 09:07:44 ip-172-31-21-130 kernel: md: Waiting for all devices to be available before autodetect
+Aug 21 09:07:44 ip-172-31-21-130 kernel: md: If you don't use raid, use raid=noautodetect
+Aug 21 09:07:44 ip-172-31-21-130 kernel: md: Autodetecting RAID arrays.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: md: autorun ...
+Aug 21 09:07:44 ip-172-31-21-130 kernel: md: ... autorun DONE.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: EXT4-fs (xvda1): mounted filesystem 0ef35759-eb42-4358-9a2a-1f74696d7007 ro with ordered data mode. Quota mode: none.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: VFS: Mounted root (ext4 filesystem) readonly on device 202:1.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: devtmpfs: mounted
+Aug 21 09:07:44 ip-172-31-21-130 kernel: VFS: Pivoted into new rootfs
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Freeing unused decrypted memory: 2028K
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Freeing unused kernel image (initmem) memory: 5412K
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Write protecting the kernel read-only data: 43008k
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Freeing unused kernel image (text/rodata gap) memory: 1444K
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Freeing unused kernel image (rodata/data gap) memory: 2044K
+Aug 21 09:07:44 ip-172-31-21-130 kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: x86/mm: Checking user space page tables
+Aug 21 09:07:44 ip-172-31-21-130 kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Run /sbin/init as init process
+Aug 21 09:07:44 ip-172-31-21-130 kernel:   with arguments:
+Aug 21 09:07:44 ip-172-31-21-130 kernel:     /sbin/init
+Aug 21 09:07:44 ip-172-31-21-130 kernel:   with environment:
+Aug 21 09:07:44 ip-172-31-21-130 kernel:     HOME=/
+Aug 21 09:07:44 ip-172-31-21-130 kernel:     TERM=linux
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Inserted module 'autofs4'
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: systemd 255.4-1ubuntu8.17 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Detected virtualization xen.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Detected architecture x86-64.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Hostname set to <ip-172-31-21-130>.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Queued start job for default target graphical.target.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Created slice system-modprobe.slice - Slice /system/modprobe.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Created slice system-serial\x2dgetty.slice - Slice /system/serial-getty.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Created slice system-systemd\x2dfsck.slice - Slice /system/systemd-fsck.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Created slice user.slice - User and Session Slice.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Expecting device dev-disk-by\x2dlabel-BOOT.device - /dev/disk/by-label/BOOT...
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Expecting device dev-disk-by\x2dlabel-UEFI.device - /dev/disk/by-label/UEFI...
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Expecting device dev-ttyS0.device - /dev/ttyS0...
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Reached target slices.target - Slice Units.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Reached target snapd.mounts-pre.target - Mounting snaps.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Reached target swap.target - Swaps.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Reached target time-set.target - System Time Set.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Listening on dm-event.socket - Device-mapper event daemon FIFOs.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Listening on lvm2-lvmpolld.socket - LVM2 poll daemon socket.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Listening on multipathd.socket - multipathd control socket.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Listening on syslog.socket - Syslog Socket.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Listening on systemd-fsckd.socket - fsck to fsckd communication Socket.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Listening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Listening on systemd-journald.socket - Journal Socket.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Listening on systemd-networkd.socket - Network Service Netlink Socket.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: systemd-pcrextend.socket - TPM2 PCR Extension (Varlink) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Starting systemd-journald.service - Journal Service...
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Starting keyboard-setup.service - Set the console keyboard layout...
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Starting lvm2-monitor.service - Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+Aug 21 09:07:44 ip-172-31-21-130 systemd-journald[129]: Collecting audit messages is disabled.
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Starting modprobe@dm_mod.service - Load Kernel Module dm_mod...
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Starting modprobe@drm.service - Load Kernel Module drm...
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Starting modprobe@fuse.service - Load Kernel Module fuse...
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Starting modprobe@loop.service - Load Kernel Module loop...
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup was skipped because of an unmet condition check (ConditionFileIsExecutable=/usr/bin/ovs-vsctl).
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Starting systemd-fsck-root.service - File System Check on Root Device...
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: systemd-pcrmachine.service - TPM2 PCR Machine ID Measurement was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: systemd-tpm2-setup-early.service - TPM2 SRK Setup (Early) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+Aug 21 09:07:44 ip-172-31-21-130 systemd[1]: Started systemd-journald.service - Journal Service.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: EXT4-fs (xvda1): re-mounted 0ef35759-eb42-4358-9a2a-1f74696d7007 r/w.
+Aug 21 09:07:44 ip-172-31-21-130 systemd-journald[129]: Received client request to flush runtime journal.
+Aug 21 09:07:44 ip-172-31-21-130 systemd-journald[129]: /var/log/journal/ec25dbf92fa7a8cca14e3d5e3abd2657/system.journal: Journal file uses a different sequence number ID, rotating.
+Aug 21 09:07:44 ip-172-31-21-130 systemd-journald[129]: Rotating system journal.
+Aug 21 09:07:44 ip-172-31-21-130 kernel: loop0: detected capacity change from 0 to 57752
+Aug 21 09:07:44 ip-172-31-21-130 kernel: loop1: detected capacity change from 0 to 58160
+Aug 21 09:07:44 ip-172-31-21-130 kernel: loop2: detected capacity change from 0 to 151512
+Aug 21 09:07:44 ip-172-31-21-130 kernel: loop3: detected capacity change from 0 to 100888
+Aug 21 09:07:44 ip-172-31-21-130 kernel: loop4: detected capacity change from 0 to 151536
+Aug 21 09:07:44 ip-172-31-21-130 kernel: loop5: detected capacity change from 0 to 102608
+Aug 21 09:07:44 ip-172-31-21-130 kernel: vif vif-0 enX0: renamed from eth0
+Aug 21 09:07:44 ip-172-31-21-130 kernel: cirrus-qemu 0000:00:02.0: vgaarb: deactivate vga console
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Console: switching to colour dummy device 80x25
+Aug 21 09:07:44 ip-172-31-21-130 kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Aug 21 09:07:44 ip-172-31-21-130 kernel: [drm] Initialized cirrus-qemu 2.0.0 for 0000:00:02.0 on minor 0
+Aug 21 09:07:44 ip-172-31-21-130 kernel: fbcon: cirrus-qemudrmf (fb0) is primary device
+Aug 21 09:07:44 ip-172-31-21-130 kernel: Console: switching to colour frame buffer device 100x37
+Aug 21 09:07:44 ip-172-31-21-130 kernel: cirrus-qemu 0000:00:02.0: [drm] fb0: cirrus-qemudrmf frame buffer device
+Aug 21 09:07:44 ip-172-31-21-130 kernel: RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 655360 ms ovfl timer
+Aug 21 09:07:45 ip-172-31-21-130 kernel: EXT4-fs (xvda16): mounted filesystem 8fb95cef-95fc-48ca-aaab-3f1b1df59748 r/w with ordered data mode. Quota mode: none.
+Aug 21 09:07:45 ip-172-31-21-130 kernel: audit: type=1400 audit(1787303265.250:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="1password" pid=384 comm="apparmor_parser"
+Aug 21 09:07:45 ip-172-31-21-130 kernel: audit: type=1400 audit(1787303265.251:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="Discord" pid=385 comm="apparmor_parser"
+Aug 21 09:07:45 ip-172-31-21-130 kernel: audit: type=1400 audit(1787303265.254:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name=4D6F6E676F444220436F6D70617373 pid=397 comm="apparmor_parser"
+Aug 21 09:07:45 ip-172-31-21-130 kernel: audit: type=1400 audit(1787303265.254:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="QtWebEngineProcess" pid=398 comm="apparmor_parser"
+Aug 21 09:07:45 ip-172-31-21-130 kernel: audit: type=1400 audit(1787303265.258:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="balena-etcher" pid=399 comm="apparmor_parser"
+Aug 21 09:07:45 ip-172-31-21-130 kernel: audit: type=1400 audit(1787303265.258:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="brave" pid=400 comm="apparmor_parser"
+Aug 21 09:07:45 ip-172-31-21-130 kernel: audit: type=1400 audit(1787303265.261:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="cam" pid=403 comm="apparmor_parser"
+Aug 21 09:07:45 ip-172-31-21-130 kernel: audit: type=1400 audit(1787303265.262:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="buildah" pid=402 comm="apparmor_parser"
+Aug 21 09:07:45 ip-172-31-21-130 kernel: audit: type=1400 audit(1787303265.265:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ch-checkns" pid=405 comm="apparmor_parser"
+Aug 21 09:07:45 ip-172-31-21-130 kernel: input: ImPS/2 Generic Wheel Mouse as /devices/platform/i8042/serio1/input/input4
+Aug 21 09:07:46 ip-172-31-21-130 kernel: 8021q: 802.1Q VLAN Support v1.8
+Aug 21 09:07:46 ip-172-31-21-130 kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Aug 21 09:07:46 ip-172-31-21-130 kernel: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Aug 21 09:07:46 ip-172-31-21-130 kernel: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+Aug 21 09:07:46 ip-172-31-21-130 kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+Aug 21 09:07:46 ip-172-31-21-130 kernel: cfg80211: failed to load regulatory.db
+Aug 21 09:07:47 ip-172-31-21-130 kernel: floppy0: no floppy controllers found
+Aug 21 09:07:47 ip-172-31-21-130 kernel: work still pending
+Aug 21 09:07:51 ip-172-31-21-130 kernel: kauditd_printk_skb: 114 callbacks suppressed
+Aug 21 09:07:51 ip-172-31-21-130 kernel: audit: type=1400 audit(1787303271.201:125): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="rsyslogd" pid=4234 comm="apparmor_parser"
+Aug 21 09:07:51 ip-172-31-21-130 kernel: NET: Registered PF_QIPCRTR protocol family
+Aug 21 09:07:53 ip-172-31-21-130 kernel: loop6: detected capacity change from 0 to 8
+Aug 21 09:07:57 ip-172-31-21-130 systemd-journald[129]: /var/log/journal/ec25dbf92fa7a8cca14e3d5e3abd2657/user-1000.journal: Journal file uses a different sequence number ID, rotating.
+Aug 21 11:08:51 ip-172-31-21-130 kernel: EXT4-fs (xvda16): unmounting filesystem 8fb95cef-95fc-48ca-aaab-3f1b1df59748.
+Aug 21 11:08:51 ip-172-31-21-130 systemd-shutdown[1]: Syncing filesystems and block devices.
+Aug 21 11:08:51 ip-172-31-21-130 systemd-shutdown[1]: Sending SIGTERM to remaining processes...
+Aug 21 11:08:51 ip-172-31-21-130 systemd-journald[129]: Received SIGTERM from PID 1 (systemd-shutdow).
+
+### CURRENT KERNEL LOG ###
+--------------------------------------------------------------------------------
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Linux version 7.0.0-1010-aws (buildd@lcy02-amd64-063) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #10~24.04.1-Ubuntu SMP PREEMPT Mon Jul 27 17:41:33 UTC 2026 (Ubuntu 7.0.0-1010.10~24.04.1-aws 7.0.12)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Command line: BOOT_IMAGE=/vmlinuz-7.0.0-1010-aws root=PARTUUID=fe814a98-f7fd-4c3d-9642-c18fe64c6e5d ro console=tty1 console=ttyS0 nvme_core.io_timeout=4294967295 crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M panic=-1
+Aug 21 11:09:04 ip-172-31-21-130 kernel: KERNEL supported cpus:
+Aug 21 11:09:04 ip-172-31-21-130 kernel:   Intel GenuineIntel
+Aug 21 11:09:04 ip-172-31-21-130 kernel:   AMD AuthenticAMD
+Aug 21 11:09:04 ip-172-31-21-130 kernel:   Hygon HygonGenuine
+Aug 21 11:09:04 ip-172-31-21-130 kernel:   Centaur CentaurHauls
+Aug 21 11:09:04 ip-172-31-21-130 kernel:   zhaoxin   Shanghai  
+Aug 21 11:09:04 ip-172-31-21-130 kernel: x86/CPU: Model not found in latest microcode list
+Aug 21 11:09:04 ip-172-31-21-130 kernel: BIOS-provided physical RAM map:
+Aug 21 11:09:04 ip-172-31-21-130 kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009dfff]  System RAM
+Aug 21 11:09:04 ip-172-31-21-130 kernel: BIOS-e820: [mem 0x000000000009e000-0x000000000009ffff]  device reserved
+Aug 21 11:09:04 ip-172-31-21-130 kernel: BIOS-e820: [gap 0x00000000000a0000-0x00000000000dffff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff]  device reserved
+Aug 21 11:09:04 ip-172-31-21-130 kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000efffffff]  System RAM
+Aug 21 11:09:04 ip-172-31-21-130 kernel: BIOS-e820: [gap 0x00000000f0000000-0x00000000fbffffff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: BIOS-e820: [mem 0x00000000fc000000-0x00000000ffffffff]  device reserved
+Aug 21 11:09:04 ip-172-31-21-130 kernel: BIOS-e820: [mem 0x0000000100000000-0x000000020fffffff]  System RAM
+Aug 21 11:09:04 ip-172-31-21-130 kernel: NX (Execute Disable) protection: active
+Aug 21 11:09:04 ip-172-31-21-130 kernel: APIC: Static calls initialized
+Aug 21 11:09:04 ip-172-31-21-130 kernel: SMBIOS 2.7 present.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: DMI: Xen HVM domU, BIOS 4.11.amazon 08/24/2006
+Aug 21 11:09:04 ip-172-31-21-130 kernel: DMI: Memory slots populated: 1/1
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Hypervisor detected: Xen HVM
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Xen version 4.11.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: platform_pci_unplug: Netfront and the Xen platform PCI driver have been compiled for this kernel: unplug emulated NICs.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: platform_pci_unplug: Blkfront and the Xen platform PCI driver have been compiled for this kernel: unplug emulated disks.
+                                         You might have to change the root device
+                                         from /dev/hd[a-d] to /dev/xvd[a-d]
+                                         in your root= kernel command line option
+Aug 21 11:09:04 ip-172-31-21-130 kernel: HVMOP_pagetable_dying not supported
+Aug 21 11:09:04 ip-172-31-21-130 kernel: tsc: Detected 2299.998 MHz processor
+Aug 21 11:09:04 ip-172-31-21-130 kernel: e820: update [mem 0x00000000-0x00000fff] System RAM ==> device reserved
+Aug 21 11:09:04 ip-172-31-21-130 kernel: e820: remove [mem 0x000a0000-0x000fffff] System RAM
+Aug 21 11:09:04 ip-172-31-21-130 kernel: last_pfn = 0x210000 max_arch_pfn = 0x400000000
+Aug 21 11:09:04 ip-172-31-21-130 kernel: MTRR map: 4 entries (3 fixed + 1 variable; max 19), built from 8 variable MTRRs
+Aug 21 11:09:04 ip-172-31-21-130 kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Aug 21 11:09:04 ip-172-31-21-130 kernel: last_pfn = 0xf0000 max_arch_pfn = 0x400000000
+Aug 21 11:09:04 ip-172-31-21-130 kernel: found SMP MP-table at [mem 0x000fbb70-0x000fbb7f]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: RAMDISK: [mem 0x3631f000-0x37186fff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: Early table checksum verification disabled
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: RSDP 0x00000000000EA020 000024 (v02 Xen   )
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: XSDT 0x00000000FC00D4F0 00005C (v01 Xen    HVM      00000000 HVML 00000000)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: FACP 0x00000000FC00D3F0 0000F4 (v04 Xen    HVM      00000000 HVML 00000000)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: DSDT 0x00000000FC001000 00BD14 (v02 Xen    HVM      00000000 INTL 20090123)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: FACS 0x00000000FC00D2F0 000040
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: FACS 0x00000000FC00D2F0 000040
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: SSDT 0x00000000FC00CD20 000033 (v02 Xen    HVM      00000000 INTL 20090123)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: SSDT 0x00000000FC00CD60 000031 (v02 Xen    HVM      00000000 INTL 20090123)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: APIC 0x00000000FC00CDA0 0000D8 (v02 Xen    HVM      00000000 HVML 00000000)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: HPET 0x00000000FC00D280 000038 (v01 Xen    HVM      00000000 HVML 00000000)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: WAET 0x00000000FC00D2C0 000028 (v01 Xen    HVM      00000000 HVML 00000000)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: Reserving FACP table memory at [mem 0xfc00d3f0-0xfc00d4e3]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: Reserving DSDT table memory at [mem 0xfc001000-0xfc00cd13]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: Reserving FACS table memory at [mem 0xfc00d2f0-0xfc00d32f]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: Reserving FACS table memory at [mem 0xfc00d2f0-0xfc00d32f]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: Reserving SSDT table memory at [mem 0xfc00cd20-0xfc00cd52]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: Reserving SSDT table memory at [mem 0xfc00cd60-0xfc00cd90]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: Reserving APIC table memory at [mem 0xfc00cda0-0xfc00ce77]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: Reserving HPET table memory at [mem 0xfc00d280-0xfc00d2b7]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: Reserving WAET table memory at [mem 0xfc00d2c0-0xfc00d2e7]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: No NUMA configuration found
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Faking a node at [mem 0x0000000000000000-0x000000020fffffff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: NODE_DATA(0) allocated [mem 0x20ffd2280-0x20fffcfff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: crashkernel reserved: 0x00000000d0000000 - 0x00000000f0000000 (512 MB)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: PM-Timer IO Port: 0xb008
+Aug 21 11:09:04 ip-172-31-21-130 kernel: IOAPIC[0]: apic_id 1, version 17, address 0xfec00000, GSI 0-47
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 low level)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 low level)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 low level)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000
+Aug 21 11:09:04 ip-172-31-21-130 kernel: TSC deadline timer available
+Aug 21 11:09:04 ip-172-31-21-130 kernel: CPU topo: Max. logical packages:   1
+Aug 21 11:09:04 ip-172-31-21-130 kernel: CPU topo: Max. logical nodes:      1
+Aug 21 11:09:04 ip-172-31-21-130 kernel: CPU topo: Num. nodes per package:  1
+Aug 21 11:09:04 ip-172-31-21-130 kernel: CPU topo: Max. logical dies:       1
+Aug 21 11:09:04 ip-172-31-21-130 kernel: CPU topo: Max. dies per package:   1
+Aug 21 11:09:04 ip-172-31-21-130 kernel: CPU topo: Max. threads per core:   1
+Aug 21 11:09:04 ip-172-31-21-130 kernel: CPU topo: Num. cores per package:     2
+Aug 21 11:09:04 ip-172-31-21-130 kernel: CPU topo: Num. threads per package:   2
+Aug 21 11:09:04 ip-172-31-21-130 kernel: CPU topo: Allowing 2 present CPUs plus 13 hotplug CPUs
+Aug 21 11:09:04 ip-172-31-21-130 kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: PM: hibernation: Registered nosave memory: [mem 0x0009e000-0x000fffff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: PM: hibernation: Registered nosave memory: [mem 0xf0000000-0xffffffff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: [gap 0xf0000000-0xfbffffff] available for PCI devices
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Booting paravirtualized kernel on Xen HVM
+Aug 21 11:09:04 ip-172-31-21-130 kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Zone ranges:
+Aug 21 11:09:04 ip-172-31-21-130 kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel:   Normal   [mem 0x0000000100000000-0x000000020fffffff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel:   Device   empty
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Movable zone start for each node
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Early memory node ranges
+Aug 21 11:09:04 ip-172-31-21-130 kernel:   node   0: [mem 0x0000000000001000-0x000000000009dfff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel:   node   0: [mem 0x0000000000100000-0x00000000efffffff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel:   node   0: [mem 0x0000000100000000-0x000000020fffffff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000020fffffff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Aug 21 11:09:04 ip-172-31-21-130 kernel: On node 0, zone DMA: 98 pages in unavailable ranges
+Aug 21 11:09:04 ip-172-31-21-130 kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:15 nr_cpu_ids:15 nr_node_ids:1
+Aug 21 11:09:04 ip-172-31-21-130 kernel: percpu: Embedded 85 pages/cpu s225280 r8192 d114688 u524288
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pcpu-alloc: s225280 r8192 d114688 u524288 alloc=1*2097152
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pcpu-alloc: [0] 00 01 02 03 [0] 04 05 06 07 
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pcpu-alloc: [0] 08 09 10 11 [0] 12 13 14 -- 
+Aug 21 11:09:04 ip-172-31-21-130 kernel: xen: PV spinlocks enabled
+Aug 21 11:09:04 ip-172-31-21-130 kernel: PV qspinlock hash table entries: 256 (order: 0, 4096 bytes, linear)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Kernel command line: BOOT_IMAGE=/vmlinuz-7.0.0-1010-aws root=PARTUUID=fe814a98-f7fd-4c3d-9642-c18fe64c6e5d ro console=tty1 console=ttyS0 nvme_core.io_timeout=4294967295 crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M panic=-1
+Aug 21 11:09:04 ip-172-31-21-130 kernel: random: crng init done
+Aug 21 11:09:04 ip-172-31-21-130 kernel: printk: log buffer data + meta data: 262144 + 1114112 = 1376256 bytes
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: software IO TLB: area num 16.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Fallback order for Node 0: 0 
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Built 1 zonelists, mobility grouping on.  Total pages: 2097053
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Policy zone: Normal
+Aug 21 11:09:04 ip-172-31-21-130 kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+Aug 21 11:09:04 ip-172-31-21-130 kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=15, Nodes=1
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Kernel/User page tables isolation: enabled
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ftrace section at ffffffffb0934260 sorted properly
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ftrace: allocating 63844 entries in 252 pages
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ftrace: allocated 252 pages with 6 groups
+Aug 21 11:09:04 ip-172-31-21-130 kernel: rcu: Hierarchical RCU implementation.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=15.
+Aug 21 11:09:04 ip-172-31-21-130 kernel:         Trampoline variant of Tasks RCU enabled.
+Aug 21 11:09:04 ip-172-31-21-130 kernel:         Rude variant of Tasks RCU enabled.
+Aug 21 11:09:04 ip-172-31-21-130 kernel:         Tracing variant of Tasks RCU enabled.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=15
+Aug 21 11:09:04 ip-172-31-21-130 kernel: RCU Tasks: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=15.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: RCU Tasks Rude: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=15.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: NR_IRQS: 524544, nr_irqs: 952, preallocated irqs: 16
+Aug 21 11:09:04 ip-172-31-21-130 kernel: xen:events: Using 2-level ABI
+Aug 21 11:09:04 ip-172-31-21-130 kernel: xen:events: Xen HVM callback vector for event delivery is enabled
+Aug 21 11:09:04 ip-172-31-21-130 kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Console: colour VGA+ 80x25
+Aug 21 11:09:04 ip-172-31-21-130 kernel: printk: legacy console [tty1] enabled
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+Aug 21 11:09:04 ip-172-31-21-130 kernel: printk: legacy console [ttyS0] enabled
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: Core revision 20251212
+Aug 21 11:09:04 ip-172-31-21-130 kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 30580167144 ns
+Aug 21 11:09:04 ip-172-31-21-130 kernel: APIC: Switch to symmetric I/O mode setup
+Aug 21 11:09:04 ip-172-31-21-130 kernel: x2apic enabled
+Aug 21 11:09:04 ip-172-31-21-130 kernel: APIC: Switched APIC routing to: physical x2apic
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=0 pin2=0
+Aug 21 11:09:04 ip-172-31-21-130 kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x212733415c7, max_idle_ns: 440795236380 ns
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 4599.99 BogoMIPS (lpj=2299998)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Last level dTLB entries: 4KB 64, 2MB 32, 4MB 32, 1GB 4
+Aug 21 11:09:04 ip-172-31-21-130 kernel: mitigations: Enabled attack vectors: user_kernel, user_user, guest_host, guest_guest, SMT mitigations: auto
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Speculative Store Bypass: Vulnerable
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Spectre V2 : Mitigation: Retpolines
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ITS: Mitigation: Aligned branch/return thunks
+Aug 21 11:09:04 ip-172-31-21-130 kernel: MDS: Vulnerable: Clear CPU buffers attempted, no microcode
+Aug 21 11:09:04 ip-172-31-21-130 kernel: MMIO Stale Data: Vulnerable: Clear CPU buffers attempted, no microcode
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Spectre V2 : Spectre v2 / SpectreRSB: Filling RSB on context switch and VMEXIT
+Aug 21 11:09:04 ip-172-31-21-130 kernel: active return thunk: its_return_thunk
+Aug 21 11:09:04 ip-172-31-21-130 kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Aug 21 11:09:04 ip-172-31-21-130 kernel: x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Freeing SMP alternatives memory: 56K
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pid_max: default: 32768 minimum: 301
+Aug 21 11:09:04 ip-172-31-21-130 kernel: landlock: Up and running.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Yama: becoming mindful.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: AppArmor: AppArmor initialized
+Aug 21 11:09:04 ip-172-31-21-130 kernel: AppArmor: AppArmor secmark mediation reserved: ready to be enabled
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: VFS: Finished mounting rootfs on nullfs
+Aug 21 11:09:04 ip-172-31-21-130 kernel: clocksource: xen: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Xen: using vcpuop timer interface
+Aug 21 11:09:04 ip-172-31-21-130 kernel: installing Xen timer for CPU 0
+Aug 21 11:09:04 ip-172-31-21-130 kernel: smpboot: CPU0: Intel(R) Xeon(R) CPU E5-2686 v4 @ 2.30GHz (family: 0x6, model: 0x4f, stepping: 0x1)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: cpu 0 spinlock event irq 53
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Performance Events: unsupported CPU family 6 model 79 no PMU driver, software events only.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: signal: max sigframe size: 1776
+Aug 21 11:09:04 ip-172-31-21-130 kernel: rcu: Hierarchical SRCU implementation.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: rcu:         Max phase no-delay instances is 400.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Timer migration: 2 hierarchy levels; 8 children per group; 2 crossnode level
+Aug 21 11:09:04 ip-172-31-21-130 kernel: NMI watchdog: Perf NMI watchdog permanently disabled
+Aug 21 11:09:04 ip-172-31-21-130 kernel: smp: Bringing up secondary CPUs ...
+Aug 21 11:09:04 ip-172-31-21-130 kernel: installing Xen timer for CPU 1
+Aug 21 11:09:04 ip-172-31-21-130 kernel: smpboot: x86: Booting SMP configuration:
+Aug 21 11:09:04 ip-172-31-21-130 kernel: .... node  #0, CPUs:        #1
+Aug 21 11:09:04 ip-172-31-21-130 kernel: cpu 1 spinlock event irq 59
+Aug 21 11:09:04 ip-172-31-21-130 kernel: smp: Brought up 1 node, 2 CPUs
+Aug 21 11:09:04 ip-172-31-21-130 kernel: smpboot: Total of 2 processors activated (386644.84 BogoMIPS)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Memory: 5513676K/8388212K available (23130K kernel code, 4948K rwdata, 16388K rodata, 5412K init, 5744K bss, 2864248K reserved, 0K cma-reserved)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: devtmpfs: initialized
+Aug 21 11:09:04 ip-172-31-21-130 kernel: x86/mm: Memory block size: 128MB
+Aug 21 11:09:04 ip-172-31-21-130 kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Aug 21 11:09:04 ip-172-31-21-130 kernel: posixtimers hash table entries: 8192 (order: 5, 131072 bytes, linear)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: futex hash table entries: 4096 (262144 bytes on 1 NUMA nodes, total 256 KiB, linear).
+Aug 21 11:09:04 ip-172-31-21-130 kernel: PM: RTC time: 11:09:01, date: 2026-08-21
+Aug 21 11:09:04 ip-172-31-21-130 kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Aug 21 11:09:04 ip-172-31-21-130 kernel: DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations
+Aug 21 11:09:04 ip-172-31-21-130 kernel: DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Aug 21 11:09:04 ip-172-31-21-130 kernel: DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Aug 21 11:09:04 ip-172-31-21-130 kernel: audit: initializing netlink subsys (disabled)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: audit: type=2000 audit(1787310537.219:1): state=initialized audit_enabled=0 res=1
+Aug 21 11:09:04 ip-172-31-21-130 kernel: thermal_sys: Registered thermal governor 'fair_share'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: thermal_sys: Registered thermal governor 'bang_bang'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: thermal_sys: Registered thermal governor 'step_wise'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: thermal_sys: Registered thermal governor 'user_space'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: thermal_sys: Registered thermal governor 'power_allocator'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: cpuidle: using governor ladder
+Aug 21 11:09:04 ip-172-31-21-130 kernel: cpuidle: using governor menu
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Aug 21 11:09:04 ip-172-31-21-130 kernel: PCI: Using configuration type 1 for base access
+Aug 21 11:09:04 ip-172-31-21-130 kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+Aug 21 11:09:04 ip-172-31-21-130 kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: Added _OSI(Module Device)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: Added _OSI(Processor Device)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: 3 ACPI AML tables successfully acquired and loaded
+Aug 21 11:09:04 ip-172-31-21-130 kernel: xen: --> pirq=16 -> irq=9 (gsi=9)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: \_SB_: platform _OSC: OS support mask [006e7eff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: Interpreter enabled
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: PM: (supports S0 S4 S5)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: Using IOAPIC for interrupt routing
+Aug 21 11:09:04 ip-172-31-21-130 kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Aug 21 11:09:04 ip-172-31-21-130 kernel: PCI: Using E820 reservations for host bridge windows
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: Enabled 2 GPEs in block 00 to 0F
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI EDR HPX-Type3]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0A03:00: _OSC: platform retains control of PCIe features (AE_ERROR)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [0] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [3] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [4] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [5] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [6] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [7] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [8] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [9] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [10] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [11] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [12] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [13] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [14] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [15] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [16] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [17] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [18] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [19] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [20] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [21] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [22] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [23] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [24] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [25] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [26] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [27] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [28] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [29] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [30] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpiphp: Slot [31] registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: PCI host bridge to bus 0000:00
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci_bus 0000:00: root bus resource [mem 0xf0000000-0xffffffff window]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000 conventional PCI endpoint
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:01.0: [8086:7000] type 00 class 0x060100 conventional PCI endpoint
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:01.1: [8086:7010] type 00 class 0x010180 conventional PCI endpoint
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:01.1: BAR 4 [io  0xc000-0xc00f]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:01.1: BAR 0 [io  0x01f0-0x01f7]: legacy IDE quirk
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:01.1: BAR 1 [io  0x03f6]: legacy IDE quirk
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:01.1: BAR 2 [io  0x0170-0x0177]: legacy IDE quirk
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:01.1: BAR 3 [io  0x0376]: legacy IDE quirk
+Aug 21 11:09:04 ip-172-31-21-130 kernel: * Found PM-Timer Bug on the chipset. Due to workarounds for a bug,
+                                         * this clock source is slow. Consider trying other clock sources
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:01.3: [8086:7113] type 00 class 0x068000 conventional PCI endpoint
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:02.0: [1013:00b8] type 00 class 0x030000 conventional PCI endpoint
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:02.0: BAR 0 [mem 0xf8000000-0xf9ffffff pref]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:02.0: BAR 1 [mem 0xfbfff000-0xfbffffff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:03.0: [5853:0001] type 00 class 0xff8000 conventional PCI endpoint
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:03.0: BAR 0 [io  0xc100-0xc1ff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:03.0: BAR 1 [mem 0xfa000000-0xfaffffff pref]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 5
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 5
+Aug 21 11:09:04 ip-172-31-21-130 kernel: xen:balloon: Initialising balloon driver
+Aug 21 11:09:04 ip-172-31-21-130 kernel: iommu: Default domain type: Translated
+Aug 21 11:09:04 ip-172-31-21-130 kernel: iommu: DMA domain TLB invalidation policy: lazy mode
+Aug 21 11:09:04 ip-172-31-21-130 kernel: SCSI subsystem initialized
+Aug 21 11:09:04 ip-172-31-21-130 kernel: libata version 3.00 loaded.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: bus type USB registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: usbcore: registered new interface driver usbfs
+Aug 21 11:09:04 ip-172-31-21-130 kernel: usbcore: registered new interface driver hub
+Aug 21 11:09:04 ip-172-31-21-130 kernel: usbcore: registered new device driver usb
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pps_core: LinuxPPS API ver. 1 registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Aug 21 11:09:04 ip-172-31-21-130 kernel: PTP clock support registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: EDAC MC: Ver: 3.0.0
+Aug 21 11:09:04 ip-172-31-21-130 kernel: NetLabel: Initializing
+Aug 21 11:09:04 ip-172-31-21-130 kernel: NetLabel:  domain hash size = 128
+Aug 21 11:09:04 ip-172-31-21-130 kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Aug 21 11:09:04 ip-172-31-21-130 kernel: NetLabel:  unlabeled traffic allowed by default
+Aug 21 11:09:04 ip-172-31-21-130 kernel: mctp: management component transport protocol core
+Aug 21 11:09:04 ip-172-31-21-130 kernel: NET: Registered PF_MCTP protocol family
+Aug 21 11:09:04 ip-172-31-21-130 kernel: PCI: Using ACPI for IRQ routing
+Aug 21 11:09:04 ip-172-31-21-130 kernel: PCI: pci_cache_line_size set to 64 bytes
+Aug 21 11:09:04 ip-172-31-21-130 kernel: e820: register RAM buffer resource [mem 0x0009e000-0x0009ffff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Aug 21 11:09:04 ip-172-31-21-130 kernel: vgaarb: loaded
+Aug 21 11:09:04 ip-172-31-21-130 kernel: hpet: 3 channels of 0 reserved for per-cpu timers
+Aug 21 11:09:04 ip-172-31-21-130 kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+Aug 21 11:09:04 ip-172-31-21-130 kernel: hpet0: 3 comparators, 64-bit 62.500000 MHz counter
+Aug 21 11:09:04 ip-172-31-21-130 kernel: clocksource: Switched to clocksource xen
+Aug 21 11:09:04 ip-172-31-21-130 kernel: VFS: Disk quotas dquot_6.6.0
+Aug 21 11:09:04 ip-172-31-21-130 kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: AppArmor: AppArmor Filesystem Enabled
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:00: Could not reserve [mem 0x00000000-0x0009ffff]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0010-0x001f]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0022-0x002d]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0030-0x003f]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0044-0x005f]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0062-0x0063]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0065-0x006f]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0072-0x007f]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0080]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0084-0x0086]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0088]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x008c-0x008e]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x0090-0x009f]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x00a2-0x00bd]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:01: Skipped [io  0x00e0-0x00ef]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:01: Reserved [io  0x08a0-0x08a3]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:01: Reserved [io  0x0cc0-0x0ccf]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:01: Reserved [io  0x04d0-0x04d1]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:02: Reserved [io  0x10c0-0x1141]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi PNP0C02:02: Reserved [io  0xb044-0xb047]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pnp: PnP ACPI init
+Aug 21 11:09:04 ip-172-31-21-130 kernel: xen: --> pirq=17 -> irq=8 (gsi=8)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: xen: --> pirq=18 -> irq=12 (gsi=12)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: xen: --> pirq=19 -> irq=1 (gsi=1)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: xen: --> pirq=20 -> irq=6 (gsi=6)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pnp 00:03: [dma 2]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: xen: --> pirq=21 -> irq=4 (gsi=4)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pnp: PnP ACPI: found 5 devices
+Aug 21 11:09:04 ip-172-31-21-130 kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Aug 21 11:09:04 ip-172-31-21-130 kernel: NET: Registered PF_INET protocol family
+Aug 21 11:09:04 ip-172-31-21-130 kernel: IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: TCP: Hash tables configured (established 65536 bind 65536)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: MPTCP token hash table entries: 8192 (order: 6, 196608 bytes, linear)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: UDP hash table entries: 4096 (order: 6, 262144 bytes, linear)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: UDP-Lite hash table entries: 4096 (order: 6, 262144 bytes, linear)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+Aug 21 11:09:04 ip-172-31-21-130 kernel: NET: Registered PF_XDP protocol family
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci_bus 0000:00: resource 7 [mem 0xf0000000-0xffffffff window]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:01.0: PIIX3: Enabling Passive Release
+Aug 21 11:09:04 ip-172-31-21-130 kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Aug 21 11:09:04 ip-172-31-21-130 kernel: PCI: CLS 0 bytes, default 64
+Aug 21 11:09:04 ip-172-31-21-130 kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Trying to unpack rootfs image as initramfs...
+Aug 21 11:09:04 ip-172-31-21-130 kernel: software IO TLB: mapped [mem 0x00000000cc000000-0x00000000d0000000] (64MB)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x212733415c7, max_idle_ns: 440795236380 ns
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Freeing initrd memory: 14752K
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Initialise system trusted keyrings
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Key type blacklist registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: workingset: timestamp_bits=36 max_order=21 bucket_order=0
+Aug 21 11:09:04 ip-172-31-21-130 kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Aug 21 11:09:04 ip-172-31-21-130 kernel: fuse: init (API version 7.45)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: integrity: Platform Keyring initialized
+Aug 21 11:09:04 ip-172-31-21-130 kernel: integrity: Machine keyring initialized
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Key type asymmetric registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Asymmetric key parser 'x509' registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: io scheduler mq-deadline registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Aug 21 11:09:04 ip-172-31-21-130 kernel: input: Power Button as /devices/platform/LNXPWRBN:00/input/input0
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: button: Power Button [PWRF]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: input: Sleep Button as /devices/platform/LNXSLPBN:00/input/input1
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: button: Sleep Button [SLPF]
+Aug 21 11:09:04 ip-172-31-21-130 kernel: xen: --> pirq=22 -> irq=28 (gsi=28)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: xen:grant_table: Grant tables using version 1 layout
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Grant table initialized
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Aug 21 11:09:04 ip-172-31-21-130 kernel: 00:04: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Linux agpgart interface v0.103
+Aug 21 11:09:04 ip-172-31-21-130 kernel: loop: module loaded
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Invalid max_queues (4), will use default max: 2.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Key type psk registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: scsi host0: ata_piix
+Aug 21 11:09:04 ip-172-31-21-130 kernel: scsi host1: ata_piix
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc000 irq 14 lpm-pol 0
+Aug 21 11:09:04 ip-172-31-21-130 kernel: blkfront: xvda: barrier or flush: disabled; persistent grants: disabled; indirect descriptors: enabled; bounce buffer: disabled;
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc008 irq 15 lpm-pol 0
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ACPI: bus type drm_connector registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: tun: Universal TUN/TAP device driver, 1.6
+Aug 21 11:09:04 ip-172-31-21-130 kernel: PPP generic driver version 2.4.2
+Aug 21 11:09:04 ip-172-31-21-130 kernel: xen_netfront: Initialising Xen virtual ethernet driver
+Aug 21 11:09:04 ip-172-31-21-130 kernel:  xvda: xvda1 xvda14 xvda15 xvda16
+Aug 21 11:09:04 ip-172-31-21-130 kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f13:PS2M] at 0x60,0x64 irq 1,12
+Aug 21 11:09:04 ip-172-31-21-130 kernel: i8042: Warning: Keylock active
+Aug 21 11:09:04 ip-172-31-21-130 kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Aug 21 11:09:04 ip-172-31-21-130 kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+Aug 21 11:09:04 ip-172-31-21-130 kernel: mousedev: PS/2 mouse device common for all mice
+Aug 21 11:09:04 ip-172-31-21-130 kernel: rtc_cmos 00:00: registered as rtc0
+Aug 21 11:09:04 ip-172-31-21-130 kernel: rtc_cmos 00:00: setting system clock to 2026-08-21T11:09:02 UTC (1787310542)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: rtc_cmos 00:00: alarms up to one day, 114 bytes nvram, hpet irqs
+Aug 21 11:09:04 ip-172-31-21-130 kernel: i2c_dev: i2c /dev entries driver
+Aug 21 11:09:04 ip-172-31-21-130 kernel: device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: device-mapper: uevent: version 1.0.3
+Aug 21 11:09:04 ip-172-31-21-130 kernel: device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+Aug 21 11:09:04 ip-172-31-21-130 kernel: intel_pstate: CPU model not supported
+Aug 21 11:09:04 ip-172-31-21-130 kernel: drop_monitor: Initializing network drop monitor service
+Aug 21 11:09:04 ip-172-31-21-130 kernel: NET: Registered PF_INET6 protocol family
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Segment Routing with IPv6
+Aug 21 11:09:04 ip-172-31-21-130 kernel: In-situ OAM (IOAM) with IPv6
+Aug 21 11:09:04 ip-172-31-21-130 kernel: NET: Registered PF_PACKET protocol family
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Key type dns_resolver registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: resctrl: No MBM correction factor available
+Aug 21 11:09:04 ip-172-31-21-130 kernel: IPI shorthand broadcast: enabled
+Aug 21 11:09:04 ip-172-31-21-130 kernel: sched_clock: Marking stable (448003201, 318788942)->(6155241023, -5388448880)
+Aug 21 11:09:04 ip-172-31-21-130 kernel: registered taskstats version 1
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Loading compiled-in X.509 certificates
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 2f24b06c1e624fb173fdac675ec9a919854884d7'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing 2025 Kmod: d541cef61dc7e793b7eb7e899970a2eef0b5dc8c'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing 2025 Kmod: 4627603d2357a2a3f81006370894c221175893e9'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: blacklist: Loading compiled-in revocation X.509 certificates
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Demotion targets for Node 0: null
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Key type .fscrypt registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Key type fscrypt-provisioning registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Key type big_key registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Key type encrypted registered
+Aug 21 11:09:04 ip-172-31-21-130 kernel: AppArmor: AppArmor sha256 policy hashing enabled
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ima: No TPM chip found, activating TPM-bypass!
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Loading compiled-in module X.509 certificates
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 2f24b06c1e624fb173fdac675ec9a919854884d7'
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ima: Allocated hash algorithm: sha256
+Aug 21 11:09:04 ip-172-31-21-130 kernel: ima: No architecture policies found
+Aug 21 11:09:04 ip-172-31-21-130 kernel: evm: Initialising EVM extended attributes:
+Aug 21 11:09:04 ip-172-31-21-130 kernel: evm: security.selinux
+Aug 21 11:09:04 ip-172-31-21-130 kernel: evm: security.SMACK64
+Aug 21 11:09:04 ip-172-31-21-130 kernel: evm: security.SMACK64EXEC
+Aug 21 11:09:04 ip-172-31-21-130 kernel: evm: security.SMACK64TRANSMUTE
+Aug 21 11:09:04 ip-172-31-21-130 kernel: evm: security.SMACK64MMAP
+Aug 21 11:09:04 ip-172-31-21-130 kernel: evm: security.apparmor
+Aug 21 11:09:04 ip-172-31-21-130 kernel: evm: security.ima
+Aug 21 11:09:04 ip-172-31-21-130 kernel: evm: security.capability
+Aug 21 11:09:04 ip-172-31-21-130 kernel: evm: HMAC attrs: 0x1
+Aug 21 11:09:04 ip-172-31-21-130 kernel: PM:   Magic number: 6:373:176
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi device:39: hash matches
+Aug 21 11:09:04 ip-172-31-21-130 kernel: acpi device:0c: hash matches
+Aug 21 11:09:04 ip-172-31-21-130 kernel: RAS: Correctable Errors collector initialized.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: clk: Disabling unused clocks
+Aug 21 11:09:04 ip-172-31-21-130 kernel: PM: genpd: Disabling unused power domains
+Aug 21 11:09:04 ip-172-31-21-130 kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+Aug 21 11:09:04 ip-172-31-21-130 kernel: md: Waiting for all devices to be available before autodetect
+Aug 21 11:09:04 ip-172-31-21-130 kernel: md: If you don't use raid, use raid=noautodetect
+Aug 21 11:09:04 ip-172-31-21-130 kernel: md: Autodetecting RAID arrays.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: md: autorun ...
+Aug 21 11:09:04 ip-172-31-21-130 kernel: md: ... autorun DONE.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: EXT4-fs (xvda1): mounted filesystem 0ef35759-eb42-4358-9a2a-1f74696d7007 ro with ordered data mode. Quota mode: none.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: VFS: Mounted root (ext4 filesystem) readonly on device 202:1.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: devtmpfs: mounted
+Aug 21 11:09:04 ip-172-31-21-130 kernel: VFS: Pivoted into new rootfs
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Freeing unused decrypted memory: 2028K
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Freeing unused kernel image (initmem) memory: 5412K
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Write protecting the kernel read-only data: 43008k
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Freeing unused kernel image (text/rodata gap) memory: 1444K
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Freeing unused kernel image (rodata/data gap) memory: 2044K
+Aug 21 11:09:04 ip-172-31-21-130 kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: x86/mm: Checking user space page tables
+Aug 21 11:09:04 ip-172-31-21-130 kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Run /sbin/init as init process
+Aug 21 11:09:04 ip-172-31-21-130 kernel:   with arguments:
+Aug 21 11:09:04 ip-172-31-21-130 kernel:     /sbin/init
+Aug 21 11:09:04 ip-172-31-21-130 kernel:   with environment:
+Aug 21 11:09:04 ip-172-31-21-130 kernel:     HOME=/
+Aug 21 11:09:04 ip-172-31-21-130 kernel:     TERM=linux
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Inserted module 'autofs4'
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: systemd 255.4-1ubuntu8.17 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Detected virtualization xen.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Detected architecture x86-64.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Hostname set to <ip-172-31-21-130>.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Queued start job for default target graphical.target.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Created slice system-modprobe.slice - Slice /system/modprobe.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Created slice system-serial\x2dgetty.slice - Slice /system/serial-getty.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Created slice system-systemd\x2dfsck.slice - Slice /system/systemd-fsck.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Created slice user.slice - User and Session Slice.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Expecting device dev-disk-by\x2dlabel-BOOT.device - /dev/disk/by-label/BOOT...
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Expecting device dev-disk-by\x2dlabel-UEFI.device - /dev/disk/by-label/UEFI...
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Expecting device dev-ttyS0.device - /dev/ttyS0...
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Reached target slices.target - Slice Units.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Reached target snapd.mounts-pre.target - Mounting snaps.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Reached target swap.target - Swaps.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Reached target time-set.target - System Time Set.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Listening on dm-event.socket - Device-mapper event daemon FIFOs.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Listening on lvm2-lvmpolld.socket - LVM2 poll daemon socket.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Listening on multipathd.socket - multipathd control socket.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Listening on syslog.socket - Syslog Socket.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Listening on systemd-fsckd.socket - fsck to fsckd communication Socket.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Listening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Listening on systemd-journald.socket - Journal Socket.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Listening on systemd-networkd.socket - Network Service Netlink Socket.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: systemd-pcrextend.socket - TPM2 PCR Extension (Varlink) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Starting systemd-journald.service - Journal Service...
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Starting keyboard-setup.service - Set the console keyboard layout...
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Starting lvm2-monitor.service - Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+Aug 21 11:09:04 ip-172-31-21-130 systemd-journald[129]: Collecting audit messages is disabled.
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Starting modprobe@dm_mod.service - Load Kernel Module dm_mod...
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Starting modprobe@drm.service - Load Kernel Module drm...
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Starting modprobe@fuse.service - Load Kernel Module fuse...
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Starting modprobe@loop.service - Load Kernel Module loop...
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup was skipped because of an unmet condition check (ConditionFileIsExecutable=/usr/bin/ovs-vsctl).
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Starting systemd-fsck-root.service - File System Check on Root Device...
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: systemd-pcrmachine.service - TPM2 PCR Machine ID Measurement was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: systemd-tpm2-setup-early.service - TPM2 SRK Setup (Early) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+Aug 21 11:09:04 ip-172-31-21-130 systemd[1]: Started systemd-journald.service - Journal Service.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: EXT4-fs (xvda1): re-mounted 0ef35759-eb42-4358-9a2a-1f74696d7007 r/w.
+Aug 21 11:09:04 ip-172-31-21-130 systemd-journald[129]: Received client request to flush runtime journal.
+Aug 21 11:09:04 ip-172-31-21-130 systemd-journald[129]: /var/log/journal/ec25dbf92fa7a8cca14e3d5e3abd2657/system.journal: Journal file uses a different sequence number ID, rotating.
+Aug 21 11:09:04 ip-172-31-21-130 systemd-journald[129]: Rotating system journal.
+Aug 21 11:09:04 ip-172-31-21-130 kernel: loop0: detected capacity change from 0 to 57752
+Aug 21 11:09:04 ip-172-31-21-130 kernel: loop1: detected capacity change from 0 to 151512
+Aug 21 11:09:04 ip-172-31-21-130 kernel: loop2: detected capacity change from 0 to 58160
+Aug 21 11:09:04 ip-172-31-21-130 kernel: loop3: detected capacity change from 0 to 151536
+Aug 21 11:09:04 ip-172-31-21-130 kernel: loop4: detected capacity change from 0 to 100888
+Aug 21 11:09:04 ip-172-31-21-130 kernel: loop5: detected capacity change from 0 to 102608
+Aug 21 11:09:04 ip-172-31-21-130 kernel: vif vif-0 enX0: renamed from eth0
+Aug 21 11:09:04 ip-172-31-21-130 kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Aug 21 11:09:04 ip-172-31-21-130 kernel: cirrus-qemu 0000:00:02.0: vgaarb: deactivate vga console
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Console: switching to colour dummy device 80x25
+Aug 21 11:09:04 ip-172-31-21-130 kernel: [drm] Initialized cirrus-qemu 2.0.0 for 0000:00:02.0 on minor 0
+Aug 21 11:09:04 ip-172-31-21-130 kernel: fbcon: cirrus-qemudrmf (fb0) is primary device
+Aug 21 11:09:04 ip-172-31-21-130 kernel: Console: switching to colour frame buffer device 100x37
+Aug 21 11:09:04 ip-172-31-21-130 kernel: cirrus-qemu 0000:00:02.0: [drm] fb0: cirrus-qemudrmf frame buffer device
+Aug 21 11:09:04 ip-172-31-21-130 kernel: RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 655360 ms ovfl timer
+Aug 21 11:09:05 ip-172-31-21-130 kernel: EXT4-fs (xvda16): mounted filesystem 8fb95cef-95fc-48ca-aaab-3f1b1df59748 r/w with ordered data mode. Quota mode: none.
+Aug 21 11:09:05 ip-172-31-21-130 kernel: audit: type=1400 audit(1787310545.242:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="1password" pid=378 comm="apparmor_parser"
+Aug 21 11:09:05 ip-172-31-21-130 kernel: audit: type=1400 audit(1787310545.244:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="Discord" pid=379 comm="apparmor_parser"
+Aug 21 11:09:05 ip-172-31-21-130 kernel: audit: type=1400 audit(1787310545.247:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="QtWebEngineProcess" pid=391 comm="apparmor_parser"
+Aug 21 11:09:05 ip-172-31-21-130 kernel: audit: type=1400 audit(1787310545.247:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name=4D6F6E676F444220436F6D70617373 pid=390 comm="apparmor_parser"
+Aug 21 11:09:05 ip-172-31-21-130 kernel: audit: type=1400 audit(1787310545.249:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="balena-etcher" pid=393 comm="apparmor_parser"
+Aug 21 11:09:05 ip-172-31-21-130 kernel: audit: type=1400 audit(1787310545.250:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="brave" pid=394 comm="apparmor_parser"
+Aug 21 11:09:05 ip-172-31-21-130 kernel: audit: type=1400 audit(1787310545.253:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="cam" pid=397 comm="apparmor_parser"
+Aug 21 11:09:05 ip-172-31-21-130 kernel: audit: type=1400 audit(1787310545.255:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="buildah" pid=396 comm="apparmor_parser"
+Aug 21 11:09:05 ip-172-31-21-130 kernel: audit: type=1400 audit(1787310545.257:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ch-checkns" pid=398 comm="apparmor_parser"
+Aug 21 11:09:05 ip-172-31-21-130 kernel: input: ImPS/2 Generic Wheel Mouse as /devices/platform/i8042/serio1/input/input4
+Aug 21 11:09:06 ip-172-31-21-130 kernel: 8021q: 802.1Q VLAN Support v1.8
+Aug 21 11:09:06 ip-172-31-21-130 kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Aug 21 11:09:06 ip-172-31-21-130 kernel: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Aug 21 11:09:06 ip-172-31-21-130 kernel: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+Aug 21 11:09:06 ip-172-31-21-130 kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+Aug 21 11:09:06 ip-172-31-21-130 kernel: cfg80211: failed to load regulatory.db
+Aug 21 11:09:07 ip-172-31-21-130 kernel: floppy0: no floppy controllers found
+Aug 21 11:09:10 ip-172-31-21-130 kernel: kauditd_printk_skb: 114 callbacks suppressed
+Aug 21 11:09:10 ip-172-31-21-130 kernel: audit: type=1400 audit(1787310550.911:125): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="rsyslogd" pid=683 comm="apparmor_parser"
+Aug 21 11:09:11 ip-172-31-21-130 kernel: NET: Registered PF_QIPCRTR protocol family
+Aug 21 11:09:13 ip-172-31-21-130 kernel: loop6: detected capacity change from 0 to 8
+Aug 21 11:09:15 ip-172-31-21-130 systemd-journald[129]: /var/log/journal/ec25dbf92fa7a8cca14e3d5e3abd2657/user-1000.journal: Journal file uses a different sequence number ID, rotating.
+
+### KERNEL PANIC / OOPS ###
+--------------------------------------------------------------------------------
+NO EVENTS FOUND
+
+### OOM / MEMORY EVENTS ###
+--------------------------------------------------------------------------------
+NO EVENTS FOUND
+
+### HARDWARE EVENTS ###
+--------------------------------------------------------------------------------
+Aug 21 09:07:44 ip-172-31-21-130 kernel: EDAC MC: Ver: 3.0.0
+
+### MCE / ECC / EDAC ###
+--------------------------------------------------------------------------------
+NO EVENTS FOUND
+
+### STORAGE / I/O EVENTS ###
+--------------------------------------------------------------------------------
+Aug 21 09:07:55 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[4227]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Aug 21 09:34:09 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[4227]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Aug 21 09:59:10 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[4227]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Aug 21 10:28:59 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[4227]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Aug 21 10:58:00 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[4227]: caused by: EC2MetadataError: failed to make EC2Metadata request
+
+### FILESYSTEM EVENTS ###
+--------------------------------------------------------------------------------
+NO EVENTS FOUND
+
+### WATCHDOG / LOCKUP EVENTS ###
+--------------------------------------------------------------------------------
+Aug 21 09:07:44 ip-172-31-21-130 kernel: NMI watchdog: Perf NMI watchdog permanently disabled
+
+### SEGFAULT / PROCESS CRASH ###
+--------------------------------------------------------------------------------
+NO EVENTS FOUND
+
+### NETWORK EVENTS ###
+--------------------------------------------------------------------------------
+Aug 21 09:07:48 ip-172-31-21-130 systemd-networkd[3819]: enX0: Link DOWN
+
+### SYSTEMD FAILURES ###
+--------------------------------------------------------------------------------
+NO EVENTS FOUND
+
+### REBOOT / SHUTDOWN ###
+--------------------------------------------------------------------------------
+Aug 21 09:07:45 ip-172-31-21-130 systemd[1]: Starting finalrd.service - Create final runtime dir for shutdown pivot root...
+Aug 21 09:07:45 ip-172-31-21-130 systemd[1]: Finished finalrd.service - Create final runtime dir for shutdown pivot root.
+Aug 21 09:07:45 ip-172-31-21-130 systemd[1]: Starting systemd-update-utmp.service - Record System Boot/Shutdown in UTMP...
+Aug 21 09:07:45 ip-172-31-21-130 systemd[1]: Finished systemd-update-utmp.service - Record System Boot/Shutdown in UTMP.
+Aug 21 09:07:50 ip-172-31-21-130 cron[4213]: (CRON) INFO (Running @reboot jobs)
+Aug 21 09:07:50 ip-172-31-21-130 systemd[1]: secureboot-db.service - Secure Boot updates for DB and DBX was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/db-d719b2cb-3d3a-4596-a3bc-dad00e67656f).
+Aug 21 09:07:51 ip-172-31-21-130 systemd[1]: ua-reboot-cmds.service - Ubuntu Pro reboot cmds was skipped because of an unmet condition check (ConditionPathExists=/var/lib/ubuntu-advantage/private/machine-token.json).
+Aug 21 09:07:51 ip-172-31-21-130 systemd[1]: Started unattended-upgrades.service - Unattended Upgrades Shutdown.
+Aug 21 11:07:44 ip-172-31-21-130 sudo[6179]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=root ; COMMAND=/usr/sbin/shutdown -r
+Aug 21 11:07:44 ip-172-31-21-130 systemd-logind[4235]: The system will reboot at Fri 2026-08-21 11:08:44 UTC!
+Aug 21 11:08:44 ip-172-31-21-130 systemd-logind[4235]: The system will reboot now!
+Aug 21 11:08:44 ip-172-31-21-130 systemd-logind[4235]: System is rebooting.
+Aug 21 11:08:44 ip-172-31-21-130 systemd[1]: Stopping finalrd.service - Create final runtime dir for shutdown pivot root...
+Aug 21 11:08:44 ip-172-31-21-130 systemd[1]: snapd.system-shutdown.service - Ubuntu core (all-snaps) system shutdown helper setup service was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/finalrd).
+Aug 21 11:08:44 ip-172-31-21-130 systemd[1]: plymouth-reboot.service - Show Plymouth Reboot Screen was skipped because of an unmet condition check (ConditionKernelCommandLine=splash).
+Aug 21 11:08:44 ip-172-31-21-130 systemd[4573]: Reached target shutdown.target - Shutdown.
+Aug 21 11:08:45 ip-172-31-21-130 systemd[1]: Stopped finalrd.service - Create final runtime dir for shutdown pivot root.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Stopping systemd-update-utmp.service - Record System Boot/Shutdown in UTMP...
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Stopped systemd-update-utmp.service - Record System Boot/Shutdown in UTMP.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Reached target shutdown.target - System Shutdown.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Reached target final.target - Late Shutdown Services.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: systemd-reboot.service: Deactivated successfully.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Finished systemd-reboot.service - System Reboot.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Reached target reboot.target - System Reboot.
+Aug 21 11:08:51 ip-172-31-21-130 systemd-shutdown[1]: Syncing filesystems and block devices.
+Aug 21 11:08:51 ip-172-31-21-130 systemd-shutdown[1]: Sending SIGTERM to remaining processes...
+
+### MANUAL / SUDO REBOOT ###
+--------------------------------------------------------------------------------
+Aug 21 11:07:44 ip-172-31-21-130 sudo[6179]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=root ; COMMAND=/usr/sbin/shutdown -r
+
+### SUDO COMMANDS ###
+--------------------------------------------------------------------------------
+Aug 21 09:08:13 ip-172-31-21-130 sudo[4752]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/sbin/kdump-config show
+Aug 21 09:08:13 ip-172-31-21-130 sudo[4752]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Aug 21 09:08:13 ip-172-31-21-130 sudo[4752]: pam_unix(sudo:session): session closed for user root
+Aug 21 09:08:31 ip-172-31-21-130 sudo[4801]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/systemctl status kdump-tools --no-pager
+Aug 21 09:08:31 ip-172-31-21-130 sudo[4801]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Aug 21 09:08:31 ip-172-31-21-130 sudo[4801]: pam_unix(sudo:session): session closed for user root
+Aug 21 10:22:40 ip-172-31-21-130 sudo[5228]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=ubuntu ; COMMAND=/usr/bin/crontab -l
+Aug 21 10:22:40 ip-172-31-21-130 sudo[5228]: pam_unix(sudo:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=1000)
+Aug 21 10:22:40 ip-172-31-21-130 sudo[5228]: pam_unix(sudo:session): session closed for user ubuntu
+Aug 21 10:41:14 ip-172-31-21-130 sudo[5605]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai ; USER=ubuntu ; COMMAND=/usr/bin/crontab -l
+Aug 21 10:41:14 ip-172-31-21-130 sudo[5605]: pam_unix(sudo:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=1000)
+Aug 21 10:41:14 ip-172-31-21-130 sudo[5605]: pam_unix(sudo:session): session closed for user ubuntu
+Aug 21 10:53:54 ip-172-31-21-130 sudo[5923]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=ubuntu ; COMMAND=/usr/bin/crontab -l
+Aug 21 10:53:54 ip-172-31-21-130 sudo[5923]: pam_unix(sudo:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=1000)
+Aug 21 10:53:54 ip-172-31-21-130 sudo[5923]: pam_unix(sudo:session): session closed for user ubuntu
+Aug 21 11:07:44 ip-172-31-21-130 sudo[6179]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=root ; COMMAND=/usr/sbin/shutdown -r
+Aug 21 11:07:44 ip-172-31-21-130 sudo[6179]: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+Aug 21 11:07:44 ip-172-31-21-130 sudo[6179]: pam_unix(sudo:session): session closed for user root
+
+### CRON LOGS ###
+--------------------------------------------------------------------------------
+Aug 21 09:07:50 ip-172-31-21-130 systemd[1]: Started cron.service - Regular background program processing daemon.
+Aug 21 09:07:50 ip-172-31-21-130 (cron)[4213]: cron.service: Referenced but unset environment variable evaluates to an empty string: EXTRA_OPTS
+Aug 21 09:07:50 ip-172-31-21-130 cron[4213]: (CRON) INFO (pidfile fd = 3)
+Aug 21 09:07:50 ip-172-31-21-130 cron[4213]: (CRON) INFO (Running @reboot jobs)
+Aug 21 09:15:01 ip-172-31-21-130 CRON[4852]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Aug 21 09:15:01 ip-172-31-21-130 CRON[4853]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Aug 21 09:15:01 ip-172-31-21-130 CRON[4852]: pam_unix(cron:session): session closed for user root
+Aug 21 09:17:01 ip-172-31-21-130 CRON[4864]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Aug 21 09:17:01 ip-172-31-21-130 CRON[4865]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Aug 21 09:17:01 ip-172-31-21-130 CRON[4864]: pam_unix(cron:session): session closed for user root
+Aug 21 09:25:01 ip-172-31-21-130 CRON[4878]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Aug 21 09:25:01 ip-172-31-21-130 CRON[4879]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Aug 21 09:25:01 ip-172-31-21-130 CRON[4878]: pam_unix(cron:session): session closed for user root
+Aug 21 09:35:01 ip-172-31-21-130 CRON[4888]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Aug 21 09:35:01 ip-172-31-21-130 CRON[4889]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Aug 21 09:35:01 ip-172-31-21-130 CRON[4888]: pam_unix(cron:session): session closed for user root
+Aug 21 09:45:01 ip-172-31-21-130 CRON[4903]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Aug 21 09:45:01 ip-172-31-21-130 CRON[4904]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Aug 21 09:45:01 ip-172-31-21-130 CRON[4903]: pam_unix(cron:session): session closed for user root
+Aug 21 09:55:01 ip-172-31-21-130 CRON[5050]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Aug 21 09:55:01 ip-172-31-21-130 CRON[5051]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Aug 21 09:55:01 ip-172-31-21-130 CRON[5050]: pam_unix(cron:session): session closed for user root
+Aug 21 10:05:01 ip-172-31-21-130 CRON[5067]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Aug 21 10:05:01 ip-172-31-21-130 CRON[5068]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Aug 21 10:05:01 ip-172-31-21-130 CRON[5067]: pam_unix(cron:session): session closed for user root
+Aug 21 10:15:01 ip-172-31-21-130 CRON[5103]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Aug 21 10:15:01 ip-172-31-21-130 CRON[5104]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Aug 21 10:15:01 ip-172-31-21-130 CRON[5103]: pam_unix(cron:session): session closed for user root
+Aug 21 10:17:01 ip-172-31-21-130 CRON[5108]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Aug 21 10:17:01 ip-172-31-21-130 CRON[5109]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Aug 21 10:17:01 ip-172-31-21-130 CRON[5108]: pam_unix(cron:session): session closed for user root
+Aug 21 10:22:40 ip-172-31-21-130 crontab[5226]: (ubuntu) LIST (ubuntu)
+Aug 21 10:22:40 ip-172-31-21-130 sudo[5228]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=ubuntu ; COMMAND=/usr/bin/crontab -l
+Aug 21 10:22:40 ip-172-31-21-130 crontab[5230]: (ubuntu) LIST (ubuntu)
+Aug 21 10:25:01 ip-172-31-21-130 CRON[5382]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Aug 21 10:25:01 ip-172-31-21-130 CRON[5383]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Aug 21 10:25:01 ip-172-31-21-130 CRON[5382]: pam_unix(cron:session): session closed for user root
+Aug 21 10:35:01 ip-172-31-21-130 CRON[5460]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Aug 21 10:35:01 ip-172-31-21-130 CRON[5461]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Aug 21 10:35:01 ip-172-31-21-130 CRON[5460]: pam_unix(cron:session): session closed for user root
+Aug 21 10:41:14 ip-172-31-21-130 crontab[5603]: (ubuntu) LIST (ubuntu)
+Aug 21 10:41:14 ip-172-31-21-130 sudo[5605]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai ; USER=ubuntu ; COMMAND=/usr/bin/crontab -l
+Aug 21 10:41:14 ip-172-31-21-130 crontab[5607]: (ubuntu) LIST (ubuntu)
+Aug 21 10:45:01 ip-172-31-21-130 CRON[5787]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Aug 21 10:45:01 ip-172-31-21-130 CRON[5788]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Aug 21 10:45:01 ip-172-31-21-130 CRON[5787]: pam_unix(cron:session): session closed for user root
+Aug 21 10:53:54 ip-172-31-21-130 crontab[5921]: (ubuntu) LIST (ubuntu)
+Aug 21 10:53:54 ip-172-31-21-130 sudo[5923]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=ubuntu ; COMMAND=/usr/bin/crontab -l
+Aug 21 10:53:54 ip-172-31-21-130 crontab[5925]: (ubuntu) LIST (ubuntu)
+Aug 21 10:55:01 ip-172-31-21-130 CRON[6073]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Aug 21 10:55:01 ip-172-31-21-130 CRON[6074]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Aug 21 10:55:01 ip-172-31-21-130 CRON[6073]: pam_unix(cron:session): session closed for user root
+Aug 21 11:05:01 ip-172-31-21-130 CRON[6164]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+Aug 21 11:05:01 ip-172-31-21-130 CRON[6165]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Aug 21 11:05:01 ip-172-31-21-130 CRON[6164]: pam_unix(cron:session): session closed for user root
+Aug 21 11:08:44 ip-172-31-21-130 systemd[1]: Stopping cron.service - Regular background program processing daemon...
+Aug 21 11:08:44 ip-172-31-21-130 systemd[1]: cron.service: Deactivated successfully.
+Aug 21 11:08:44 ip-172-31-21-130 systemd[1]: Stopped cron.service - Regular background program processing daemon.
+
+### CRON REBOOT ###
+--------------------------------------------------------------------------------
+Aug 21 09:07:50 ip-172-31-21-130 cron[4213]: (CRON) INFO (Running @reboot jobs)
+
+### SYSTEMD REBOOT ###
+--------------------------------------------------------------------------------
+Aug 21 11:07:44 ip-172-31-21-130 systemd-logind[4235]: The system will reboot at Fri 2026-08-21 11:08:44 UTC!
+Aug 21 11:08:44 ip-172-31-21-130 systemd-logind[4235]: The system will reboot now!
+Aug 21 11:08:44 ip-172-31-21-130 systemd-logind[4235]: System is rebooting.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: systemd-reboot.service: Deactivated successfully.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Finished systemd-reboot.service - System Reboot.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Reached target reboot.target - System Reboot.
+Aug 21 11:08:51 ip-172-31-21-130 systemd-shutdown[1]: Syncing filesystems and block devices.
+Aug 21 11:08:51 ip-172-31-21-130 systemd-shutdown[1]: Sending SIGTERM to remaining processes...
+
+### SYSTEMD TIMERS ###
+--------------------------------------------------------------------------------
+NEXT                                LEFT LAST                        PASSED UNIT                           ACTIVATES
+Fri 2026-08-21 11:10:00 UTC        384ms -                                - sysstat-collect.timer          sysstat-collect.service
+Fri 2026-08-21 11:14:03 UTC      4min 3s -                                - update-notifier-download.timer update-notifier-download.service
+Fri 2026-08-21 11:24:02 UTC        14min -                                - systemd-tmpfiles-clean.timer   systemd-tmpfiles-clean.service
+Fri 2026-08-21 11:53:21 UTC        43min Fri 2026-08-21 10:43:46 UTC      - fwupd-refresh.timer            fwupd-refresh.service
+Fri 2026-08-21 12:13:16 UTC      1h 3min Fri 2026-08-21 11:00:23 UTC      - motd-news.timer                motd-news.service
+Sat 2026-08-22 00:00:00 UTC          12h Fri 2026-08-21 00:00:21 UTC      - dpkg-db-backup.timer           dpkg-db-backup.service
+Sat 2026-08-22 00:00:00 UTC          12h Fri 2026-08-21 00:00:21 UTC      - logrotate.timer                logrotate.service
+Sat 2026-08-22 00:07:00 UTC          12h -                                - sysstat-summary.timer          sysstat-summary.service
+Sat 2026-08-22 05:21:51 UTC          18h Fri 2026-08-21 09:02:15 UTC      - apt-daily.timer                apt-daily.service
+Sat 2026-08-22 06:16:15 UTC          19h Fri 2026-08-21 03:33:21 UTC      - man-db.timer                   man-db.service
+Sat 2026-08-22 06:17:41 UTC          19h Fri 2026-08-21 06:48:21 UTC      - apt-daily-upgrade.timer        apt-daily-upgrade.service
+Sun 2026-08-23 03:10:27 UTC    1 day 16h Sun 2026-08-16 03:10:39 UTC      - e2scrub_all.timer              e2scrub_all.service
+Mon 2026-08-24 01:31:33 UTC       2 days Mon 2026-08-17 01:23:45 UTC      - fstrim.timer                   fstrim.service
+Sat 2026-08-29 21:08:50 UTC 1 week 1 day Wed 2026-08-19 16:57:34 UTC      - update-notifier-motd.timer     update-notifier-motd.service
+-                                      - -                                - apport-autoreport.timer        apport-autoreport.service
+-                                      - -                                - snapd.snap-repair.timer        snapd.snap-repair.service
+-                                      - -                                - ua-timer.timer                 ua-timer.service
+
+17 timers listed.
+
+### ROOT CRONTAB ###
+--------------------------------------------------------------------------------
+# Edit this file to introduce tasks to be run by cron.
+# 
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+# 
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+# 
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+# 
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+# 
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+
+### UBUNTU CRONTAB ###
+--------------------------------------------------------------------------------
+# Edit this file to introduce tasks to be run by cron.
+# 
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+# 
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+# 
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+# 
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+# 
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+
+### SYSTEM CRON CONFIGURATION ###
+--------------------------------------------------------------------------------
+276      4 -rw-r--r--   1 root     root          201 Apr  8  2024 /etc/cron.d/e2scrub_all
+      277      4 -rw-r--r--   1 root     root          102 Mar 31  2024 /etc/cron.d/.placeholder
+      278      4 -rw-r--r--   1 root     root          396 Jan  9  2024 /etc/cron.d/sysstat
+      254      4 -rwxr-xr-x   1 root     root          123 Feb  5  2024 /etc/cron.daily/dpkg
+      257      4 -rwxr-xr-x   1 root     root          377 Apr  8  2024 /etc/cron.daily/logrotate
+      258      4 -rwxr-xr-x   1 root     root          376 Jul  8  2025 /etc/cron.daily/apport
+      256      4 -rwxr-xr-x   1 root     root         1478 Mar 22  2024 /etc/cron.daily/apt-compat
+      255      4 -rw-r--r--   1 root     root          102 Mar 31  2024 /etc/cron.daily/.placeholder
+      260      4 -rwxr-xr-x   1 root     root          518 Jan  9  2024 /etc/cron.daily/sysstat
+      259      4 -rwxr-xr-x   1 root     root         1395 Mar 29  2024 /etc/cron.daily/man-db
+      644      4 -rw-r--r--   1 root     root          102 Mar 31  2024 /etc/cron.hourly/.placeholder
+      648      4 -rw-r--r--   1 root     root          102 Mar 31  2024 /etc/cron.weekly/.placeholder
+      649      4 -rwxr-xr-x   1 root     root         1055 Mar 29  2024 /etc/cron.weekly/man-db
+      646      4 -rw-r--r--   1 root     root          102 Mar 31  2024 /etc/cron.monthly/.placeholder
+
+### FAILED SYSTEMD SERVICES ###
+--------------------------------------------------------------------------------
+UNIT LOAD ACTIVE SUB DESCRIPTION
+
+0 loaded units listed.
+
+### SERVICE FAILURE STATUS ###
+--------------------------------------------------------------------------------
+UNIT LOAD ACTIVE SUB DESCRIPTION
+
+0 loaded units listed.
+
+### TOP PROCESSES ###
+--------------------------------------------------------------------------------
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         659  3.0  0.5 1851064 42068 ?       Ssl  11:09   0:01 /snap/snapd/current/usr/lib/snapd/snapd
+root         189  0.0  0.3 288960 27292 ?        SLsl 11:09   0:00 /sbin/multipathd -d -s
+root         800  0.1  0.3 110024 23036 ?        Ssl  11:09   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         653  2.5  0.2 1759088 22556 ?       Ssl  11:09   0:01 /snap/amazon-ssm-agent/13349/amazon-ssm-agent
+root         649  0.1  0.2  32428 20668 ?        Ss   11:09   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         129  0.3  0.2  50436 17412 ?        S<s  11:09   0:00 /usr/lib/systemd/systemd-journald
+root         687  0.0  0.1 468844 13716 ?        Ssl  11:09   0:00 /usr/libexec/udisks2/udisksd
+root           1  1.8  0.1  22076 13264 ?        Ss   11:09   0:01 /sbin/init
+ubuntu      1189  1.2  0.1  20684 12916 pts/0    S+   11:09   0:00 python3 collect_evidence.py
+systemd+     395  0.1  0.1  21476 12832 ?        Ss   11:09   0:00 /usr/lib/systemd/systemd-resolved
+root         832  0.0  0.1 391888 12796 ?        Ssl  11:09   0:00 /usr/sbin/ModemManager
+ubuntu       998  0.1  0.1  20240 11524 ?        Ss   11:09   0:00 /usr/lib/systemd/systemd --user
+root         963  0.0  0.1  14740 10380 ?        Ss   11:09   0:00 sshd: ubuntu [priv]
+root         994  0.0  0.1  14748 10368 ?        Ss   11:09   0:00 sshd: ubuntu [priv]
+polkitd      651  0.1  0.1 383668 10060 ?        Ssl  11:09   0:00 /usr/lib/polkit-1/polkitd --no-debug
+systemd+     593  0.0  0.1  22424 10020 ?        Ss   11:09   0:00 /usr/lib/systemd/systemd-networkd
+root         664  0.0  0.1  18168  8984 ?        Ss   11:09   0:00 /usr/lib/systemd/systemd-logind
+root         195  0.5  0.1  29240  8420 ?        Ss   11:09   0:00 /usr/lib/systemd/systemd-udevd
+root         962  0.0  0.1  12028  8264 ?        Ss   11:09   0:00 sshd: /usr/sbin/sshd -D -o AuthorizedKeysCommand /usr/share/ec2-instance-connect/eic_run_authorized_keys %u %f -o AuthorizedKeysCommandUser ec2-instance-connect [listener] 0 of 10-100 startups
+ubuntu      1109  0.0  0.1  15224  7880 ?        S    11:09   0:00 sshd: ubuntu@pts/0
+ubuntu      1168  0.0  0.0  15004  7192 ?        S    11:09   0:00 sshd: ubuntu@notty
+syslog       727  0.0  0.0 222516  6300 ?        Ssl  11:09   0:00 /usr/sbin/rsyslogd -n -iNONE
+message+     641  0.1  0.0   9856  5740 ?        Ss   11:09   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+ubuntu      1110  0.0  0.0   9200  5488 pts/0    Ss   11:09   0:00 -bash
+root         647  0.0  0.0  82928  4696 ?        Ssl  11:09   0:00 /usr/sbin/irqbalance
+ubuntu      1298  0.0  0.0  11328  4484 pts/0    R+   11:09   0:00 ps aux --sort=-%mem
+_chrony      736  0.0  0.0  19412  3816 ?        S    11:09   0:00 /usr/sbin/chronyd -F 1
+ubuntu       999  0.0  0.0  21168  3616 ?        S    11:09   0:00 (sd-pam)
+root         640  0.0  0.0   7232  2760 ?        Ss   11:09   0:00 /usr/sbin/cron -f -P
+
+### KDUMP SERVICE ###
+--------------------------------------------------------------------------------
+active
+
+### KDUMP ENABLED ###
+--------------------------------------------------------------------------------
+enabled
+
+### KDUMP STATUS ###
+--------------------------------------------------------------------------------
+current state   : ready to kdump
+
+### KDUMP CONFIGURATION ###
+--------------------------------------------------------------------------------
+DUMP_MODE:		kdump
+USE_KDUMP:		1
+KDUMP_COREDIR:		/var/crash
+crashkernel addr: 0x
+   /var/lib/kdump/vmlinuz: symbolic link to /boot/vmlinuz-7.0.0-1010-aws
+kdump initrd: 
+   /var/lib/kdump/initrd.img: symbolic link to /var/lib/kdump/initrd.img-7.0.0-1010-aws
+current state:    ready to kdump
+
+crashkernel suggested size: 258M
+
+kexec command:
+  /sbin/kexec -p --command-line="BOOT_IMAGE=/vmlinuz-7.0.0-1010-aws root=PARTUUID=fe814a98-f7fd-4c3d-9642-c18fe64c6e5d ro console=tty1 console=ttyS0 nvme_core.io_timeout=4294967295 panic=-1 reset_devices systemd.unit=kdump-tools-dump.service nr_cpus=1 irqpoll usbcore.nousb" --initrd=/var/lib/kdump/initrd.img /var/lib/kdump/vmlinuz
+
+### KDUMP TEST ###
+--------------------------------------------------------------------------------
+USE_KDUMP:		1
+KDUMP_COREDIR:		/var/crash
+crashkernel addr		0x
+kdump kernel addr		
+kdump kernel:
+   /var/lib/kdump/vmlinuz: symbolic link to /boot/vmlinuz-7.0.0-1010-aws
+kdump initrd: 
+   /var/lib/kdump/initrd.img: symbolic link to /var/lib/kdump/initrd.img-7.0.0-1010-aws
+kexec command to be used:
+  /sbin/kexec -p --command-line="BOOT_IMAGE=/vmlinuz-7.0.0-1010-aws root=PARTUUID=fe814a98-f7fd-4c3d-9642-c18fe64c6e5d ro console=tty1 console=ttyS0 nvme_core.io_timeout=4294967295 panic=-1 reset_devices systemd.unit=kdump-tools-dump.service nr_cpus=1 irqpoll usbcore.nousb" --initrd=/var/lib/kdump/initrd.img /var/lib/kdump/vmlinuz
+
+### KDUMP DEFAULT CONFIGURATION ###
+--------------------------------------------------------------------------------
+USE_KDUMP=1
+KDUMP_KERNEL=/var/lib/kdump/vmlinuz
+KDUMP_INITRD=/var/lib/kdump/initrd.img
+KDUMP_COREDIR="/var/crash"
+
+### CRASHKERNEL CMDLINE ###
+--------------------------------------------------------------------------------
+crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M
+
+### CRASHKERNEL CONFIGURATION ###
+--------------------------------------------------------------------------------
+/etc/default/grub.d/kdump-tools.cfg:GRUB_CMDLINE_LINUX_DEFAULT="$GRUB_CMDLINE_LINUX_DEFAULT crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M"
+
+### GRUB CONFIGURATION ###
+--------------------------------------------------------------------------------
+/etc/default/grub:GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+/etc/default/grub:GRUB_CMDLINE_LINUX=""
+/etc/default/grub.d/50-cloudimg-settings.cfg:GRUB_CMDLINE_LINUX_DEFAULT="console=tty1 console=ttyS0 nvme_core.io_timeout=4294967295"
+/etc/default/grub.d/kdump-tools.cfg:GRUB_CMDLINE_LINUX_DEFAULT="$GRUB_CMDLINE_LINUX_DEFAULT crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M"
+
+### KDUMP DIRECTORY ###
+--------------------------------------------------------------------------------
+total 19M
+drwxr-xr-x  3 root root 4.0K Aug 21 11:09 .
+drwxr-xr-x 47 root root 4.0K Aug 21 09:02 ..
+drwxr-xr-x  5 root root 4.0K Jun 10 10:10 initramfs-tools
+lrwxrwxrwx  1 root root   40 Aug 21 11:09 initrd.img -> /var/lib/kdump/initrd.img-7.0.0-1010-aws
+-rw-r--r--  1 root root  19M Aug 21 09:07 initrd.img-7.0.0-1010-aws
+-rw-r--r--  1 root root  234 Aug 21 11:09 latest_sysctls-7.0.0-1010-aws
+-rw-r--r--  1 root root 1.6K Aug 21 11:09 mem-7.0.0-1010-aws
+-rw-r--r--  1 root root    3 Aug 21 09:07 size_initrd.img-7.0.0-1010-aws
+lrwxrwxrwx  1 root root   28 Aug 21 11:09 vmlinuz -> /boot/vmlinuz-7.0.0-1010-aws
+
+### KDUMP KERNEL ###
+--------------------------------------------------------------------------------
+/boot/vmlinuz-7.0.0-1010-aws
+
+### KDUMP INITRD ###
+--------------------------------------------------------------------------------
+/var/lib/kdump/initrd.img-7.0.0-1010-aws
+
+### VMCORE / CRASH FILES ###
+--------------------------------------------------------------------------------
+NO EVENTS FOUND
+
+### CRASH DIRECTORY ###
+--------------------------------------------------------------------------------
+total 12K
+drwxrwsrwt  2 root root 4.0K Aug 21 09:07 .
+drwxr-xr-x 13 root root 4.0K Aug 11 09:16 ..
+-rw-r--r--  1 root root    0 Aug 21 11:09 kdump_lock
+-rw-r--r--  1 root root  331 Aug 21 11:09 kexec_cmd
+
+### CRASH FILES ###
+--------------------------------------------------------------------------------
+783      0 -rw-r--r--   1 root     root            0 Aug 21 11:09 /var/crash/kdump_lock
+     2846      4 -rw-r--r--   1 root     root          331 Aug 21 11:09 /var/crash/kexec_cmd
+
+### KERNEL / INITRD FILES ###
+--------------------------------------------------------------------------------
+lrwxrwxrwx 1 root root  25 Aug 12 06:27 /boot/initrd.img -> initrd.img-7.0.0-1010-aws
+-rw-r--r-- 1 root root 44M Aug 12 06:27 /boot/initrd.img-6.17.0-1017-aws
+-rw-r--r-- 1 root root 63M Aug 21 09:02 /boot/initrd.img-7.0.0-1010-aws
+lrwxrwxrwx 1 root root  26 Jun 10 10:15 /boot/initrd.img.old -> initrd.img-6.17.0-1017-aws
+lrwxrwxrwx 1 root root  22 Aug 12 06:27 /boot/vmlinuz -> vmlinuz-7.0.0-1010-aws
+-rw------- 1 root root 16M May 26 19:51 /boot/vmlinuz-6.17.0-1017-aws
+-rw------- 1 root root 17M Jul 27 15:45 /boot/vmlinuz-7.0.0-1010-aws
+lrwxrwxrwx 1 root root  23 Jun 10 10:15 /boot/vmlinuz.old -> vmlinuz-6.17.0-1017-aws
+
+### FILTERED OOM / MEMORY ###
+--------------------------------------------------------------------------------
+NO EVENTS FOUND
+
+### FILTERED KERNEL PANIC / OOPS ###
+--------------------------------------------------------------------------------
+NO EVENTS FOUND
+
+### FILTERED HARDWARE ###
+--------------------------------------------------------------------------------
+Aug 21 09:07:44 ip-172-31-21-130 kernel: EDAC MC: Ver: 3.0.0
+
+### FILTERED STORAGE / I/O ###
+--------------------------------------------------------------------------------
+Aug 21 09:07:55 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[4227]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Aug 21 09:34:09 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[4227]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Aug 21 09:59:10 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[4227]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Aug 21 10:28:59 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[4227]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Aug 21 10:58:00 ip-172-31-21-130 amazon-ssm-agent.amazon-ssm-agent[4227]: caused by: EC2MetadataError: failed to make EC2Metadata request
+
+### FILTERED FILESYSTEM ###
+--------------------------------------------------------------------------------
+NO EVENTS FOUND
+
+### FILTERED WATCHDOG / LOCKUP ###
+--------------------------------------------------------------------------------
+Aug 21 09:07:44 ip-172-31-21-130 kernel: NMI watchdog: Perf NMI watchdog permanently disabled
+
+### FILTERED SEGFAULT ###
+--------------------------------------------------------------------------------
+NO EVENTS FOUND
+
+### FILTERED NETWORK ###
+--------------------------------------------------------------------------------
+Aug 21 09:07:48 ip-172-31-21-130 systemd-networkd[3819]: enX0: Link DOWN
+
+### FILTERED SYSTEMD FAILURE ###
+--------------------------------------------------------------------------------
+NO EVENTS FOUND
+
+### FILTERED REBOOT / SHUTDOWN ###
+--------------------------------------------------------------------------------
+Aug 21 09:07:45 ip-172-31-21-130 systemd[1]: Starting finalrd.service - Create final runtime dir for shutdown pivot root...
+Aug 21 09:07:45 ip-172-31-21-130 systemd[1]: Finished finalrd.service - Create final runtime dir for shutdown pivot root.
+Aug 21 09:07:45 ip-172-31-21-130 systemd[1]: Starting systemd-update-utmp.service - Record System Boot/Shutdown in UTMP...
+Aug 21 09:07:45 ip-172-31-21-130 systemd[1]: Finished systemd-update-utmp.service - Record System Boot/Shutdown in UTMP.
+Aug 21 09:07:50 ip-172-31-21-130 cron[4213]: (CRON) INFO (Running @reboot jobs)
+Aug 21 09:07:50 ip-172-31-21-130 systemd[1]: secureboot-db.service - Secure Boot updates for DB and DBX was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/db-d719b2cb-3d3a-4596-a3bc-dad00e67656f).
+Aug 21 09:07:51 ip-172-31-21-130 systemd[1]: ua-reboot-cmds.service - Ubuntu Pro reboot cmds was skipped because of an unmet condition check (ConditionPathExists=/var/lib/ubuntu-advantage/private/machine-token.json).
+Aug 21 09:07:51 ip-172-31-21-130 systemd[1]: Started unattended-upgrades.service - Unattended Upgrades Shutdown.
+Aug 21 11:07:44 ip-172-31-21-130 sudo[6179]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=root ; COMMAND=/usr/sbin/shutdown -r
+Aug 21 11:07:44 ip-172-31-21-130 systemd-logind[4235]: The system will reboot at Fri 2026-08-21 11:08:44 UTC!
+Aug 21 11:08:44 ip-172-31-21-130 systemd-logind[4235]: The system will reboot now!
+Aug 21 11:08:44 ip-172-31-21-130 systemd-logind[4235]: System is rebooting.
+Aug 21 11:08:44 ip-172-31-21-130 systemd[1]: Stopping finalrd.service - Create final runtime dir for shutdown pivot root...
+Aug 21 11:08:44 ip-172-31-21-130 systemd[1]: snapd.system-shutdown.service - Ubuntu core (all-snaps) system shutdown helper setup service was skipped because of an unmet condition check (ConditionPathExists=!/usr/bin/finalrd).
+Aug 21 11:08:44 ip-172-31-21-130 systemd[1]: plymouth-reboot.service - Show Plymouth Reboot Screen was skipped because of an unmet condition check (ConditionKernelCommandLine=splash).
+Aug 21 11:08:44 ip-172-31-21-130 systemd[4573]: Reached target shutdown.target - Shutdown.
+Aug 21 11:08:45 ip-172-31-21-130 systemd[1]: Stopped finalrd.service - Create final runtime dir for shutdown pivot root.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Stopping systemd-update-utmp.service - Record System Boot/Shutdown in UTMP...
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Stopped systemd-update-utmp.service - Record System Boot/Shutdown in UTMP.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Reached target shutdown.target - System Shutdown.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Reached target final.target - Late Shutdown Services.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: systemd-reboot.service: Deactivated successfully.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Finished systemd-reboot.service - System Reboot.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Reached target reboot.target - System Reboot.
+Aug 21 11:08:51 ip-172-31-21-130 systemd-shutdown[1]: Syncing filesystems and block devices.
+Aug 21 11:08:51 ip-172-31-21-130 systemd-shutdown[1]: Sending SIGTERM to remaining processes...

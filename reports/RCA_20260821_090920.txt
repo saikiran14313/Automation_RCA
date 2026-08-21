@@ -1,0 +1,51 @@
+========================================
+LINUX REBOOT RCA
+========================================
+
+Server:
+ip-172-31-21-130
+
+Incident:
+Repeated system reboots observed in the logs.
+
+Probable Root Cause:
+Manual / Planned reboot
+
+Confidence:
+HIGH
+
+Timeline:
+- 2026-08-20 15:02:18 - sudo user executed /usr/sbin/reboot
+- 2026-08-20 15:02:18 - systemd-logind received signal to reboot
+- 2026-08-20 15:02:26 - systemd-shutdown initiated process termination
+
+Key Evidence:
+1. Aug 20 15:02:18 ip-172-31-21-130 sudo[1147]: ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/linux-rcc-ai ; USER=root ; COMMAND=/usr/sbin/reboot
+2. Aug 20 15:02:18 ip-172-31-21-130 systemd-logind[584]: The system will reboot now!
+3. Boot history shows multiple successive short uptimes ending in user-initiated reboot patterns.
+
+Root Cause Checks:
+Kernel Panic: Not detected
+Kernel OOPS: Not detected
+OOM: Not detected
+Hardware Error: Not detected
+Storage / I/O Error: Not detected
+Filesystem Error: Not detected
+Watchdog / Lockup: Not detected
+Systemd Failure: Not detected
+Manual / Planned Reboot: Detected
+Cron Scheduled Reboot: Not detected
+Kdump: Not configured
+VMcore: Not available
+
+Final RCA:
+The server experienced a sequence of reboots. The final reboot event was explicitly triggered by the 'ubuntu' user via a sudo command, as recorded in the authentication logs. No system errors or automated service triggers were found to explain the preceding reboot cycle.
+
+Recommended Action:
+Review the shell history of the 'ubuntu' user and investigate the motivation behind the repeated manual reboot commands.
+
+Evidence File:
+ai_evidence_20260820_150403.txt
+
+Cause of Reboot:
+The system reboot was manually initiated by the user 'ubuntu' executing the reboot command.

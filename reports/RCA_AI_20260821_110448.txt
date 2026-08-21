@@ -1,0 +1,161 @@
+LINUX REBOOT INTELLIGENCE CENTER
+=================================
+
+Server:
+ip-172-31-21-130
+
+Analysis Time:
+2026-08-21 11:04:48.701256
+
+Evidence:
+/home/ubuntu/linux-rcc-ai/logs/evidence/ai_evidence_20260821_105350.txt
+
+Evidence Size:
+222,516 characters
+
+
+PRIMARY RCA
+===========
+
+Root Cause:
+UNKNOWN
+
+Confidence:
+HIGH
+
+Health Score:
+95/100
+
+Kdump:
+READY
+
+VMcore:
+NOT AVAILABLE
+
+
+RCA AUTHORITY
+=============
+
+Primary RCA Engine:
+LOCAL RULE ENGINE
+
+AI Role:
+EXPLANATION / CORRELATION ONLY
+
+AI MAY NOT OVERRIDE LOCAL RCA.
+
+
+LOCAL RULE REPORT
+=================
+
+LINUX REBOOT LOCAL RULE ENGINE RCA REPORT
+================================================================================
+
+Server: ip-172-31-21-130
+Evidence: ai_evidence_20260821_105350.txt
+Analysis Time: 2026-08-21 11:04:08.490935
+Analysis Mode: LOCAL RULE ENGINE
+Confidence: HIGH
+Health Score: 95/100
+Health Status: HEALTHY
+
+PROBABLE ROOT CAUSE
+--------------------------------------------------------------------------------
+Manual / Planned Reboot
+
+CAUSE OF REBOOT
+--------------------------------------------------------------------------------
+The server was manually rebooted by a user through a sudo reboot command. The evidence shows the reboot command being executed from a user session.
+
+REBOOT TYPE
+--------------------------------------------------------------------------------
+MANUAL
+
+ROOT CAUSE MATRIX
+--------------------------------------------------------------------------------
+Kernel Panic: NOT DETECTED
+Kernel OOPS: NOT DETECTED
+OOM: NOT DETECTED
+Hardware Error: NOT DETECTED
+Storage / I/O: NOT DETECTED
+Filesystem: NOT DETECTED
+Watchdog / Lockup: NOT DETECTED
+Systemd Failure: NOT DETECTED
+Manual Reboot: DETECTED
+Cron Reboot: NOT DETECTED
+Kdump: READY
+VMcore: NOT AVAILABLE
+
+HEALTH IMPACT
+--------------------------------------------------------------------------------
+Recent reboot detected: -5
+
+REBOOT TIMELINE
+--------------------------------------------------------------------------------
+Aug 21 01:21:13 ip-172-31-21-130 systemd[919]: Reached target shutdown.target - Shutdown.
+Aug 21 09:07:24 ip-172-31-21-130 sudo[13293]:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/linux-rcc-ai ; USER=root ; COMMAND=/usr/sbin/reboot
+Aug 21 09:07:24 ip-172-31-21-130 systemd-logind[586]: The system will reboot now!
+Aug 21 09:07:24 ip-172-31-21-130 systemd-logind[586]: System is rebooting.
+Aug 21 09:07:24 ip-172-31-21-130 systemd[3221]: Reached target shutdown.target - Shutdown.
+Aug 21 09:07:31 ip-172-31-21-130 systemd[1]: Reached target shutdown.target - System Shutdown.
+Aug 21 09:07:31 ip-172-31-21-130 systemd[1]: systemd-reboot.service: Deactivated successfully.
+Aug 21 09:07:31 ip-172-31-21-130 systemd[1]: Finished systemd-reboot.service - System Reboot.
+Aug 21 09:07:31 ip-172-31-21-130 systemd[1]: Reached target reboot.target - System Reboot.
+
+RECOMMENDED ACTION
+--------------------------------------------------------------------------------
+Verify the reboot against the approved change or maintenance window.
+
+
+
+AI ANALYSIS
+===========
+
+1. INCIDENT SUMMARY
+- **Server**: ip-172-31-21-130
+- **OS / Kernel**: Ubuntu 24.04.4 LTS / Linux 7.0.0-1010-aws
+- **Event Time**: 2026-08-21 09:07:24 UTC
+- **Current System State**: Healthy (Health Score: 95/100, Uptime: 1 hour 46 minutes)
+- **Primary RCA**: UNKNOWN
+
+2. PRIMARY RCA
+UNKNOWN
+
+3. WHY THIS RCA WAS SELECTED
+The Local Rule Engine has designated the authoritative Primary RCA as `UNKNOWN`. 
+
+While log evidence shows a user-initiated reboot command (`/usr/sbin/reboot`), the engine's primary classification output remains `UNKNOWN`. No kernel panic, Out-Of-Memory (OOM) killer event, hardware failure, watchdog timeout, or filesystem error was detected in the pre-reboot logs.
+
+4. SUPPORTING EVIDENCE
+- **User Command Execution**:
+  `Aug 21 09:07:24 ip-172-31-21-130 sudo[13293]: ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/linux-rcc-ai ; USER=root ; COMMAND=/usr/sbin/reboot`
+- **Clean Systemd Shutdown Sequence**:
+  `Aug 21 09:07:24 ip-172-31-21-130 systemd-logind[586]: The system will reboot now!`
+  `Aug 21 09:07:24 ip-172-31-21-130 systemd-logind[586]: System is rebooting.`
+  `Aug 21 09:07:31 ip-172-31-21-130 systemd[1]: Reached target reboot.target - System Reboot.`
+
+5. OTHER DETECTED EVENTS
+The following non-fatal background events were identified during boot analysis and are unrelated to the reboot cause:
+- **IRQ Balance Warnings**: `irqbalance[4219]: Cannot change IRQ affinity: No such file or directory` across IRQs 0 and 48–59.
+- **Kernel Boot Warnings**: Minor Xen HVM parameter warning (`CONSOLE_EVTCHN (18): -22`) and ACPI PM-Timer workaround notice.
+- **SSH Warning (Previous Boot)**: `sshd[1396]: error: kex_exchange_identification: read: Connection reset by peer`.
+
+6. KDUMP / VMCORE ANALYSIS
+- **Kdump**: `READY` — Kdump is active and properly configured to capture kernel memory dumps in the event of a future kernel crash.
+- **VMcore**: `NOT AVAILABLE` — No crash dump was generated because the system underwent a standard shutdown sequence rather than a kernel panic or crash.
+
+7. RECOMMENDED INVESTIGATION
+- Verify whether the `sudo reboot` action performed by user `ubuntu` at 09:07:24 UTC aligns with an authorized maintenance window or scheduled change request.
+- Review `irqbalance` service configurations to suppress cosmetic IRQ affinity warnings during system startup.
+
+
+FINAL DECISION
+==============
+
+The Local Rule Engine is the authoritative source
+for the primary reboot RCA.
+
+Gemini AI is used only to provide additional
+explanation and contextual analysis.
+
+Evidence was preserved separately.

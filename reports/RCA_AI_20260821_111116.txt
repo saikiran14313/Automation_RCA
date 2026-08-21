@@ -1,0 +1,173 @@
+LINUX REBOOT INTELLIGENCE CENTER
+=================================
+
+Server:
+ip-172-31-21-130
+
+Analysis Time:
+2026-08-21 11:11:16.208458
+
+Evidence:
+/home/ubuntu/linux-rcc-ai/logs/evidence/ai_evidence_20260821_110956.txt
+
+Evidence Size:
+183,294 characters
+
+
+PRIMARY RCA
+===========
+
+Root Cause:
+UNKNOWN
+
+Confidence:
+LOW
+
+Health Score:
+100/100
+
+Kdump:
+READY
+
+VMcore:
+NOT AVAILABLE
+
+
+RCA AUTHORITY
+=============
+
+Primary RCA Engine:
+LOCAL RULE ENGINE
+
+AI Role:
+EXPLANATION / CORRELATION ONLY
+
+AI MAY NOT OVERRIDE LOCAL RCA.
+
+
+LOCAL RULE REPORT
+=================
+
+LINUX REBOOT LOCAL RULE ENGINE RCA REPORT
+================================================================================
+
+Server: ip-172-31-21-130
+Evidence: ai_evidence_20260821_110956.txt
+Analysis Time: 2026-08-21 11:10:59.314962
+Analysis Mode: LOCAL RULE ENGINE
+Confidence: LOW
+Health Score: 100/100
+Health Status: HEALTHY
+
+PROBABLE ROOT CAUSE
+--------------------------------------------------------------------------------
+Unknown
+
+CAUSE OF REBOOT
+--------------------------------------------------------------------------------
+The exact cause of the reboot could not be determined from the available evidence.
+
+REBOOT TYPE
+--------------------------------------------------------------------------------
+UNKNOWN
+
+ROOT CAUSE MATRIX
+--------------------------------------------------------------------------------
+Kernel Panic: NOT DETECTED
+Kernel OOPS: NOT DETECTED
+OOM: NOT DETECTED
+Hardware Error: NOT DETECTED
+Storage / I/O: NOT DETECTED
+Filesystem: NOT DETECTED
+Watchdog / Lockup: NOT DETECTED
+Systemd Failure: NOT DETECTED
+Manual Reboot: NOT DETECTED
+Cron Reboot: NOT DETECTED
+Kdump: READY
+VMcore: NOT AVAILABLE
+
+HEALTH IMPACT
+--------------------------------------------------------------------------------
+No health-impacting events detected.
+
+REBOOT TIMELINE
+--------------------------------------------------------------------------------
+Aug 21 11:08:44 ip-172-31-21-130 systemd-logind[4235]: The system will reboot now!
+Aug 21 11:08:44 ip-172-31-21-130 systemd-logind[4235]: System is rebooting.
+Aug 21 11:08:44 ip-172-31-21-130 systemd[4573]: Reached target shutdown.target - Shutdown.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Reached target shutdown.target - System Shutdown.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: systemd-reboot.service: Deactivated successfully.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Finished systemd-reboot.service - System Reboot.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Reached target reboot.target - System Reboot.
+
+RECOMMENDED ACTION
+--------------------------------------------------------------------------------
+Review the raw previous-boot logs and correlate the reboot with the approved change or maintenance window.
+
+
+
+AI ANALYSIS
+===========
+
+### 1. INCIDENT SUMMARY
+Server `ip-172-31-21-130` experienced a reboot on August 21, 2026, at 11:08:44 UTC. The system executed a clean, graceful shutdown sequence managed by `systemd-logind` and successfully rebooted into service. The overall system health score remains 100/100 (HEALTHY).
+
+---
+
+### 2. PRIMARY RCA
+**UNKNOWN**
+
+---
+
+### 3. WHY THIS RCA WAS SELECTED
+The Local Rule Engine assigned an RCA of **UNKNOWN** with **LOW** confidence because available log evidence shows a clean reboot request initiated by `systemd-logind`, but does not contain sufficient audit detail to identify the specific caller (such as a manual command by a specific user, an external cloud hypervisor request, or an automated patch management tool). 
+
+There was no evidence of system instability, kernel crash, hardware fault, out-of-memory event, or filesystem degradation. Because the specific trigger cannot be conclusively verified from the captured logs, the cause remains undetermined.
+
+---
+
+### 4. SUPPORTING EVIDENCE
+* **Clean System Shutdown Sequence:**
+  * `Aug 21 11:08:44 ip-172-31-21-130 systemd-logind[4235]: The system will reboot now!`
+  * `Aug 21 11:08:44 ip-172-31-21-130 systemd-logind[4235]: System is rebooting.`
+  * `Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Reached target reboot.target - System Reboot.`
+* **Root Cause Matrix Findings:**
+  * Kernel Panic: NOT DETECTED
+  * Kernel OOPS: NOT DETECTED
+  * Out-Of-Memory (OOM): NOT DETECTED
+  * Hardware / Storage / I/O Error: NOT DETECTED
+  * Systemd Failure: NOT DETECTED
+
+---
+
+### 5. OTHER DETECTED EVENTS
+Standard background initialization warnings were logged during system boot:
+* `irqbalance`: Logged unmanaged IRQ affinity notices (e.g., `Cannot change IRQ 0 affinity`).
+* Kernel/Hardware Init: Minor messages regarding `PM-Timer Bug` workaround and missing optional wireless firmware (`regulatory.db`).
+
+These are normal background operational messages and did not contribute to or cause the system reboot.
+
+---
+
+### 6. KDUMP / VMCORE ANALYSIS
+* **Kdump Status:** **READY**. The kernel command line includes `crashkernel` reservations, and the kdump service is prepared to capture memory dumps in the event of a future kernel panic.
+* **VMcore Status:** **NOT AVAILABLE**. No vmcore file exists because the system underwent a graceful reboot rather than a kernel crash or panic.
+
+---
+
+### 7. RECOMMENDED INVESTIGATION
+1. **Audit Log Inspection:** Review `/var/log/audit/audit.log` or system journal logs around `11:08:44 UTC` to identify the user session, process ID, or service that issued the shutdown/reboot signal to `systemd-logind`.
+2. **Maintenance Window Correlation:** Check internal change-management records, CI/CD deployment logs, or scheduled cron jobs to verify if an automated task triggered the reboot.
+3. **Cloud Infrastructure Logs:** Check AWS CloudTrail or EC2 instance action history to verify if an instance reboot request was sent via the AWS API or console.
+
+
+FINAL DECISION
+==============
+
+The Local Rule Engine is the authoritative source
+for the primary reboot RCA.
+
+Gemini AI is used only to provide additional
+explanation and contextual analysis.
+
+Evidence was preserved separately.

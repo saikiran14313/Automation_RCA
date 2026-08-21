@@ -1,0 +1,51 @@
+========================================
+LINUX REBOOT RCA
+========================================
+
+Server:
+ip-172-31-21-130
+
+Incident:
+Repeated system reboots occurring at short intervals
+
+Probable Root Cause:
+Manual / Planned reboot
+
+Confidence:
+HIGH
+
+Timeline:
+- 2026-08-20 14:58:21 - System booted
+- 2026-08-20 15:02:18 - sudo user 'ubuntu' executed /usr/sbin/reboot via terminal pts/0
+- 2026-08-20 15:02:26 - System initiated shutdown and reboot sequence
+
+Key Evidence:
+1. Aug 20 15:02:18 ip-172-31-21-130 sudo[1147]: ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/linux-rcc-ai ; USER=root ; COMMAND=/usr/sbin/reboot
+2. Aug 20 15:02:18 ip-172-31-21-130 systemd-logind[584]: The system will reboot now!
+3. Boot history confirms multiple short-lived reboots occurring consecutively
+
+Root Cause Checks:
+Kernel Panic: Not detected
+Kernel OOPS: Not detected
+OOM: Not detected
+Hardware Error: Not detected
+Storage / I/O Error: Not detected
+Filesystem Error: Not detected
+Watchdog / Lockup: Not detected
+Systemd Failure: Not detected
+Manual / Planned Reboot: Detected
+Cron Scheduled Reboot: Not detected
+Kdump: Not configured
+VMcore: Not available
+
+Final RCA:
+The system experienced a series of consecutive reboots. Analysis of the logs shows that a user with 'sudo' privileges explicitly executed the '/usr/sbin/reboot' command from an active terminal session immediately preceding the shutdown, confirming these actions were manual.
+
+Recommended Action:
+Audit access to the server, specifically review the actions of user 'ubuntu' on TTY pts/0, and investigate if automated scripts or human operators are intentionally triggering these frequent reboots.
+
+Evidence File:
+ai_evidence_20260820_150403.txt
+
+Cause of Reboot:
+The reboot was manually triggered by a user executing the /usr/sbin/reboot command.

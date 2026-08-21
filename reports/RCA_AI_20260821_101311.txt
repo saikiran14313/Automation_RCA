@@ -1,0 +1,74 @@
+LINUX AI REBOOT RCA REPORT
+================================================================================
+
+Server: ip-172-31-21-130
+Evidence: ai_evidence_20260820_150403.txt
+Analysis Time: 2026-08-21 10:13:11.403629
+Analysis Mode: Gemini AI + Local Health Engine
+Confidence: HIGH
+Health Score: 90/100
+Health Status: HEALTHY
+
+PROBABLE ROOT CAUSE
+--------------------------------------------------------------------------------
+Manual system reboot executed via sudo by user 'ubuntu'
+
+CAUSE OF REBOOT
+--------------------------------------------------------------------------------
+User 'ubuntu' issued '/usr/sbin/reboot' command via sudo on pts/0
+
+REBOOT TYPE
+--------------------------------------------------------------------------------
+MANUAL
+
+RCA REASONING
+--------------------------------------------------------------------------------
+The system logs demonstrate a clean, planned reboot sequence initiated by user 'ubuntu' executing 'sudo /usr/sbin/reboot' at 15:02:18 UTC. Systemd-logind responded to the command and cleanly shut down services and unmounted filesystems. There are no kernel panics, hardware errors, OOM events, or watchdog timeouts present in the logs.
+
+SUPPORTING EVIDENCE
+--------------------------------------------------------------------------------
+- Aug 20 15:02:18 ip-172-31-21-130 sudo[1147]: ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/linux-rcc-ai ; USER=root ; COMMAND=/usr/sbin/reboot
+- Aug 20 15:02:18 ip-172-31-21-130 systemd-logind[584]: The system will reboot now!
+
+ROOT CAUSE MATRIX
+--------------------------------------------------------------------------------
+Kernel Panic: NOT DETECTED
+Kernel OOPS: NOT DETECTED
+OOM: NOT DETECTED
+Hardware Error: NOT DETECTED
+Storage / I/O: NOT DETECTED
+Filesystem: NOT DETECTED
+Watchdog / Lockup: NOT DETECTED
+Systemd Failure: NOT DETECTED
+Manual Reboot: DETECTED
+Cron Reboot: NOT DETECTED
+Kdump: NOT CONFIGURED
+VMcore: NOT AVAILABLE
+
+HEALTH IMPACT
+--------------------------------------------------------------------------------
+Recent reboot detected: -5
+Kdump not ready: -5
+
+RECOMMENDED ACTION
+--------------------------------------------------------------------------------
+No corrective action is necessary as this was an intentional manual reboot. Coordinate with system administrators if this reboot was unscheduled.
+
+REBOOT TIMELINE
+--------------------------------------------------------------------------------
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: plymouth-reboot.service - Show Plymouth Reboot Screen was skipped because of an unmet condition check (ConditionKernelCommandLine=splash).
+Aug 20 15:02:19 ip-172-31-21-130 systemd[930]: Reached target shutdown.target - Shutdown.
+Aug 20 15:02:19 ip-172-31-21-130 systemd[1]: Stopped finalrd.service - Create final runtime dir for shutdown pivot root.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopping systemd-update-utmp.service - Record System Boot/Shutdown in UTMP...
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Stopped systemd-update-utmp.service - Record System Boot/Shutdown in UTMP.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Reached target shutdown.target - System Shutdown.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Reached target final.target - Late Shutdown Services.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: systemd-reboot.service: Deactivated successfully.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Finished systemd-reboot.service - System Reboot.
+Aug 20 15:02:26 ip-172-31-21-130 systemd[1]: Reached target reboot.target - System Reboot.
+Aug 20 15:02:26 ip-172-31-21-130 systemd-shutdown[1]: Syncing filesystems and block devices.
+Aug 20 15:02:26 ip-172-31-21-130 systemd-shutdown[1]: Sending SIGTERM to remaining processes...
+
+EVIDENCE FILE
+--------------------------------------------------------------------------------
+/home/ubuntu/linux-rcc-ai/logs/evidence/ai_evidence_20260820_150403.txt

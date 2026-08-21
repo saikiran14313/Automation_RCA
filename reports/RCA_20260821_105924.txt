@@ -1,0 +1,46 @@
+LINUX REBOOT INTELLIGENCE CENTER
+================================================================================
+Server: ip-172-31-21-130
+Evidence: /home/ubuntu/linux-rcc-ai/logs/evidence/ai_evidence_20260821_105350.txt
+Analysis Time: 2026-08-21 10:59:24.962270
+
+ROOT CAUSE MATRIX
+--------------------------------------------------
+Kernel Panic           NOT DETECTED
+Kernel OOPS            NOT DETECTED
+OOM                    NOT DETECTED
+Hardware Error         DETECTED
+Storage / I/O          DETECTED
+Filesystem             NOT DETECTED
+Watchdog / Lockup      NOT DETECTED
+Systemd Failure        NOT DETECTED
+Manual Reboot          DETECTED
+Cron Reboot            DETECTED
+Kdump                  READY
+VMcore                 NOT AVAILABLE
+
+FINAL RCA
+--------------------------------------------------
+Root Cause: Manual / Planned Reboot
+Confidence: HIGH
+Cause: The server was manually rebooted by a user through a sudo reboot command. The collected evidence shows the reboot command being executed from a user session.
+
+RECOMMENDED ACTION
+--------------------------------------------------
+Verify the reboot against the approved change or maintenance window. Review the associated sudo command/session if the reboot was unexpected.
+
+HEALTH
+--------------------------------------------------
+Health Score: 40/100
+Health Status: CRITICAL
+
+ENGINE
+--------------------------------------------------
+Engine: Local Rule Engine
+AI: Optional
+External API: Not required for RCA
+
+EVIDENCE
+--------------------------------------------------
+Evidence Size: 222,516 characters
+Raw evidence preserved separately.

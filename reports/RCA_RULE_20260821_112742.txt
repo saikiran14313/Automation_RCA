@@ -1,0 +1,54 @@
+LINUX REBOOT LOCAL RULE ENGINE RCA REPORT
+================================================================================
+
+Server: ip-172-31-21-130
+Evidence: ai_evidence_20260821_110956.txt
+Analysis Time: 2026-08-21 11:27:42.422104
+Analysis Mode: LOCAL RULE ENGINE
+Confidence: HIGH
+Health Score: 95/100
+Health Status: HEALTHY
+
+PROBABLE ROOT CAUSE
+--------------------------------------------------------------------------------
+Manual / Planned Reboot
+
+CAUSE OF REBOOT
+--------------------------------------------------------------------------------
+The server was manually/planned rebooted by a user through a user-initiated reboot command.
+
+Evidence:
+Aug 21 11:07:44 ip-172-31-21-130 sudo[6179]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=root ; COMMAND=/usr/sbin/shutdown -r
+
+REBOOT TYPE
+--------------------------------------------------------------------------------
+MANUAL
+
+ROOT CAUSE MATRIX
+--------------------------------------------------------------------------------
+Kernel Panic: NOT DETECTED
+Kernel OOPS: NOT DETECTED
+OOM: NOT DETECTED
+Hardware Error: NOT DETECTED
+Storage / I/O: NOT DETECTED
+Filesystem: NOT DETECTED
+Watchdog / Lockup: NOT DETECTED
+Systemd Failure: NOT DETECTED
+Manual Reboot: DETECTED
+Cron Reboot: NOT DETECTED
+Kdump: READY
+VMcore: NOT AVAILABLE
+
+HEALTH IMPACT
+--------------------------------------------------------------------------------
+Recent reboot detected: -5
+
+REBOOT TIMELINE
+--------------------------------------------------------------------------------
+Aug 21 11:07:44 ip-172-31-21-130 sudo[6179]:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu/linux-rcc-ai/scripts ; USER=root ; COMMAND=/usr/sbin/shutdown -r
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: systemd-reboot.service: Deactivated successfully.
+Aug 21 11:08:51 ip-172-31-21-130 systemd[1]: Finished systemd-reboot.service - System Reboot.
+
+RECOMMENDED ACTION
+--------------------------------------------------------------------------------
+Verify the reboot against the approved change or maintenance window.
